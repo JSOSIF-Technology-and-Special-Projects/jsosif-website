@@ -2,38 +2,38 @@ export const mockApiData = {
   statistics: {
     fundMembers: 26,
     investmentHoldings: 30,
-    assetsUnderManagement: 256000,
+    assetsUnderManagement: 1111000,
   },
   investmentDivisions: [
     {
       name: "Financial Institutions",
       description: "Test",
-      ticker: "NYSE:JPM", // Example ticker for Financial Institutions
+      ticker: "NYSE:JPM, AAPL",
     },
     {
       name: "Tech Media Telecommunications",
       description: "Test",
-      ticker: "AAPL", // Example ticker for Tech Media
+      ticker: "AAPL",
     },
     {
       name: "Consumer & Retail",
       description: "Test",
-      ticker: "AMZN", // Example ticker for Consumer & Retail
+      ticker: "AMZN",
     },
     {
       name: "Industrials & Natural Resources",
       description: "Test",
-      ticker: "CAT", // Example ticker for Industrials
+      ticker: "CAT",
     },
     {
       name: "Health Care",
       description: "Test",
-      ticker: "JNJ", // Example ticker for Health Care
+      ticker: "JNJ",
     },
     {
       name: "Fixed-Income & Real Estate",
       description: "Test",
-      ticker: "VNQ", // Example ticker for Fixed-Income
+      ticker: "VNQ",
     },
   ],
   supportTeams: [
@@ -65,7 +65,8 @@ export const mockApiData = {
           year: "Unknown",
           joined: "Unknown",
           image: "/images/jacobsweet.png",
-          linkedin: "https://www.linkedin.com/in/jacob-sweet-853066214/?originalSubdomain=ca",
+          linkedin:
+            "https://www.linkedin.com/in/jacob-sweet-853066214/?originalSubdomain=ca",
         },
       ],
     },
@@ -97,67 +98,45 @@ export const mockApiData = {
         },
       ],
     },
+  ],
+  alumni: [
     {
-      name: "Junior Analysts",
-      members: [
-        {
-          name: "Emily Brown",
-          role: "Junior Analyst",
-          program: "Accounting",
-          year: "First Year",
-          joined: "May 2024",
-          image: "/images/emily.jpg",
-          linkedin: "",
-        },
-      ],
+      name: "Alice Johnson",
+      position: "Software Engineer",
+      company: "Google",
+      program: "Computer Science",
+      year: "2021",
+      image: "/images/alice.jpg",
+      linkedin: "https://www.linkedin.com/in/alice-johnson/",
     },
     {
-      name: "Economics Team",
-      members: [
-        {
-          name: "Liam Wilson",
-          role: "Economic Researcher",
-          program: "Economics",
-          year: "Third Year",
-          joined: "September 2023",
-          image: "/images/liam.jpg",
-          linkedin: "",
-        },
-      ],
+      name: "Bob Brown",
+      position: "Data Scientist",
+      company: "Meta",
+      program: "Data Analytics",
+      year: "2020",
+      image: "/images/bob.jpg",
+      linkedin: "https://www.linkedin.com/in/bob-brown/",
     },
     {
-      name: "Math and Risk Team",
-      members: [
-        {
-          name: "Sophia Davis",
-          role: "Risk Analyst",
-          program: "Mathematics",
-          year: "Second Year",
-          joined: "October 2023",
-          image: "/images/sophia.jpg",
-          linkedin: "",
-        },
-      ],
-    },
-    {
-      name: "Operations Team",
-      members: [
-        {
-          name: "Michael Johnson",
-          role: "Operations Coordinator",
-          program: "Business Management",
-          year: "Fourth Year",
-          joined: "June 2023",
-          image: "/images/michael.jpg",
-          linkedin: "",
-        },
-      ],
+      name: "Catherine Green",
+      position: "Product Manager",
+      company: "Amazon",
+      program: "Business Administration",
+      year: "2019",
+      image: "/images/catherine.jpg",
+      linkedin: "https://www.linkedin.com/in/catherine-green/",
     },
   ],
 };
 
-// Mock API functions
+// Existing mock API functions
 export const fetchStatistics = async () => mockApiData.statistics;
-export const fetchInvestmentDivisions = async () => mockApiData.investmentDivisions;
+export const fetchInvestmentDivisions = async () =>
+  mockApiData.investmentDivisions;
 export const fetchSupportTeams = async () => mockApiData.supportTeams;
 export const fetchTeams = async () => mockApiData.teams;
+
+// New function to fetch alumni data
+export const fetchAlumni = async () => mockApiData.alumni;
+

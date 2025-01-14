@@ -1,0 +1,3 @@
+.tv-widget-chart__title.symbol-description-name {
+  color: #000000 !important; /* Force the company name to black */
+}
