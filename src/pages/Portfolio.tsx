@@ -71,18 +71,21 @@ export default function Portfolio() {
 
       {/* Investment Divisions with SymbolOverviewWidget */}
       <div className="px-8 py-12">
-        {investmentDivisions.map((division, index) => (
-          <div key={index} className="mb-12">
-            {/* Team Header */}
-            <h2 className="text-2xl font-bold text-blue-800 text-center mb-4">
-              {division.name}
-            </h2>
+  {investmentDivisions.map((division, index) => (
+    <div key={index} className="mb-12">
+      {/* Team Header */}
+      <h2 className="text-2xl font-bold text-blue-800 text-center mb-4">
+        {division.name}
+      </h2>
 
-            {/* SymbolOverviewWidget */}
-            {division.ticker && <SymbolOverviewWidget ticker={division.ticker} />}
-          </div>
-        ))}
-      </div>
+      {/* SymbolOverviewWidget */}
+      {division.ticker && (
+        <SymbolOverviewWidget ticker={division.ticker} />
+      )}
+    </div>
+  ))}
+</div>
+
     </div>
   );
 }
