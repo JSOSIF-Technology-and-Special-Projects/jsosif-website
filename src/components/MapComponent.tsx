@@ -1,19 +1,150 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import {
+	GoogleMap,
+	InfoWindow,
+	LoadScript,
+	Marker,
+} from "@react-google-maps/api";
 
-const MapComponent: React.FC = () => {
-  return (
-    <div className="w-full h-[500px]">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2830.849372159465!2d-83.0679!3d42.3037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2cd3804c7337%3A0x8e16b77569b212f7!2sOdette%20School%20of%20Business!5e0!3m2!1sen!2sca!4v1684598584371!5m2!1sen!2sca"
-        width="100%"
-        height="100%"
-        style={{ border: 0 }}
-        allowFullScreen={false}
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-  );
+const MapComponent = () => {
+	const mapStyles = [
+		{
+			featureType: "all",
+			elementType: "labels.text.fill",
+			stylers: [
+				{ saturation: 36 },
+				{ color: "#000000" },
+				{ lightness: 60 },
+			],
+		},
+		{
+			featureType: "all",
+			elementType: "labels.text.stroke",
+			stylers: [
+				{ visibility: "on" },
+				{ color: "#000000" },
+				{ lightness: 16 },
+			],
+		},
+		{
+			featureType: "all",
+			elementType: "labels.icon",
+			stylers: [{ visibility: "off" }],
+		},
+		{
+			featureType: "administrative",
+			elementType: "geometry.fill",
+			stylers: [{ color: "#000000" }, { lightness: 20 }],
+		},
+		{
+			featureType: "administrative",
+			elementType: "geometry.stroke",
+			stylers: [{ color: "#000000" }, { lightness: 17 }, { weight: 1.2 }],
+		},
+		{
+			featureType: "landscape",
+			elementType: "geometry",
+			stylers: [{ color: "#000000" }, { lightness: 28 }],
+		},
+		{
+			featureType: "poi",
+			elementType: "geometry",
+			stylers: [{ color: "#000000" }, { lightness: 24 }],
+		},
+		{
+			featureType: "road.highway",
+			elementType: "geometry.fill",
+			stylers: [{ color: "#000000" }, { lightness: 17 }],
+		},
+		{
+			featureType: "road.highway",
+			elementType: "geometry.stroke",
+			stylers: [{ color: "#000000" }, { lightness: 29 }, { weight: 0.2 }],
+		},
+		{
+			featureType: "road.arterial",
+			elementType: "geometry",
+			stylers: [{ color: "#000000" }, { lightness: 18 }],
+		},
+		{
+			featureType: "road.local",
+			elementType: "geometry",
+			stylers: [{ color: "#000000" }, { lightness: 16 }],
+		},
+		{
+			featureType: "transit",
+			elementType: "geometry",
+			stylers: [{ color: "#000000" }, { lightness: 19 }],
+		},
+		{
+			featureType: "water",
+			elementType: "geometry",
+			stylers: [{ color: "#000000" }, { lightness: 17 }],
+		},
+	];
+
+	const containerStyle = {
+		width: "100%",
+		height: "100%",
+	};
+
+	const center = {
+		lat: 42.3050989623961, // Replace with your desired latitude
+		lng: -83.06467324703436, // Replace with your desired longitude
+	};
+
+	const [marker, markerRef] = useState<Marker | null>(null);
+	const [infoWindow, setInfoWindow] = useState(true);
+
+	const handleInfoCloseClick = () => {
+		setInfoWindow(false);
+	};
+
+	const handleInfoOpenClick = () => {
+		setInfoWindow(true);
+	};
+
+	return (
+		<div className="w-full h-[500px]">
+			<LoadScript
+				googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY || ""}
+			>
+				<GoogleMap
+					mapContainerStyle={containerStyle}
+					center={center}
+					zoom={14}
+					options={{ styles: mapStyles }}
+				>
+					<Marker
+						ref={(newRef) => markerRef(newRef)}
+						position={center}
+						onClick={handleInfoOpenClick}
+					>
+						{infoWindow && marker ? (
+							<InfoWindow
+								// @ts-ignore
+								anchor={marker}
+								onDomReady={() => setInfoWindow(true)}
+								onUnmount={() => setInfoWindow(false)}
+								onCloseClick={handleInfoCloseClick}
+							>
+								<div className="">
+									<h1 className="font-medium">
+										John Simpson Odette Student Investment
+										Fund
+									</h1>
+									<p>
+										Odette School of Business @ University
+										of Windsor
+									</p>
+								</div>
+							</InfoWindow>
+						) : null}
+					</Marker>
+				</GoogleMap>
+			</LoadScript>
+		</div>
+	);
 };
 
 export default MapComponent;
