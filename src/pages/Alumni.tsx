@@ -3,12 +3,12 @@
 import React, { useEffect, useState } from "react";
 import AlumniCard from "../components/AlumniCard"; // Reuse the new AlumniCard component
 import { fetchAlumni } from "../data/mockApi"; // Use the fetchAlumni function
-import aboutbanner from "../assets/aboutbanner.png"; // Replace with your actual banner image
+import alumnibackground from "../assets/alumnibackground.jpg"; // Replace with your actual banner image
 import Image from "next/image";
 
 interface Alumni {
   name: string;
-  position: string; // Current position
+  position: string; 
   company: string;
   program: string;
   image: string;
@@ -35,7 +35,7 @@ export default function Alumni() {
       {/* Banner Section */}
       <div className="relative">
         <Image
-          src={aboutbanner}
+          src={alumnibackground}
           alt="Our Alumni Banner"
           className="w-full h-[400px] object-cover"
         />
