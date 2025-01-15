@@ -12,6 +12,8 @@ interface AlumniCardProps {
     program: string;
     image: string;
     linkedin: string;
+    year: string;
+    blurb: string;
   };
 }
 
@@ -36,6 +38,13 @@ export default function AlumniCard({ alumni }: AlumniCardProps) {
           <p className="text-gray-600">
             <strong>Program:</strong> {alumni.program}
           </p>
+          <p className="text-gray-600">
+            <strong>Year on Fund:</strong> {alumni.year}
+          </p>
+          <p className="text-gray-600">
+           {alumni.blurb}
+          </p>
+          
         </div>
         {/* LinkedIn Button */}
         {alumni.linkedin && (

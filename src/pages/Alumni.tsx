@@ -13,6 +13,8 @@ interface Alumni {
   program: string;
   image: string;
   linkedin: string;
+  blurb: string;
+  year: string;
 }
 
 export default function Alumni() {

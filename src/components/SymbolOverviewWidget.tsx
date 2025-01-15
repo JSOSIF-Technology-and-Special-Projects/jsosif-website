@@ -25,6 +25,9 @@ export default function SymbolOverviewWidget({ ticker }: SymbolOverviewWidgetPro
         fontColor="#000"
         showFloatingTooltip={false}
         widgetFontColor="#000"
+        dateFormat="MM/dd/yyyy"
+        valuesTracking="0"
+        scalePosition="right"
       />
     </div>
   );
