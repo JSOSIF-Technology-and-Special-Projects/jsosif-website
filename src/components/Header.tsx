@@ -26,11 +26,11 @@ export default function Header() {
         <Link href="/team" passHref legacyBehavior>
           <a className="hover:text-blue-500">Team</a>
         </Link>
-        <Link href="/bloomberg" passHref legacyBehavior>
-          <a className="hover:text-blue-500">Bloomberg</a>
-        </Link>
         <Link href="/alumni" passHref legacyBehavior>
           <a className="hover:text-blue-500">Alumni</a>
+        </Link>
+        <Link href="/bloomberg" passHref legacyBehavior>
+          <a className="hover:text-blue-500">Bloomberg</a>
         </Link>
       </nav>
     </header>
