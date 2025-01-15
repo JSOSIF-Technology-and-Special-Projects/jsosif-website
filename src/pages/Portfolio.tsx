@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { fetchInvestmentDivisions, fetchStatistics } from "../data/mockApi"; // Import mock data functions
 import Image from "next/image";
 import portfoliobanner from "../assets/portfoliobanner.png"; // Update the image path as necessary
-import SymbolOverviewWidget from "../components/SymbolOverviewWidget"; // Import the reusable component
+import SymbolOverviewWidget from "../components/SymbolOverviewWidget";
 
 export default function Portfolio() {
 	const [investmentHoldings, setInvestmentHoldings] = useState(0);
@@ -17,7 +17,7 @@ export default function Portfolio() {
 		[]
 	);
 
-	useEffect(() => {
+	useMemo(() => {
 		const fetchData = async () => {
 			try {
 				const statistics = await fetchStatistics();
@@ -34,14 +34,14 @@ export default function Portfolio() {
 
 	return (
 		<div className="bg-white min-h-screen">
+			<Image
+				src={portfoliobanner}
+				alt="Our Team Banner"
+				className={`w-full object-cover -z-0 absolute h-[400px]`}
+			/>
 			{/* Hero Section with Image and Divs */}
-			<div className="relative">
-				<Image
-					src={portfoliobanner}
-					alt="Portfolio Banner"
-					className="w-full h-[400px] object-cover"
-				/>
-				<div className="absolute inset-0 flex flex-col items-center justify-between py-8">
+			<div>
+				<div className="flex flex-col items-center justify-between py-8">
 					{/* Portfolio Title */}
 					<div className="flex flex-col items-center justify-center gap-2">
 						<div className="flex flex-col items-center justify-center w-fit bg-primary opacity-70">
@@ -49,14 +49,14 @@ export default function Portfolio() {
 								Portfolio
 							</h1>
 						</div>
-						<div className="flex flex-col items-center justify-center">
+						<div className="flex flex-col items-center justify-center z-10 ">
 							<div className="w-screen bg-primary h-0.5 mb-1" />
 							<div className="w-screen bg-primary h-1" />
 						</div>
 					</div>
 
 					{/* Overlay Divs */}
-					<div className="flex flex-col md:flex-row items-center justify-center gap-8 w-[45vw]">
+					<div className="flex flex-col md:flex-row items-center justify-center gap-8 w-[50vw] z-10 mt-10">
 						{/* Holdings Info */}
 
 						<p className="text-3xl font-serif mt-2 w-1/2 text-center">
@@ -77,7 +77,7 @@ export default function Portfolio() {
 			</div>
 
 			{/* Investment Divisions with SymbolOverviewWidget */}
-			<div className="py-12 content-center mx-auto">
+			<div className="py-12 content-center mx-auto z-10 relative bg-white">
 				{investmentDivisions.map((division, index) => (
 					<div
 						key={index}

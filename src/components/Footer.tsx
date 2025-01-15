@@ -7,7 +7,7 @@ import jsoifjoin from "../assets/jsosifjoin.png";
 
 export default function Footer() {
 	return (
-		<footer className="bg-[#1e242e]">
+		<footer className="bg-[#1e242e] z-50 relative">
 			<div className="px-72 text-white text-left py-4 flex justify-between items-center">
 				<div>
 					<Image
