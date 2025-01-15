@@ -8,7 +8,7 @@ export const mockApiData = {
 		{
 			name: "Financial Institutions",
 			description: "Connor Demelo and Cozy Cosentino",
-			ticker: "BRK.B|12M, V|12M, ALLY|12M, SCHW|12M, JPM|12M, TSX:BMO|12M",
+			ticker: "V|12M, SCHW, JPM|12M, TSX:BMO|12M",
 		},
 		{
 			name: "Tech Media Telecommunications",
@@ -18,17 +18,17 @@ export const mockApiData = {
 		{
 			name: "Consumer & Retail",
 			description: "Mohammad Mohammad and Noah Di Maio",
-			ticker: "MODG|12M, LVMHF|12M, PEP|12M, TSX:JWEL|12M, GIS|12M, TJX|12M, COST|12M, TSX:ATD|12M",
+			ticker: "LVMHF|12M, PEP|12M, TSX:JWEL|12M, GIS|12M, COST|12M, TSX:ATD|12M",
 		},
 		{
 			name: "Industrials & Natural Resources",
 			description: "Fadel Asfari and Jack",
-			ticker: "BEP|12M, TSX:ENB|12M, NEE|12M, TSX:CNQ|12M, J|12M, TSX:MG|12M, XYL|12M, TSX:CP|12M, TSX:NTR|12M",
+			ticker: "TSX:ENB|12M, TSX:CNQ|12M, J|12M, TSX:MG|12M, XYL|12M, TSX:CP|12M, TSX:NTR|12M, AMTM",
 		},
 		{
 			name: "Health Care",
 			description: "Cullan",
-			ticker: "JNJ|12M, PFE|12M, VRTX|12M, NVO|12M",
+			ticker: "PFE|12M, VRTX|12M, NVO|12M",
 		},
 		{
 			name: "Fixed-Income & Real Estate",
