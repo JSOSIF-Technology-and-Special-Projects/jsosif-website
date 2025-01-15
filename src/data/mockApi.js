@@ -7,60 +7,51 @@ export const mockApiData = {
 	investmentDivisions: [
 		{
 			name: "Financial Institutions",
-			description:
-				"Connor Demelo and Cozy Cosentino Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod odio sit amet rutrum ullamcorper. Sed felis neque, laoreet vitae accumsan elementum, gravida aliquet enim. Mauris vel turpis diam. Sed at cursus elit, et sagittis purus. Donec maximus augue a lorem sollicitudin, vitae ultrices ipsum lacinia. Donec vel gravida erat. Nam bibendum nisi quis orci ullamcorper interdum. Aliquam erat volutpat. Nullam id semper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur finibus leo libero, sit amet venenatis nisl imperdiet et. Phasellus vel porttitor massa. Aliquam sit amet ex sed augue pellentesque viverra. Morbi faucibus lectus eu sapien aliquam, non hendrerit velit volutpat.",
-			ticker: "NYSE:JPM, AAPL",
+			description: "Connor Demelo and Cozy Cosentino",
+			ticker: "BRK.B|12M, V|12M, ALLY|12M, SCHW|12M, JPM|12M, TSX:BMO|12M",
 		},
 		{
 			name: "Tech Media Telecommunications",
-			description:
-				"Eddy Aboukassm and Rafael Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod odio sit amet rutrum ullamcorper. Sed felis neque, laoreet vitae accumsan elementum, gravida aliquet enim. Mauris vel turpis diam. Sed at cursus elit, et sagittis purus. Donec maximus augue a lorem sollicitudin, vitae ultrices ipsum lacinia. Donec vel gravida erat. Nam bibendum nisi quis orci ullamcorper interdum. Aliquam erat volutpat. Nullam id semper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur finibus leo libero, sit amet venenatis nisl imperdiet et. Phasellus vel porttitor massa. Aliquam sit amet ex sed augue pellentesque viverra. Morbi faucibus lectus eu sapien aliquam, non hendrerit velit volutpat.",
-			ticker: "AAPL",
+			description: "Eddy Aboukassm and Rafael",
+			ticker: "ACN|12M, CSCO|12M, TSX:OTEX|12M, DIS|12M",
 		},
 		{
 			name: "Consumer & Retail",
-			description:
-				"Mohammad Mohammad and Noah Di Maio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod odio sit amet rutrum ullamcorper. Sed felis neque, laoreet vitae accumsan elementum, gravida aliquet enim. Mauris vel turpis diam. Sed at cursus elit, et sagittis purus. Donec maximus augue a lorem sollicitudin, vitae ultrices ipsum lacinia. Donec vel gravida erat. Nam bibendum nisi quis orci ullamcorper interdum. Aliquam erat volutpat. Nullam id semper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur finibus leo libero, sit amet venenatis nisl imperdiet et. Phasellus vel porttitor massa. Aliquam sit amet ex sed augue pellentesque viverra. Morbi faucibus lectus eu sapien aliquam, non hendrerit velit volutpat.",
-			ticker: "AMZN",
+			description: "Mohammad Mohammad and Noah Di Maio",
+			ticker: "MODG|12M, LVMHF|12M, PEP|12M, TSX:JWEL|12M, GIS|12M, TJX|12M, COST|12M, TSX:ATD|12M",
 		},
 		{
 			name: "Industrials & Natural Resources",
-			description:
-				"Fadel Asfari and Jack Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod odio sit amet rutrum ullamcorper. Sed felis neque, laoreet vitae accumsan elementum, gravida aliquet enim. Mauris vel turpis diam. Sed at cursus elit, et sagittis purus. Donec maximus augue a lorem sollicitudin, vitae ultrices ipsum lacinia. Donec vel gravida erat. Nam bibendum nisi quis orci ullamcorper interdum. Aliquam erat volutpat. Nullam id semper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur finibus leo libero, sit amet venenatis nisl imperdiet et. Phasellus vel porttitor massa. Aliquam sit amet ex sed augue pellentesque viverra. Morbi faucibus lectus eu sapien aliquam, non hendrerit velit volutpat.",
-			ticker: "CAT",
+			description: "Fadel Asfari and Jack",
+			ticker: "BEP|12M, TSX:ENB|12M, NEE|12M, TSX:CNQ|12M, J|12M, TSX:MG|12M, XYL|12M, TSX:CP|12M, TSX:NTR|12M",
 		},
 		{
 			name: "Health Care",
 			description: "Cullan",
-			ticker: "JNJ",
+			ticker: "JNJ|12M, PFE|12M, VRTX|12M, NVO|12M",
 		},
 		{
 			name: "Fixed-Income & Real Estate",
-			description:
-				"Luca Pecorada Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod odio sit amet rutrum ullamcorper. Sed felis neque, laoreet vitae accumsan elementum, gravida aliquet enim. Mauris vel turpis diam. Sed at cursus elit, et sagittis purus. Donec maximus augue a lorem sollicitudin, vitae ultrices ipsum lacinia. Donec vel gravida erat. Nam bibendum nisi quis orci ullamcorper interdum. Aliquam erat volutpat. Nullam id semper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur finibus leo libero, sit amet venenatis nisl imperdiet et. Phasellus vel porttitor massa. Aliquam sit amet ex sed augue pellentesque viverra. Morbi faucibus lectus eu sapien aliquam, non hendrerit velit volutpat.",
-			ticker: "VNQ",
+			description: "Luca Pecorada",
+			ticker: "",
 		},
 	],
 	supportTeams: [
 		{
 			name: "Quantitative Research & Portfolio Risk",
-			description:
-				"Adam Bergen and Aidan Richer Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod odio sit amet rutrum ullamcorper. Sed felis neque, laoreet vitae accumsan elementum, gravida aliquet enim. Mauris vel turpis diam. Sed at cursus elit, et sagittis purus. Donec maximus augue a lorem sollicitudin, vitae ultrices ipsum lacinia. Donec vel gravida erat. Nam bibendum nisi quis orci ullamcorper interdum. Aliquam erat volutpat. Nullam id semper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur finibus leo libero, sit amet venenatis nisl imperdiet et. Phasellus vel porttitor massa. Aliquam sit amet ex sed augue pellentesque viverra. Morbi faucibus lectus eu sapien aliquam, non hendrerit velit volutpat.",
+			description: "Adam Bergen and Aidan Richer",
 		},
 		{
 			name: "Economic Advisory",
-			description:
-				"Sean Clarke and Ethan Braga Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod odio sit amet rutrum ullamcorper. Sed felis neque, laoreet vitae accumsan elementum, gravida aliquet enim. Mauris vel turpis diam. Sed at cursus elit, et sagittis purus. Donec maximus augue a lorem sollicitudin, vitae ultrices ipsum lacinia. Donec vel gravida erat. Nam bibendum nisi quis orci ullamcorper interdum. Aliquam erat volutpat. Nullam id semper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur finibus leo libero, sit amet venenatis nisl imperdiet et. Phasellus vel porttitor massa. Aliquam sit amet ex sed augue pellentesque viverra. Morbi faucibus lectus eu sapien aliquam, non hendrerit velit volutpat.",
+			description: "Sean Clarke and Ethan Braga",
 		},
 		{
 			name: "Software Development",
-			description:
-				"Aya Madi and Micheal Gibb Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod odio sit amet rutrum ullamcorper. Sed felis neque, laoreet vitae accumsan elementum, gravida aliquet enim. Mauris vel turpis diam. Sed at cursus elit, et sagittis purus. Donec maximus augue a lorem sollicitudin, vitae ultrices ipsum lacinia. Donec vel gravida erat. Nam bibendum nisi quis orci ullamcorper interdum. Aliquam erat volutpat. Nullam id semper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur finibus leo libero, sit amet venenatis nisl imperdiet et. Phasellus vel porttitor massa. Aliquam sit amet ex sed augue pellentesque viverra. Morbi faucibus lectus eu sapien aliquam, non hendrerit velit volutpat.",
+			description: "Aya Madi and Micheal Gibb",
 		},
 		{
 			name: "Engagement & Recruiting",
-			description:
-				"Emma Tellier and Joelle Jawdat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod odio sit amet rutrum ullamcorper. Sed felis neque, laoreet vitae accumsan elementum, gravida aliquet enim. Mauris vel turpis diam. Sed at cursus elit, et sagittis purus. Donec maximus augue a lorem sollicitudin, vitae ultrices ipsum lacinia. Donec vel gravida erat. Nam bibendum nisi quis orci ullamcorper interdum. Aliquam erat volutpat. Nullam id semper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur finibus leo libero, sit amet venenatis nisl imperdiet et. Phasellus vel porttitor massa. Aliquam sit amet ex sed augue pellentesque viverra. Morbi faucibus lectus eu sapien aliquam, non hendrerit velit volutpat.",
+			description: "Emma Tellier and Joelle Jawdat",
 		},
 	],
 	teams: [
