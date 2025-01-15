@@ -70,8 +70,8 @@ export default function Portfolio() {
       </div>
 
       {/* Investment Divisions with SymbolOverviewWidget */}
-      <div className="px-8 py-12">
-  {investmentDivisions.map((division, index) => (
+    <div className="px-8 py-12 w-[80%] content-center mx-auto">
+    {investmentDivisions.map((division, index) => (
     <div key={index} className="mb-12">
       {/* Team Header */}
       <h2 className="text-2xl font-bold text-blue-800 text-center mb-4">

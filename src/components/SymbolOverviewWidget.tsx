@@ -28,6 +28,7 @@ export default function SymbolOverviewWidget({ ticker }: SymbolOverviewWidgetPro
         dateFormat="MM/dd/yyyy"
         valuesTracking="0"
         scalePosition="right"
+        hideMarketStatus={true}
       />
     </div>
   );

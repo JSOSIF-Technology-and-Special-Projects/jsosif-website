@@ -2,56 +2,56 @@ export const mockApiData = {
   statistics: {
     fundMembers: 26,
     investmentHoldings: 30,
-    assetsUnderManagement: 1111000,
+    assetsUnderManagement: 256000,
   },
   investmentDivisions: [
     {
       name: "Financial Institutions",
-      description: "Test",
+      description: "Connor Demelo and Cozy Cosentino",
       ticker: "NYSE:JPM, AAPL",
     },
     {
       name: "Tech Media Telecommunications",
-      description: "Test",
+      description: "Eddy Aboukassm and Rafael",
       ticker: "AAPL",
     },
     {
       name: "Consumer & Retail",
-      description: "Test",
+      description: "Mohammad Mohammad and Noah Di Maio",
       ticker: "AMZN",
     },
     {
       name: "Industrials & Natural Resources",
-      description: "Test",
+      description: "Fadel Asfari and Jack",
       ticker: "CAT",
     },
     {
       name: "Health Care",
-      description: "Test",
+      description: "Cullan",
       ticker: "JNJ",
     },
     {
       name: "Fixed-Income & Real Estate",
-      description: "Test",
+      description: "Luca Pecorada",
       ticker: "VNQ",
     },
   ],
   supportTeams: [
     {
       name: "Quantitative Research & Portfolio Risk",
-      description: "Test",
+      description: "Adam Bergen and Aidan Richer",
     },
     {
       name: "Economic Advisory",
-      description: "Test",
+      description: "Sean Clarke and Ethan Braga",
     },
     {
       name: "Software Development",
-      description: "Test",
+      description: "Aya Madi and Micheal Gibb",
     },
     {
       name: "Engagement & Recruiting",
-      description: "Test",
+      description: "Emma Tellier and Joelle Jawdat",
     },
   ],
   teams: [

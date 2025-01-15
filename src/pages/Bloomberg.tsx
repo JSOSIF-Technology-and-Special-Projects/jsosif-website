@@ -2,6 +2,7 @@
 import Image from "next/image";
 import bloomberg from "../assets/bloomberg.png";
 import microsoftteams from "../assets/microsoftteams.png";
+import attach from "../assets/attach.png";
 
 export default function Bloomberg() {
   return (
@@ -42,7 +43,10 @@ export default function Bloomberg() {
                 className="w-16 h-16 mx-auto mb-4"
               />
               <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                <a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_YzYzMDQ4M2QtOGIxMS00OThkLWEyMTctYTA4MzIwMjhjNjZj%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%252212f933b3-3d61-4b19-9a4d-689021de8cc9%2522%252c%2522Oid%2522%253a%25220f9ffcd5-7671-4db9-8b7c-cce8a7c66908%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=a5ff1420-b4e0-49e2-91c8-cbd5bf4f573e&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true"
+                   target="_blank">
                 Click to Join
+                </a>
               </button>
             </div>
           </div>
@@ -83,7 +87,7 @@ export default function Bloomberg() {
               <div>
                 <p className="font-bold">Office Hours Support:</p>
                 <a
-                  href=""
+                  href="mailto:sweet21@uwindsor.ca"
                   className="text-blue-800 hover:underline"
                 >
                   Jacob Sweet
@@ -100,39 +104,44 @@ export default function Bloomberg() {
           </h2>
           <ul className="mt-4 space-y-4">
             <li className="flex items-center space-x-4 bg-gray-100 p-4 rounded-md shadow">
-              <img
-                src="/path-to-attachment-icon.png"
+              <Image
+                src={attach}
                 alt="Attachment Icon"
                 className="w-10 h-10"
               />
               <a
-                href="#"
+                href="/public/files/JSOSIF-2024-Annual-Report.pdf"
+                target="_blank"
                 className="text-lg text-blue-800 hover:underline font-medium"
               >
                 JSOSIF 2024 Annual Report
               </a>
             </li>
             <li className="flex items-center space-x-4 bg-gray-100 p-4 rounded-md shadow">
-              <img
-                src="/path-to-attachment-icon.png"
+              <Image
+                src={attach}
                 alt="Attachment Icon"
                 className="w-10 h-10"
               />
               <a
-                href="#"
+                href="/files/Getting-Started-Guide-for-Students-English.pdf"
+                locale={false}
+                target="_blank"
                 className="text-lg text-blue-800 hover:underline font-medium"
               >
                 Getting Started Guide
               </a>
             </li>
             <li className="flex items-center space-x-4 bg-gray-100 p-4 rounded-md shadow">
-              <img
-                src="/path-to-attachment-icon.png"
+              <Image
+                src={attach}
                 alt="Attachment Icon"
                 className="w-10 h-10"
               />
               <a
-                href="#"
+                href="/files/BMC-Professor-Guide.pdf"
+                locale={false}
+                target="_blank"
                 className="text-lg text-blue-800 hover:underline font-medium"
               >
                 BMC Professor Guide

@@ -3,6 +3,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Image from "next/image";
 
 interface AlumniCardProps {
   alumni: {
@@ -19,14 +20,15 @@ interface AlumniCardProps {
 
 export default function AlumniCard({ alumni }: AlumniCardProps) {
   return (
-    <div className="w-[300px] h-[450px] bg-white shadow-lg rounded-lg overflow-hidden mx-auto flex flex-col">
-      {/* Image */}
-      <img
+    <div className="w-[300px] bg-white shadow-lg rounded-lg overflow-hidden mx-auto flex flex-col">
+      <Image
         className="w-full h-[200px] object-cover"
         src={alumni.image}
         alt={alumni.name}
+        layout="responsive"
+        width={300}
+        height={200}
       />
-
       {/* Content */}
       <div className="p-4 flex-1 flex flex-col justify-between">
         <div>
@@ -42,7 +44,7 @@ export default function AlumniCard({ alumni }: AlumniCardProps) {
             <strong>Year on Fund:</strong> {alumni.year}
           </p>
           <p className="text-gray-600">
-           {alumni.blurb}
+           <strong>Blurb: </strong>{alumni.blurb}
           </p>
           
         </div>
