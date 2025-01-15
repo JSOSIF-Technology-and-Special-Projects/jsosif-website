@@ -107,7 +107,7 @@ export default function Bloomberg() {
               <Image
                 src={attach}
                 alt="Attachment Icon"
-                className="w-10 h-10"
+                className="w-10 h-18"
               />
               <a
                 href="/files/JSOSIF-2024-Annual-Report.pdf"
@@ -121,7 +121,7 @@ export default function Bloomberg() {
               <Image
                 src={attach}
                 alt="Attachment Icon"
-                className="w-10 h-10"
+                className="w-10 h-18"
               />
               <a
                 href="/files/Getting-Started-Guide-for-Students-English.pdf"
@@ -135,7 +135,7 @@ export default function Bloomberg() {
               <Image
                 src={attach}
                 alt="Attachment Icon"
-                className="w-10 h-10"
+                className="w-10 h-18"
               />
               <a
                 href="/files/BMC-Professor-Guide.pdf"
