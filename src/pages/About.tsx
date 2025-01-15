@@ -9,13 +9,14 @@ import jsosifhand from "../assets/jsosifhand.png";
 
 export default function About() {
 	return (
-		<div className="min-h-screen px-40 2xl:px-72 flex flex-col w-full bg-white">
+		<div className="min-h-screen flex flex-col w-full bg-white">
 			{/* About Us Banner Section */}
 			<div className="relative">
 				<Image
 					src={aboutBanner}
+					width={1920}
 					alt="About Us Banner"
-					className="w-full h-[200px] object-cover"
+					className="w-[100vw] h-[200px] object-cover"
 				/>
 				{/* Overlay Content */}
 				<div className="absolute inset-0 mb-12 flex flex-col items-center justify-center">
@@ -28,7 +29,7 @@ export default function About() {
 			</div>
 
 			{/*  History Section */}
-			<div className="py-3 flex flex-col md:flex-row justify-center items-center gap-16">
+			<div className="py-3 flex flex-col md:flex-row justify-center items-center gap-16 px-40 2xl:px-72">
 				<div className="relative bg-transparent text-white rounded-lg items-center flex max-w-md">
 					<Image
 						src={jsosifseeks}
@@ -73,7 +74,7 @@ export default function About() {
 			</div>
 
 			{/* Mission Statement */}
-			<div className="px-8 py-3 flex flex-col md:flex-row justify-center items-center gap-16">
+			<div className="py-3 flex flex-col md:flex-row justify-center items-center gap-16 px-40 2xl:px-72">
 				<div className="max-w-md w-full">
 					<h4 className="text-3xl text-primary mb-4">
 						Mission Statement
@@ -100,7 +101,7 @@ export default function About() {
 			</div>
 
 			{/* Vision Statement */}
-			<div className="px-8 py-3 mb-14 flex flex-col md:flex-row justify-center items-center gap-16">
+			<div className="py-3 mb-14 flex flex-col md:flex-row justify-center items-center gap-16 px-40 2xl:px-72">
 				{/* Image Section */}
 				<div className="relative max-w-md w-full flex items-stretch">
 					<Image

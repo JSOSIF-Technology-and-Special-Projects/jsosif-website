@@ -21,7 +21,7 @@ export default function Header() {
 
 	return (
 		<header
-			className={`flex items-center justify-center py-4 bg-white shadow-md z-50 ${
+			className={`flex items-center justify-center py-4 bg-white shadow-md z-[99999] ${
 				scrollPosition > 0 ? "fixed w-full" : "absolute w-full"
 			}`}
 		>

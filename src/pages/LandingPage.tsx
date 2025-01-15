@@ -141,13 +141,13 @@ const LandingPage: React.FC = () => {
 				</div>
 			</div>
 			{/* Investment Divisions Section */}
-			<div className="relative max-h-[50vh] mt-10 overflow-hidden">
+			<div className="relative min-h-[50vh] mt-10 overflow-hidden">
 				<Image
 					src={investmentdiv}
 					alt="Investment Divisions"
-					className="w-full h-auto"
+					className="w-full h-full absolute inset-0"
 				/>
-				<div className="absolute inset-0 justify-center items-center w-full p-10">
+				<div className=" justify-center items-center w-full p-10 relative z-50">
 					<h1 className="text-white text-[2.75rem] font-light border-b-2 border-white  mx-auto w-[34rem]  tracking-widest text-center">
 						Investment Divisions
 					</h1>
@@ -160,7 +160,7 @@ const LandingPage: React.FC = () => {
 								<h3 className="text-[#0E5791] text-xl mb-2 min-h-16">
 									{division.name}
 								</h3>
-								<p className="text-gray-700 text-sm">
+								<p className="text-gray-700 text-sm line-clamp-[15]">
 									{division.description}
 								</p>
 							</div>
@@ -170,13 +170,13 @@ const LandingPage: React.FC = () => {
 			</div>
 
 			{/* Support Teams Section */}
-			<div className="relative max-h-[50vh] mt-10 overflow-hidden w-full">
+			<div className="relative min-h-[50vh] h-fit mt-10 overflow-hidden w-full">
 				<Image
 					src={supportdiv}
 					alt="Support Teams"
-					className="w-full h-auto"
+					className="h-full absolute w-full inset-0 object-cover"
 				/>
-				<div className="absolute inset-0 flex flex-col justify-start items-center w-full p-10">
+				<div className="flex flex-col justify-start items-center w-full p-10 z-50 relative">
 					<h1 className="text-white text-[2.75rem] font-light border-b-2 border-white w-[34rem] mx-auto  tracking-widest text-center">
 						Support Teams
 					</h1>
@@ -189,7 +189,7 @@ const LandingPage: React.FC = () => {
 								<h3 className="text-primary text-xl mb-2 min-h-16">
 									{team.name}
 								</h3>
-								<p className="text-gray-700 text-sm">
+								<p className="text-gray-700 text-sm line-clamp-[15]">
 									{team.description}
 								</p>
 							</div>
