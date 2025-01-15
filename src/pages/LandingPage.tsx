@@ -60,8 +60,8 @@ const LandingPage: React.FC = () => {
 			</div>
 
 			{/* Statistics Section */}
-			<div className="bg-[#0E5791] text-white flex justify-center items-center px-72 pt-20 pb-8">
-				<div className="flex gap-12">
+			<div className="bg-[#0E5791] text-white flex items-center px-[25rem] pt-20 pb-8">
+				<div className="flex justify-between gap-12">
 					{/* Fund Members */}
 					<div className="text-left w-full">
 						<h3 className="text-8xl italic">
@@ -121,21 +121,21 @@ const LandingPage: React.FC = () => {
 				</div>
 			</div>
 			{/* The John Simpson Odette Section */}
-			<div className="py-10 px-72 ">
+			<div className="py-10 px-[23.5rem]">
 				<div className="max-w-6xl mx-auto">
-					<h4 className="text-[#0E5791] italic text-lg">
+					<h4 className="text-[#0E5791] italic text-xl">
 						The John Simpson Odette Student Investment Fund in
 						Brief:
 					</h4>
-					<div className="flex items-center mt-4">
-						<div className="w-1 h-20 bg-[#0E5791] mr-4"></div>
-						<p className="text-gray-800 text-lg">
+					<div className="flex items-center mt-4 pl-[1.5rem]">
+						<div className="w-2 h-24 bg-[#0E5791] mr-4"></div>
+						<p className="text-gray-800 text-2xl font-light">
 							The John Simpson Odette Student Investment Fund at
 							the Odette School of Business is the University of
 							Windsor&apos;s only student managed-student run
-							investment fund with{" "}
-							{statistics.assetsUnderManagement}$ in real capital
-							under management.
+							investment fund with $
+							{statistics.assetsUnderManagement.toLocaleString()}{" "}
+							in real capital under management.
 						</p>
 					</div>
 				</div>
@@ -151,11 +151,11 @@ const LandingPage: React.FC = () => {
 					<h1 className="text-white text-[2.75rem] font-light border-b-2 border-white  mx-auto w-[34rem]  tracking-widest text-center">
 						Investment Divisions
 					</h1>
-					<div className="flex flex-wrap gap-2 w-fit mx-72 justify-center mt-3">
+					<div className="flex flex-wrap gap-2 w-fit mx-40 2xl:mx-72 justify-center mt-3">
 						{investmentDivisions.map((division, index) => (
 							<div
 								key={index}
-								className="bg-white/80 w-[calc(25%-8px)] shadow-lg p-3 text-center"
+								className="bg-white/80 w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
 							>
 								<h3 className="text-[#0E5791] text-xl mb-2 min-h-16">
 									{division.name}
@@ -180,13 +180,13 @@ const LandingPage: React.FC = () => {
 					<h1 className="text-white text-[2.75rem] font-light border-b-2 border-white w-[34rem] mx-auto  tracking-widest text-center">
 						Support Teams
 					</h1>
-					<div className="flex flex-wrap gap-2 w-fit mx-72 justify-center mt-3">
+					<div className="flex flex-wrap gap-2 w-fit mx-40 2xl:mx-72 justify-center mt-3">
 						{supportTeams.map((team, index) => (
 							<div
 								key={index}
-								className="bg-white/80 w-[calc(25%-8px)] shadow-lg p-3 text-center"
+								className="bg-white/80 w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
 							>
-								<h3 className="text-[#0E5791] text-xl mb-2 min-h-16">
+								<h3 className="text-primary text-xl mb-2 min-h-16">
 									{team.name}
 								</h3>
 								<p className="text-gray-700 text-sm">
