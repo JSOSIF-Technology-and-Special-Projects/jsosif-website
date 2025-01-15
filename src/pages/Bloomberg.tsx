@@ -110,7 +110,7 @@ export default function Bloomberg() {
                 className="w-10 h-10"
               />
               <a
-                href="/public/files/JSOSIF-2024-Annual-Report.pdf"
+                href="/files/JSOSIF-2024-Annual-Report.pdf"
                 target="_blank"
                 className="text-lg text-blue-800 hover:underline font-medium"
               >
@@ -125,7 +125,6 @@ export default function Bloomberg() {
               />
               <a
                 href="/files/Getting-Started-Guide-for-Students-English.pdf"
-                locale={false}
                 target="_blank"
                 className="text-lg text-blue-800 hover:underline font-medium"
               >
@@ -140,7 +139,6 @@ export default function Bloomberg() {
               />
               <a
                 href="/files/BMC-Professor-Guide.pdf"
-                locale={false}
                 target="_blank"
                 className="text-lg text-blue-800 hover:underline font-medium"
               >

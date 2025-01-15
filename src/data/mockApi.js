@@ -8,32 +8,32 @@ export const mockApiData = {
     {
       name: "Financial Institutions",
       description: "Connor Demelo and Cozy Cosentino",
-      ticker: "NYSE:JPM, AAPL",
+      ticker: "BRK.B|12M, V|12M, ALLY|12M, SCHW|12M, JPM|12M, TSX:BMO|12M",
     },
     {
       name: "Tech Media Telecommunications",
       description: "Eddy Aboukassm and Rafael",
-      ticker: "AAPL",
+      ticker: "ACN|12M, CSCO|12M, TSX:OTEX|12M, DIS|12M",
     },
     {
       name: "Consumer & Retail",
       description: "Mohammad Mohammad and Noah Di Maio",
-      ticker: "AMZN",
+      ticker: "MODG|12M, LVMHF|12M, PEP|12M, TSX:JWEL|12M, GIS|12M, TJX|12M, COST|12M, TSX:ATD|12M",
     },
     {
       name: "Industrials & Natural Resources",
       description: "Fadel Asfari and Jack",
-      ticker: "CAT",
+      ticker: "BEP|12M, TSX:ENB|12M, NEE|12M, TSX:CNQ|12M, J|12M, TSX:MG|12M, XYL|12M, TSX:CP|12M, TSX:NTR|12M",
     },
     {
       name: "Health Care",
       description: "Cullan",
-      ticker: "JNJ",
+      ticker: "JNJ|12M, PFE|12M, VRTX|12M, NVO|12M",
     },
     {
       name: "Fixed-Income & Real Estate",
       description: "Luca Pecorada",
-      ticker: "VNQ",
+      ticker: "",
     },
   ],
   supportTeams: [
