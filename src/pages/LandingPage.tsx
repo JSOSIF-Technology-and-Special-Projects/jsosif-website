@@ -42,9 +42,9 @@ const LandingPage: React.FC = () => {
 	}, []);
 
 	return (
-		<div className="relative">
+		<div className="relative flex flex-col">
 			{/* Background Section */}
-			<div className="relative w-full">
+			<div className="relative w-full max-h-[50vh]">
 				<Image
 					src={jsosifbackground}
 					alt="Background"
@@ -60,7 +60,7 @@ const LandingPage: React.FC = () => {
 			</div>
 
 			{/* Statistics Section */}
-			<div className="bg-[#0E5791] text-white flex items-center px-[25rem] pt-20 pb-8">
+			<div className="bg-[#0E5791] text-white flex items-center px-[25rem] pt-20 pb-8 max-h-[50vh] ">
 				<div className="flex justify-between gap-12">
 					{/* Fund Members */}
 					<div className="text-left w-full">
@@ -121,7 +121,7 @@ const LandingPage: React.FC = () => {
 				</div>
 			</div>
 			{/* The John Simpson Odette Section */}
-			<div className="py-10 px-[23.5rem]">
+			<div className="py-10 px-[23.5rem] max-h-[50vh] mt-10">
 				<div className="max-w-6xl mx-auto">
 					<h4 className="text-[#0E5791] italic text-xl">
 						The John Simpson Odette Student Investment Fund in
@@ -141,7 +141,7 @@ const LandingPage: React.FC = () => {
 				</div>
 			</div>
 			{/* Investment Divisions Section */}
-			<div className="mt-10 relative">
+			<div className="relative max-h-[50vh] mt-10 overflow-hidden">
 				<Image
 					src={investmentdiv}
 					alt="Investment Divisions"
@@ -170,17 +170,17 @@ const LandingPage: React.FC = () => {
 			</div>
 
 			{/* Support Teams Section */}
-			<div className="relative mt-10">
+			<div className="relative max-h-[50vh] mt-10 overflow-hidden w-full">
 				<Image
 					src={supportdiv}
 					alt="Support Teams"
 					className="w-full h-auto"
 				/>
-				<div className="absolute inset-0 justify-center items-center w-full p-10">
+				<div className="absolute inset-0 flex flex-col justify-start items-center w-full p-10">
 					<h1 className="text-white text-[2.75rem] font-light border-b-2 border-white w-[34rem] mx-auto  tracking-widest text-center">
 						Support Teams
 					</h1>
-					<div className="flex flex-wrap gap-2 w-fit mx-40 2xl:mx-72 justify-center mt-3">
+					<div className="flex flex-wrap gap-2 px-40 2xl:px-72 w-full justify-center mt-3">
 						{supportTeams.map((team, index) => (
 							<div
 								key={index}
