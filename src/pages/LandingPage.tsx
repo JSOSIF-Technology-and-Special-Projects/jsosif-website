@@ -11,6 +11,7 @@ import jsosifbackground from "../assets/jsosifbackground.png";
 import investmentdiv from "../assets/investmentdiv.png";
 import supportdiv from "../assets/supportdiv.png";
 import MapComponent from "../components/MapComponent";
+import CountUp from "react-countup";
 
 const LandingPage: React.FC = () => {
 	const [statistics, setStatistics] = useState({
@@ -41,6 +42,13 @@ const LandingPage: React.FC = () => {
 		fetchData();
 	}, []);
 
+	const [transition, setTransition] = useState(false);
+	useEffect(() => {
+		setTimeout(() => {
+			setTransition(true);
+		}, 100);
+	}, [transition]);
+
 	return (
 		<div className="relative flex flex-col">
 			{/* Background Section */}
@@ -60,20 +68,23 @@ const LandingPage: React.FC = () => {
 			</div>
 
 			{/* Statistics Section */}
-			<div className="bg-[#0E5791] text-white flex items-center px-[25rem] pt-20 pb-8 max-h-[50vh] ">
-				<div className="flex justify-between gap-12">
+			<div className="bg-[#0E5791] text-white flex items-center px-[25rem] pt-20 pb-8 h-[20rem]">
+				<div className={`flex justify-between gap-12`}>
 					{/* Fund Members */}
 					<div className="text-left w-full">
-						<h3 className="text-8xl italic">
+						<h3
+							className={`text-8xl italic transition-all duration-1000 ease-in-out ${
+								transition
+									? "opacity-100"
+									: "opacity-0 -translate-x-40"
+							}`}
+						>
 							{statistics.fundMembers}
 						</h3>
 						<div
 							className="h-1 bg-white mt-4"
 							style={{
-								width: `${
-									statistics.fundMembers.toString().length *
-									44
-								}px`, // Slightly shorter than the number
+								width: `80px`, // Slightly shorter than the number
 							}}
 						></div>
 						<p className="text-xl mt-4 w-full shrink-0 whitespace-nowrap">
@@ -83,16 +94,19 @@ const LandingPage: React.FC = () => {
 
 					{/* Investment Holdings */}
 					<div className="text-left w-full">
-						<h3 className="text-8xl italic">
+						<h3
+							className={`text-8xl italic transition-all duration-1000 ease-in-out delay-100 ${
+								transition
+									? "opacity-100"
+									: "opacity-0 -translate-x-32"
+							}`}
+						>
 							{statistics.investmentHoldings}
 						</h3>
 						<div
 							className="h-1 bg-white mt-4"
 							style={{
-								width: `${
-									statistics.investmentHoldings.toString()
-										.length * 44
-								}px`,
+								width: `80px`,
 							}}
 						></div>
 						<p className="text-xl mt-4 whitespace-nowrap">
@@ -102,16 +116,26 @@ const LandingPage: React.FC = () => {
 
 					{/* Assets Under Management */}
 					<div className="text-left w-full">
-						<h3 className="text-8xl italic">
-							${statistics.assetsUnderManagement.toLocaleString()}
+						<h3
+							className={`text-8xl italic transition-all duration-1000 ease-in-out delay-500 ${
+								transition
+									? "opacity-100"
+									: "opacity-0 -translate-x-10"
+							}`}
+						>
+							$
+							<CountUp
+								duration={2}
+								start={0}
+								delay={0.3}
+								end={statistics.assetsUnderManagement}
+							/>
+							{/* ${statistics.assetsUnderManagement.toLocaleString()} */}
 						</h3>
 						<div
 							className="h-1 bg-white mt-4"
 							style={{
-								width: `${
-									statistics.assetsUnderManagement.toLocaleString()
-										.length * 44
-								}px`,
+								width: `350px`,
 							}}
 						></div>
 						<p className="text-xl mt-4 w-full">
