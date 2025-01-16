@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useMemo } from "react";
 import { fetchInvestmentDivisions, fetchStatistics } from "../data/mockApi"; // Import mock data functions
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import portfoliobanner from "../assets/portfoliobanner.png"; // Update the image path as necessary
 import SymbolOverviewWidget from "../components/SymbolOverviewWidget";
 
@@ -11,6 +11,7 @@ export default function Portfolio() {
 	interface Division {
 		name: string;
 		ticker?: string;
+		bgImage: StaticImageData;
 	}
 
 	const [investmentDivisions, setInvestmentDivisions] = useState<Division[]>(
@@ -84,10 +85,17 @@ export default function Portfolio() {
 						className="mb-12 items-center flex flex-col"
 					>
 						{/* Team Header */}
-						<h2 className="text-5xl w-full font-medium tracking-widest text-primary py-5 text-center mb-4">
-							{division.name}
-						</h2>
+						<div className="relattive w-full flex items-center justify-center my-10">
+							<Image
+								alt={division.name}
+								src={division.bgImage}
+								className="absolute max-h-32 object-cover overflow-hidden"
+							/>
 
+							<h2 className="text-5xl w-full font-medium tracking-widest text-white py-5 text-center mb-4 z-10 relative">
+								{division.name}
+							</h2>
+						</div>
 						{/* SymbolOverviewWidget */}
 						<div className="w-[80%] px-8">
 							{division.ticker && (
