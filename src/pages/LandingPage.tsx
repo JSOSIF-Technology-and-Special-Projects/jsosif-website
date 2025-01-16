@@ -73,10 +73,10 @@ const LandingPage: React.FC = () => {
 					{/* Fund Members */}
 					<div className="text-left w-full">
 						<h3
-							className={`text-8xl italic transition-all duration-1000 ease-in-out ${
+							className={`text-8xl italic transition-all duration-1200 ease-in-out ${
 								transition
 									? "opacity-100"
-									: "opacity-0 -translate-x-40"
+									: "opacity-0 -translate-x-36"
 							}`}
 						>
 							{statistics.fundMembers}
@@ -95,10 +95,10 @@ const LandingPage: React.FC = () => {
 					{/* Investment Holdings */}
 					<div className="text-left w-full">
 						<h3
-							className={`text-8xl italic transition-all duration-1000 ease-in-out delay-100 ${
+							className={`text-8xl italic transition-all duration-1200 ease-in-out delay-100 ${
 								transition
 									? "opacity-100"
-									: "opacity-0 -translate-x-32"
+									: "opacity-0 -translate-x-28"
 							}`}
 						>
 							{statistics.investmentHoldings}
@@ -117,10 +117,10 @@ const LandingPage: React.FC = () => {
 					{/* Assets Under Management */}
 					<div className="text-left w-full">
 						<h3
-							className={`text-8xl italic transition-all duration-1000 ease-in-out delay-500 ${
+							className={`text-8xl italic transition-all duration-1200 ease-in-out delay-300 ${
 								transition
 									? "opacity-100"
-									: "opacity-0 -translate-x-10"
+									: "opacity-0 -translate-x-24"
 							}`}
 						>
 							$

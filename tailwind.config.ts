@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      transitionDuration: {
+        '1200': '1200ms',
+      }
     },
   },
   plugins: [require("tailwindcss-animate"),],
