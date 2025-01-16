@@ -26,7 +26,7 @@ export default function Header() {
 			}`}
 		>
 			{/* Logo Section */}
-			<div className="mx-72 w-full flex items-center justify-between">
+			<div className="mx-52 w-full flex items-center justify-between">
 				<div className="hover:cursor-pointer w-fit">
 					<Link href="/" passHref legacyBehavior>
 						<Image
@@ -53,8 +53,14 @@ export default function Header() {
 					<Link href="/alumni" passHref legacyBehavior>
 						<a className="hover:text-blue-500">Alumni</a>
 					</Link>
+					<Link href="/research" passHref legacyBehavior>
+						<a className="hover:text-blue-500">Research</a>
+					</Link>
 					<Link href="/bloomberg" passHref legacyBehavior>
 						<a className="hover:text-blue-500">Bloomberg</a>
+					</Link>
+					<Link href="/hiring" passHref legacyBehavior>
+						<a className="hover:text-blue-500">Hiring</a>
 					</Link>
 				</nav>
 			</div>

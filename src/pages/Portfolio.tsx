@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { fetchInvestmentDivisions, fetchStatistics } from "../data/mockApi"; // Import mock data functions
 import Image, { StaticImageData } from "next/image";
 import portfoliobanner from "../assets/portfoliobanner.png"; // Update the image path as necessary
@@ -79,7 +79,7 @@ export default function Portfolio() {
 
 			{/* Investment Divisions with SymbolOverviewWidget */}
 			<div className="py-12 content-center mx-auto z-10 relative bg-white">
-				{investmentDivisions.map((division, index) => (
+				{investmentDivisions.map((division, index)  => (
 					<div
 						key={index}
 						className="mb-12 items-center flex flex-col"

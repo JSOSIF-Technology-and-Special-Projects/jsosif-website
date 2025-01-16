@@ -124,6 +124,7 @@ const MapComponent = () => {
 						ref={(newRef) => markerRef(newRef)}
 						position={center}
 						onClick={handleInfoOpenClick}
+
 					>
 						{infoWindow && marker ? (
 							<InfoWindow

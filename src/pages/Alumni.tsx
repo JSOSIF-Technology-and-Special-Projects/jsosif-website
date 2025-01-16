@@ -7,82 +7,59 @@ import alumnibackground from "../assets/alumnibackground.jpg"; // Replace with y
 import Image from "next/image";
 
 interface Alumni {
-	name: string;
-	position: string;
-	company: string;
-	program: string;
-	image: string;
-	linkedin: string;
-	blurb: string;
-	year: string;
+  name: string;
+  position: string; 
+  company: string;
+  program: string;
+  image: string;
+  linkedin: string;
+  blurb: string;
+  year: string;
 }
 
 export default function Alumni() {
-	const [alumni, setAlumni] = useState<Alumni[]>([]);
+  const [alumni, setAlumni] = useState<Alumni[]>([]);
 
-	useEffect(() => {
-		// Fetch alumni data from the mock API
-		const fetchData = async () => {
-			const alumniData = await fetchAlumni(); // Use the correct function to fetch alumni
-			setAlumni(alumniData);
-		};
+  useEffect(() => {
+    // Fetch alumni data from the mock API
+    const fetchData = async () => {
+      const alumniData = await fetchAlumni(); 
+      setAlumni(alumniData);
+    };
 
-		fetchData();
-	}, []);
+    fetchData();
+  }, []);
 
-	const [scrollPosition, setScrollPosition] = useState(0);
-	const handleScroll = () => {
-		const position = window.scrollY;
-		setScrollPosition(position);
-	};
+  return (
+    <div className="px-8 py-12">
+      {/* Banner Section */}
+      <div className="relative">
+        <Image
+          src={alumnibackground}
+          alt="Our Alumni Banner"
+          className="w-full h-[400px] object-cover"
+        />
+        {/* Overlay Content */}
+        <div className="absolute top-0 left-0 right-0 flex items-start justify-center mt-4">
+          <h1 className="text-4xl font-bold bg-blue-800 text-white px-6 py-2 rounded-sm shadow-md">
+            Our Alumni
+          </h1>
+        </div>
+      </div>
 
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll, { passive: true });
+      {/* Alumni Section */}
+      <div className="mt-12">
+        <h1 className="text-4xl font-bold text-center text-blue-800 mb-8">
+          Meet Our Alumni
+        </h1>
 
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
-
-	return (
-		<div className="min-h-screen flex flex-col w-full bg-white">
-			{/* Banner Section */}
-			<Image
-				src={alumnibackground}
-				alt="Our Team Banner"
-				style={{ height: scrollPosition / 8 + 400 }}
-				className={`w-full object-cover -z-0 ${
-					scrollPosition > 0 ? "fixed" : "absolute"
-				} ${scrollPosition > 400 && "hidden"}`}
-			/>
-			{/* Overlay Content */}
-			<div className="flex items-start justify-center mt-10 mb-52 z-10">
-				<div className="flex flex-col items-center justify-center gap-2">
-					<div className="flex flex-col items-center justify-center w-fit bg-primary opacity-90">
-						<h1 className="text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
-							Our Alumni
-						</h1>
-					</div>
-					<div className="flex flex-col items-center justify-center">
-						<div className="w-screen bg-primary h-0.5 mb-1" />
-						<div className="w-screen bg-primary h-1" />
-					</div>
-				</div>
-			</div>
-
-			{/* Alumni Section */}
-			<div className="mt-12 bg-white flex flex-col z-10">
-				<h1 className="text-4xl font-bold text-center text-blue-800 mb-8">
-					Meet Our Alumni
-				</h1>
-
-				{/* Alumni Cards */}
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-					{alumni.map((alum, idx) => (
-						<AlumniCard key={idx} alumni={alum} />
-					))}
-				</div>
-			</div>
-		</div>
-	);
+        {/* Alumni Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          {alumni.map((alum, idx) => (
+            <AlumniCard key={idx} alumni={alum} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }

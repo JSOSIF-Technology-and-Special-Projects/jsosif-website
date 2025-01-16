@@ -15,7 +15,7 @@ export const mockApiData = {
 		{
 			name: "Financial Institutions",
 			description: "Connor Demelo and Cozy Cosentino",
-			ticker: "V|12M, SCHW, JPM|12M, TSX:BMO|12M",
+			ticker: "V|12M, SCHW, JPM|12M, TSX:BMO|12M, FINRA:WMT.IC",
 			bgImage: financial,
 		},
 		{
