@@ -1,23 +1,25 @@
+//symbol overview widget component that displays the overview of the stock symbol that accepts tickers as props and displays it
+//on the portfolio page
 "use client";
 
 import { SymbolOverview } from "react-ts-tradingview-widgets";
 
 interface SymbolOverviewWidgetProps {
-	ticker: string; // Single string of tickers, e.g., "NYSE:JPM, AAPL"
+	ticker: string; 
 }
 
 export default function SymbolOverviewWidget({
 	ticker,
 }: SymbolOverviewWidgetProps) {
-	// Parse the ticker string into an array of arrays
+	//parse the ticker string into an array of arrays
 	const formattedTickers = ticker
-		.split(",") // Split by comma
-		.map((t) => [t.trim()]); // Trim spaces and format as an array of arrays
+		.split(",") 
+		.map((t) => [t.trim()]); 
 
 	return (
 		<div className="h-96 justify-center mx-auto">
 			<SymbolOverview
-				symbols={formattedTickers} // Pass formatted tickers
+				symbols={formattedTickers} 
 				colorTheme="light"
 				autosize
 				chartType="area"

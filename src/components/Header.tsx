@@ -1,3 +1,5 @@
+//header component, contains jsosif logo and our navbar with routes to all sub pages on the website
+
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
@@ -5,12 +7,15 @@ import Link from "next/link";
 import jsosifbanner from "../assets/jsosifbanner.png";
 
 export default function Header() {
+	//this allows an animation to be applied to the pages when you scroll down the page
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const handleScroll = () => {
 		const position = window.scrollY;
 		setScrollPosition(position);
 	};
 
+
+	//adds an event listener to the window to listen for scroll events on use
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll, { passive: true });
 

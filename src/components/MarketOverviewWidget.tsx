@@ -1,0 +1,47 @@
+"use client";
+
+import { MarketOverview } from "react-ts-tradingview-widgets";
+
+interface MarketOverviewWidgetProps {
+	colorTheme?: "light" | "dark";
+	height?: number | string;
+	width?: number | string;
+	tabs?: {
+		title: string;
+		symbols: { s: string; d?: string }[];
+		originalTitle?: string;
+	}[];
+	dateRange?: "1D" | "1M" | "3M" | "12M" | "60M" | "ALL";
+	showFloatingTooltip?: boolean;
+	showChart?: boolean;
+	locale?: string;
+	isTransparent?: boolean;
+}
+
+export default function MarketOverviewWidget({
+	colorTheme = "light",
+	height = 660,
+	width = 400,
+	tabs = [],
+	dateRange = "12M",
+	showFloatingTooltip = true,
+	showChart = true,
+	locale = "en",
+	isTransparent = false,
+}: MarketOverviewWidgetProps) {
+	return (
+		<div className="mx-auto my-8">
+			<MarketOverview
+				colorTheme={colorTheme}
+				height={height}
+				width={width}
+				tabs={tabs}
+				dateRange={dateRange}
+				showFloatingTooltip={showFloatingTooltip}
+				showChart={showChart}
+				locale={locale}
+				isTransparent={isTransparent}
+			/>
+		</div>
+	);
+}

@@ -15,7 +15,7 @@ export const mockApiData = {
 		{
 			name: "Financial Institutions",
 			description: "Connor Demelo and Cozy Cosentino",
-			ticker: "V|12M, SCHW, JPM|12M, TSX:BMO|12M, FINRA:WMT.IC",
+			ticker: "V|12M, SCHW, JPM|12M, TSX:BMO|12M",
 			bgImage: financial,
 		},
 		{
@@ -45,7 +45,33 @@ export const mockApiData = {
 		{
 			name: "Fixed-Income & Real Estate",
 			description: "Luca Pecorada",
-			ticker: "",
+			bondTicker: [
+				{
+					s: "BAC4273622",
+					d: "Bank of America 3.875%",
+				},
+				{
+					s: "FWB:CA448810AC58",
+					d: "Hydro One 7.350%",
+				},
+				{
+					s: "US478160CT9",
+					d: "Johnson & Johnson 6.95%",
+				},
+				{
+					s: "US594918AD65",
+					d: "Microsoft 5.20%",
+				},
+				{
+					s: "CA780086XL38",
+					d: "Royal Bank of Canada 4.632%",
+				},
+				{
+					s: "US931142CK7",
+					d: "Walmart 6.5% ",
+				},
+			],
+			  
 			bgImage: fixedIncomeRealEstate,
 		},
 	],
@@ -98,12 +124,9 @@ export const mockApiData = {
 	],
 };
 
-// Existing mock API functions
+//mock api functions
 export const fetchStatistics = async () => mockApiData.statistics;
-export const fetchInvestmentDivisions = async () =>
-	mockApiData.investmentDivisions;
+export const fetchInvestmentDivisions = async () => mockApiData.investmentDivisions;
 export const fetchSupportTeams = async () => mockApiData.supportTeams;
 export const fetchTeams = async () => mockApiData.teams;
-
-// New function to fetch alumni data
 export const fetchAlumni = async () => mockApiData.alumni;

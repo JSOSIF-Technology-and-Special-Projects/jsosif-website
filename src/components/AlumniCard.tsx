@@ -1,3 +1,6 @@
+//alumni card component that displays alumni information and a read more button that opens a modal with more information
+
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -5,10 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
+//props for the alumni card component
 interface AlumniCardProps {
   alumni: {
     name: string;
-    position: string; // Current position
+    position: string; 
     company: string;
     program: string;
     image: string;
@@ -19,6 +23,7 @@ interface AlumniCardProps {
 }
 
 export default function AlumniCard({ alumni }: AlumniCardProps) {
+  //states for the modal
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleReadMoreClick = () => {
@@ -29,6 +34,7 @@ export default function AlumniCard({ alumni }: AlumniCardProps) {
     setIsModalOpen(false);
   };
 
+  //useEffect to disable scrolling when the modal is open
   useEffect(() => {
     if (isModalOpen) {
       document.body.style.overflow = "hidden";

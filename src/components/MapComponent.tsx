@@ -1,3 +1,4 @@
+//google maps api to display the location of the John Simpson Odette Student Investment Fund
 import React, { useState } from "react";
 import {
 	GoogleMap,

@@ -1,3 +1,5 @@
+//footer component, contains traderview component and social media links but nothing special
+
 "use client";
 import jsosifbannerbw from "../assets/jsosifbannerbw.png";
 import Image from "next/image";

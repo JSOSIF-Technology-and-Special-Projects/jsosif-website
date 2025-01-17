@@ -1,3 +1,5 @@
+//team card component that displays the team members of the jsosif team on the team page, was used for alumni card
+
 "use client";
 
 import React from "react";
