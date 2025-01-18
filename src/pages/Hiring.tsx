@@ -21,25 +21,25 @@ export default function Hiring() {
 
             {/* Hiring Section */}
             <div>
-                <div className="relative items-start gap-16 px-40 2xl:px-72">
-                    <div>
-                        <h1 className="text-4xl font-bold text-left text-gray-700 mb-8">
+                <div className="relative items-start gap-8 px-40 2xl:px-72">
+                    <div className="mb-8">
+                        <h1 className="text-4xl font-bold text-left text-gray-700 mb-4">
                             Why JSOSIF
                             <hr className="w-full mx-auto"/>
                         </h1>
                         <p className="my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quo libero neque assumenda repudiandae tempora, corrupti quis quisquam dolore a velit facere exercitationem culpa porro vero. Perferendis atque sint ab!</p>
                         
                     </div>
-                    <div>
-                        <h1 className="text-4xl font-bold text-left text-gray-700 mb-8">
+                    <div className="mb-8">
+                        <h1 className="text-4xl font-bold text-left text-gray-700 mb-4">
                             What you will bring
                             <hr className="w-full mx-auto"/>
                         </h1>
                         <p className="my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ratione perspiciatis obcaecati reiciendis inventore facilis delectus repellat assumenda qui soluta libero officia doloribus molestias, mollitia ipsum ipsam suscipit aut quibusdam.</p>
                         
                     </div>
-                    <div>
-                        <h1 className="text-4xl font-bold text-left text-gray-700 mb-8">
+                    <div className="mb-8">
+                        <h1 className="text-4xl font-bold text-left text-gray-700 mb-4">
                             Something else?
                             <hr className="w-full mx-auto"/>
                         </h1>
