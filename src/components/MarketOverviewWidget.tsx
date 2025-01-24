@@ -21,7 +21,7 @@ interface MarketOverviewWidgetProps {
 export default function MarketOverviewWidget({
 	colorTheme = "light",
 	height = 660,
-	width = 400,
+	width = "100%",
 	tabs = [],
 	dateRange = "12M",
 	showFloatingTooltip = true,
@@ -30,7 +30,7 @@ export default function MarketOverviewWidget({
 	isTransparent = false,
 }: MarketOverviewWidgetProps) {
 	return (
-		<div className="mx-auto my-8">
+		<div className="mx-auto my-8 max-w-4xl">
 			<MarketOverview
 				colorTheme={colorTheme}
 				height={height}

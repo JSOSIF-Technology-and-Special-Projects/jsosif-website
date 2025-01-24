@@ -224,6 +224,7 @@ const LandingPage: React.FC = () => {
 			<div className="my-10">
 				<MapComponent />
 			</div>
+			
 		</div>
 	);
 };

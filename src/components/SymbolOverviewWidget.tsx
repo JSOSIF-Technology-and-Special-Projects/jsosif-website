@@ -1,39 +1,54 @@
-//symbol overview widget component that displays the overview of the stock symbol that accepts tickers as props and displays it
-//on the portfolio page
 "use client";
 
 import { SymbolOverview } from "react-ts-tradingview-widgets";
 
+interface BondTicker {
+	s: string; // Symbol
+}
+
 interface SymbolOverviewWidgetProps {
-	ticker: string; 
+	ticker?: string; // Comma-separated tickers
+	bondData?: BondTicker[]; // Array of bond tickers
 }
 
 export default function SymbolOverviewWidget({
 	ticker,
+	bondData = [],
 }: SymbolOverviewWidgetProps) {
-	//parse the ticker string into an array of arrays
+	// Parse the ticker string into an array of arrays for TradingView
 	const formattedTickers = ticker
-		.split(",") 
-		.map((t) => [t.trim()]); 
+		? ticker.split(",").map((t) => [t.trim()]) // Regular tickers
+		: [];
+
+	// Format bond tickers into TradingView symbols
+	const formattedBondTickers = bondData.map((bond) => [bond.s]);
+
+	// Combine both tickers
+	const allTickers = [...formattedTickers, ...formattedBondTickers];
 
 	return (
-		<div className="h-96 justify-center mx-auto">
-			<SymbolOverview
-				symbols={formattedTickers} 
-				colorTheme="light"
-				autosize
-				chartType="area"
-				downColor="#800080"
-				borderDownColor="#800080"
-				wickDownColor="#800080"
-				fontColor="#000"
-				showFloatingTooltip={false}
-				widgetFontColor="#000"
-				dateFormat="MM/dd/yyyy"
-				valuesTracking="0"
-				scalePosition="right"
-				hideMarketStatus={true}
-			/>
+		<div className="h-[500px] w-[80%] mx-auto flex flex-col items-center">
+			{/* TradingView SymbolOverview Widget */}
+			{allTickers.length > 0 && (
+				<div className="w-full h-full">
+					<SymbolOverview
+						symbols={allTickers}
+						colorTheme="light"
+						autosize
+						chartType="area"
+						downColor="#800080"
+						borderDownColor="#800080"
+						wickDownColor="#800080"
+						fontColor="#000"
+						showFloatingTooltip={false}
+						dateFormat="MM/dd/yyyy"
+						valuesTracking="0"
+						scalePosition="right"
+						hideMarketStatus={true}
+						widgetFontColor="#000"
+					/>
+				</div>
+			)}
 		</div>
 	);
 }

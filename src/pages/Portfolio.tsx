@@ -5,7 +5,6 @@ import { fetchInvestmentDivisions, fetchStatistics } from "../data/mockApi"; // 
 import Image, { StaticImageData } from "next/image";
 import portfoliobanner from "../assets/portfoliobanner.png"; // Replace with your banner image path
 import SymbolOverviewWidget from "../components/SymbolOverviewWidget";
-import MarketOverviewWidget from "../components/MarketOverviewWidget";
 
 export default function Portfolio() {
 	const [investmentHoldings, setInvestmentHoldings] = useState(0);
@@ -13,7 +12,7 @@ export default function Portfolio() {
 	interface Division {
 		name: string;
 		ticker?: string;
-		bondTicker?: { s: string; d?: string }[];
+		bondTicker?: { s: string }[];
 		bgImage: StaticImageData;
 	}
 
@@ -43,7 +42,7 @@ export default function Portfolio() {
 			<Image
 				src={portfoliobanner}
 				alt="Portfolio Banner"
-				className="w-full object-cover -z-0 absolute h-[400px]"
+				className="w-full object-cover -z-10 absolute h-[400px]"
 			/>
 			{/* Header Section */}
 			<div>
@@ -94,32 +93,13 @@ export default function Portfolio() {
 								{division.name}
 							</h2>
 						</div>
-						
+
 						{/* Widgets Section */}
-						
 						<div className="w-[80%] px-8">
-							{/* Render MarketOverviewWidget for bonds in Fixed-Income & Real Estate */}
-							{index === investmentDivisions.length - 1 && division.bondTicker ? (
-								<MarketOverviewWidget
-								tabs={[
-								  {
-									title: "Bonds",
-									symbols: division.bondTicker.map((bond) => ({
-									  s: bond.s.trim(), // Ensures no extra spaces
-									  d: bond.d?.trim(), // Optional description, trimmed
-									})),
-								  },
-								]}
-							  />
-							  
-							  
-							) : (
-								division.ticker && (
-									<SymbolOverviewWidget
-										ticker={division.ticker}
-									/>
-								)
-							)}
+							<SymbolOverviewWidget
+								ticker={division.ticker}
+								bondData={division.bondTicker || []} // Pass bond data if available
+							/>
 						</div>
 					</div>
 				))}
