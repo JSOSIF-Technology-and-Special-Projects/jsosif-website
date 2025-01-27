@@ -62,11 +62,10 @@ export default function Bloomberg() {
             Bloomberg Office Hours
           </h2>
           <ul className="mt-4 text-lg space-y-2 text-center">
-            <li>Mondays: 9am-6pm</li>
-            <li>Tuesdays: 9am-6pm</li>
-            <li>Wednesdays: 9am-6pm</li>
-            <li>Thursdays: 9am-6pm</li>
-            <li>Fridays: 9am-6pm</li>
+            <li>Mondays: 10am-4pm</li>
+            <li>Tuesdays: 10am-4pm</li>
+            <li>Wednesdays: 10am-4pm</li>
+            <li>Thursdays: 10am-4pm</li>
           </ul>
 
           {/* Contact Information */}

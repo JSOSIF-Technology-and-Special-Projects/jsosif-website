@@ -47,10 +47,6 @@ export const mockApiData = {
 			description: "Luca Pecorada  cover the biggest names and most promising investments in the fixed income sector, such as Bank of America and Walmart.",
 			bondTicker: [
 				{
-					s: "BAC4273622|12M",
-					d: "Bank of America 3.875%",
-				},
-				{
 					s: "CA448810AC5|12M",
 					d: "Hydro One 7.350%",
 				},
@@ -67,6 +63,10 @@ export const mockApiData = {
 					d: "Royal Bank of Canada 4.632%",
 				},
 				{
+					s: "BAC4273622|12M",
+					d: "Bank of America 3.875%",
+				},
+				{
 					s: "US931142CK7|12M",
 					d: "Walmart 6.5% ",
 				},
@@ -78,19 +78,19 @@ export const mockApiData = {
 	supportTeams: [
 		{
 			name: "Quantitative Research & Portfolio Risk",
-			description: "Adam Bergen and Aidan Richer",
+			description: "Adam Bergen and Aidan Richer develop a series of mathematical models measuring various aspects of and expected performance of the fund's portfolio.",
 		},
 		{
 			name: "Economic Advisory",
-			description: "Sean Clarke and Ethan Braga",
+			description: "Sean Clarke and Ethan Braga track ongoing macroeconomic events driving different areas of the market, providing perspective on areas to concentrate capital allocation.",
 		},
 		{
 			name: "Software Development",
-			description: "Aya Madi and Micheal Gibb",
+			description: "Aya Madi and Micheal Gibb focus on developing and maintaining the fund's proprietary software, which is used to track and analyze the fund's investments.",
 		},
 		{
 			name: "Engagement & Recruiting",
-			description: "Emma Tellier and Joelle Jawdat",
+			description: "Emma Tellier and Joelle Jawdat focus on engaging with the community and recruiting new members to the fund.",
 		},
 	],
 	teams: [
