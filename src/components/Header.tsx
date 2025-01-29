@@ -58,9 +58,9 @@ export default function Header() {
 					<Link href="/alumni" passHref legacyBehavior>
 						<a className="hover:text-blue-500">Alumni</a>
 					</Link>
-					<Link href="/research" passHref legacyBehavior>
+					{/* <Link href="/research" passHref legacyBehavior>
 						<a className="hover:text-blue-500">Research</a>
-					</Link>
+					</Link> */}
 					<Link href="/bloomberg" passHref legacyBehavior>
 						<a className="hover:text-blue-500">Bloomberg</a>
 					</Link>

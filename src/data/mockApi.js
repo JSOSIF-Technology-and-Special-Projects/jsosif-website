@@ -9,7 +9,7 @@ export const mockApiData = {
 	statistics: {
 		fundMembers: 26,
 		investmentHoldings: 30,
-		assetsUnderManagement: 256000,
+		assetsUnderManagement: 261000,
 	},
 	investmentDivisions: [
 		{
@@ -109,11 +109,11 @@ export const mockApiData = {
 				{
 					name: "Saif Jawdat",
 					role: "Chief Investment Officer",
-					program: "No idea",
-					year: "Super Senior",
-					joined: "Unknown",
+					program: "BCOM specalziing in finance with a double minor in economics and IT",
+					year: "4th year",
+					joined: "Sep 2023",
 					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					linkedin: "https://www.linkedin.com/in/saif-jawdat-54a645262/",
 				},
 				{
 					name: "Nolan Robinson",

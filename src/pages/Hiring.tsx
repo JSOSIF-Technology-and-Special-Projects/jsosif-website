@@ -1,7 +1,46 @@
+"use client";
 import hiringbanner from '../assets/hiringbanner.png';
 import Image from 'next/image';
+import emailjs from 'emailjs-com';
+import { useState } from 'react';
 
 export default function Hiring() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+        file: null,
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleFileChange = (e) => {
+        setFormData({ ...formData, file: e.target.files[0] });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const templateParams = {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+        };
+
+        emailjs
+            .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
+            .then((response) => {
+                console.log('Email sent successfully:', response.status, response.text);
+                alert('Application submitted successfully!');
+            })
+            .catch((error) => {
+                console.error('Failed to send email:', error);
+                alert('Failed to send application. Please try again.');
+            });
+    };
     return (
         <div className="px-8 py-12">
             {/* Banner Section */}
@@ -57,7 +96,7 @@ export default function Hiring() {
                 <h1 className="text-4xl font-bold text-center text-blue-800 mb-8">
                     Apply Now
                 </h1>
-                <form className="max-w-lg mx-auto space-y-6 bg-white p-8 rounded-lg shadow-lg">
+                <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-6 bg-white p-8 rounded-lg shadow-lg">
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                             Name
@@ -67,18 +106,22 @@ export default function Hiring() {
                             id="name"
                             name="name"
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                            value={formData.name}
+                            onChange={handleChange}
                             required
                         />
                     </div>
                     <div>
                         <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                           UWindsor Email
+                            UWindsor Email
                         </label>
                         <input
                             type="email"
                             id="email"
                             name="email"
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                            value={formData.email}
+                            onChange={handleChange}
                             required
                         />
                     </div>
@@ -91,6 +134,8 @@ export default function Hiring() {
                             name="message"
                             rows={6}
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm resize-none"
+                            value={formData.message}
+                            onChange={handleChange}
                             required
                         />
                     </div>
@@ -110,15 +155,18 @@ export default function Hiring() {
                                 name="file"
                                 type="file"
                                 className="hidden"
+                                onChange={handleFileChange}
                             />
-                            <span className="ml-3 text-gray-500">No file chosen</span>
+                            <span className="ml-3 text-gray-500">
+                                {formData.file ? formData.file.name : 'No file chosen'}
+                            </span>
                         </div>
                     </div>
                     <div className="text-center">
                         <button
                             type="submit"
                             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                        >   
+                        >
                             Submit
                         </button>
                     </div>
