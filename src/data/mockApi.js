@@ -14,37 +14,43 @@ export const mockApiData = {
 	investmentDivisions: [
 		{
 			name: "Financial Institutions",
-			description: "Connor Demelo and Cozy Cosentino cover the biggest names and most promising investments in the financial sector, such as Visa and Bank of America.",
+			description:
+				"Connor Demelo and Cozy Cosentino cover the biggest names and most promising investments in the financial sector, such as Visa and Bank of America.",
 			ticker: "V|12M, SCHW, JPM|12M, TSX:BMO|12M",
 			bgImage: financial,
 		},
 		{
 			name: "Tech Media Telecommunications",
-			description: "Eddy Aboukassm and Rafael cover the biggest names and most promising investments in the tech sector, such as Cisco and Disney.",
+			description:
+				"Eddy Aboukassm and Rafael cover the biggest names and most promising investments in the tech sector, such as Cisco and Disney.",
 			ticker: "ACN|12M, CSCO|12M, TSX:OTEX|12M, DIS|12M",
 			bgImage: techMediaTelecom,
 		},
 		{
 			name: "Consumer & Retail",
-			description: "Mohammad Mohammad and Noah Di Maio cover the biggest names and most promising investments in the consumer sector, such as Pepsi and Costco.",
+			description:
+				"Mohammad Mohammad and Noah Di Maio cover the biggest names and most promising investments in the consumer sector, such as Pepsi and Costco.",
 			ticker: "LVMHF|12M, PEP|12M, TSX:JWEL|12M, GIS|12M, COST|12M, TSX:ATD|12M",
 			bgImage: consumerRetail,
 		},
 		{
 			name: "Industrials & Natural Resources",
-			description: "Fadel Asfari and Jack cover the biggest names and most promising investments in the industrial sector, such as Enbridge and Canadian Natural Resources.",
+			description:
+				"Fadel Asfari and Jack cover the biggest names and most promising investments in the industrial sector, such as Enbridge and Canadian Natural Resources.",
 			ticker: "TSX:ENB|12M, TSX:CNQ|12M, J|12M, TSX:MG|12M, XYL|12M, TSX:CP|12M, TSX:NTR|12M, AMTM",
 			bgImage: industrialsNaturalResources,
 		},
 		{
 			name: "Health Care",
-			description: "Cullan Bryne and Kartikay Dhamija cover the biggest names and most promising investments in the health care sector, such as Pfizer and Vertex Pharmecutical.",
+			description:
+				"Cullan Bryne and Kartikay Dhamija cover the biggest names and most promising investments in the health care sector, such as Pfizer and Vertex Pharmecutical.",
 			ticker: "PFE|12M, VRTX|12M, NVO|12M",
 			bgImage: healthCare,
 		},
 		{
 			name: "Fixed-Income & Real Estate",
-			description: "Luca Pecorada  cover the biggest names and most promising investments in the fixed income sector, such as Bank of America and Walmart.",
+			description:
+				"Luca Pecorada  cover the biggest names and most promising investments in the fixed income sector, such as Bank of America and Walmart.",
 			bondTicker: [
 				{
 					s: "CA448810AC5|12M",
@@ -71,31 +77,36 @@ export const mockApiData = {
 					d: "Walmart 6.5% ",
 				},
 			],
-			  
+
 			bgImage: fixedIncomeRealEstate,
 		},
 	],
 	supportTeams: [
 		{
 			name: "Quantitative Research & Portfolio Risk",
-			description: "Adam Bergen and Aidan Richer develop a series of mathematical models measuring various aspects of and expected performance of the fund's portfolio.",
+			description:
+				"Adam Bergen and Aidan Richer develop a series of mathematical models measuring various aspects of and expected performance of the fund's portfolio.",
 		},
 		{
 			name: "Economic Advisory",
-			description: "Sean Clarke and Ethan Braga track ongoing macroeconomic events driving different areas of the market, providing perspective on areas to concentrate capital allocation.",
+			description:
+				"Sean Clarke and Ethan Braga track ongoing macroeconomic events driving different areas of the market, providing perspective on areas to concentrate capital allocation.",
 		},
 		{
 			name: "Software Development",
-			description: "Aya Madi and Micheal Gibb focus on developing and maintaining the fund's proprietary software, which is used to track and analyze the fund's investments.",
+			description:
+				"Aya Madi and Micheal Gibb focus on developing and maintaining the fund's proprietary software, which is used to track and analyze the fund's investments.",
 		},
 		{
 			name: "Engagement & Recruiting",
-			description: "Emma Tellier and Joelle Jawdat focus on engaging with the community and recruiting new members to the fund.",
+			description:
+				"Emma Tellier and Joelle Jawdat focus on engaging with the community and recruiting new members to the fund.",
 		},
 	],
 	teams: [
 		{
 			name: "Executive Team",
+			banner: "/images/team-banners/executive_team_banner.avif",
 			members: [
 				{
 					name: "Jacob Sweet",
@@ -104,16 +115,19 @@ export const mockApiData = {
 					year: "Unknown",
 					joined: "Unknown",
 					image: "/images/jacobsweet.png",
-					linkedin: "https://www.linkedin.com/in/jacob-sweet-853066214/?originalSubdomain=ca",
+					linkedin:
+						"https://www.linkedin.com/in/jacob-sweet-853066214/?originalSubdomain=ca",
 				},
 				{
 					name: "Saif Jawdat",
 					role: "Chief Investment Officer",
-					program: "BCOM specalziing in finance with a double minor in economics and IT",
+					program:
+						"BCOM specalziing in finance with a double minor in economics and IT",
 					year: "4th year",
 					joined: "Sep 2023",
 					image: "",
-					linkedin: "https://www.linkedin.com/in/saif-jawdat-54a645262/",
+					linkedin:
+						"https://www.linkedin.com/in/saif-jawdat-54a645262/",
 				},
 				{
 					name: "Nolan Robinson",
@@ -128,6 +142,7 @@ export const mockApiData = {
 		},
 		{
 			name: "Portfolio Managers",
+			banner: "/images/team-banners/portfolio_managers.webp",
 			members: [
 				{
 					name: "Connor Demelo",
@@ -157,7 +172,7 @@ export const mockApiData = {
 					linkedin: "https://www.linkedin.com/in/",
 				},
 				{
-					name: "Fadel Asfari", 
+					name: "Fadel Asfari",
 					role: "Industrials & Natural Resources",
 					program: "",
 					year: "",
@@ -187,6 +202,7 @@ export const mockApiData = {
 		},
 		{
 			name: "Senior Analysts",
+			banner: "/images/team-banners/senior_analysts_banner.webp",
 			members: [
 				{
 					name: "Cozy Cosentino",
@@ -246,6 +262,7 @@ export const mockApiData = {
 		},
 		{
 			name: "Junior Analysts",
+			banner: "/images/team-banners/junior_analyst_banner.avif",
 			members: [
 				{
 					name: "Nick",
@@ -409,10 +426,11 @@ export const mockApiData = {
 					image: "",
 					linkedin: "https://www.linkedin.com/in/",
 				},
-			]
+			],
 		},
 		{
 			name: "Economic Advisory",
+			banner: "/images/team-banners/economic_advisory_banner.avif",
 			members: [
 				{
 					name: "Sean Clarke",
@@ -463,6 +481,7 @@ export const mockApiData = {
 		},
 		{
 			name: "Quantitative Research & Portfolio Risk",
+			banner: "/images/team-banners/quant_portfolio_risk_banner.avif",
 			members: [
 				{
 					name: "Adam Bergen",
@@ -504,6 +523,7 @@ export const mockApiData = {
 		},
 		{
 			name: "Software Development",
+			banner: "/images/team-banners/software_development_banner.webp",
 			members: [
 				{
 					name: "Aya Madi",
@@ -563,6 +583,7 @@ export const mockApiData = {
 		},
 		{
 			name: "Engagement & Recruiting",
+			banner: "/images/team-banners/engagement_recruiting.webp",
 			members: [
 				{
 					name: "Emma Tellier",
@@ -601,7 +622,7 @@ export const mockApiData = {
 					linkedin: "https://www.linkedin.com/in/",
 				},
 			],
-		}
+		},
 	],
 	alumni: [
 		{
@@ -619,7 +640,8 @@ export const mockApiData = {
 
 //mock api functions
 export const fetchStatistics = async () => mockApiData.statistics;
-export const fetchInvestmentDivisions = async () => mockApiData.investmentDivisions;
+export const fetchInvestmentDivisions = async () =>
+	mockApiData.investmentDivisions;
 export const fetchSupportTeams = async () => mockApiData.supportTeams;
 export const fetchTeams = async () => mockApiData.teams;
 export const fetchAlumni = async () => mockApiData.alumni;

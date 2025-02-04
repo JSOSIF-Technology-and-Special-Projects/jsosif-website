@@ -8,6 +8,7 @@ import jsosifteam from "../assets/jsosifteam.png"; // Import the banner image
 
 interface Team {
 	name: string;
+	banner: string;
 	members: {
 		name: string;
 		role: string;
@@ -71,33 +72,45 @@ export default function Teams() {
 					</div>
 				</div>
 			</div>
-			<div className="relative z-10 bg-white">
+			<div className="relative z-10 bg-white flex justify-center">
 				{/* Teams Section */}
 				<div className="my-12">
-					<h1 className="text-4xl font-bold text-center text-blue-800 mb-8">
-						Meet Our Teams
-					</h1>
-
 					{/* Render Each Team */}
-					{teams.map((team, index) => (
-						<div
-							key={index}
-							id={team.name.replace(/\s+/g, "-").toLowerCase()}
-							className="mb-12"
-						>
-							{/* Team Header */}
-							<h2 className="text-2xl font-bold text-blue-800 pb-4 text-center">
-								{team.name}
-							</h2>
+					<div className="flex flex-col justify-center w-full">
+						{teams.map((team, index) => (
+							<div
+								key={index}
+								id={team.name
+									.replace(/\s+/g, "-")
+									.toLowerCase()}
+								className="mb-12"
+							>
+								{/* Team Header */}
+								<div className="relative w-screen mb-20 h-24">
+									<img
+										src={team.banner}
+										alt={team.name}
+										className="w-full h-24 z-0 object-cover"
+									/>
+									<h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center font-semibold tracking-[0.25em] text-4xl text-white">
+										{team.name}
+									</h1>
+								</div>
 
-							{/* Team Members */}
-							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-								{team.members.map((member, idx) => (
-									<TeamCard key={idx} member={member} />
-								))}
+								{/* Team Members */}
+								<div className="flex justify-center">
+									<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 w-[50vw] h-full">
+										{team.members.map((member, idx) => (
+											<TeamCard
+												key={idx}
+												member={member}
+											/>
+										))}
+									</div>
+								</div>
 							</div>
-						</div>
-					))}
+						))}
+					</div>
 				</div>
 			</div>
 		</div>

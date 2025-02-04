@@ -7,56 +7,75 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 interface TeamCardProps {
-  member: {
-    name: string;
-    role: string;
-    program: string;
-    year: string;
-    joined: string;
-    image: string;
-    linkedin: string;
-  };
+	member: {
+		name: string;
+		role: string;
+		program: string;
+		year: string;
+		joined: string;
+		image: string;
+		linkedin: string;
+	};
 }
 
 export default function TeamCard({ member }: TeamCardProps) {
-  return (
-    <div className="w-[300px] h-[450px] bg-white shadow-lg rounded-lg overflow-hidden mx-auto flex flex-col">
-      {/* Image */}
-      <img
-        className="w-full h-[200px] object-cover"
-        src={member.image}
-        alt={member.name}
-      />
+	const name = member.name.split(" ");
 
-      {/* Content */}
-      <div className="p-4 flex-1 flex flex-col justify-between">
-        <div>
-          <h3 className="text-xl font-bold text-gray-800">{member.role}</h3>
-          <h2 className="text-2xl font-bold text-blue-800">{member.name}</h2>
-          <p className="mt-2 text-gray-600">
-            <strong>Program:</strong> {member.program}
-          </p>
-          <p className="text-gray-600">
-            <strong>Year:</strong> {member.year}
-          </p>
-          <p className="text-gray-600">
-            <strong>JSOSIF member since:</strong> {member.joined}
-          </p>
-        </div>
-        {/* LinkedIn Button */}
-        {member.linkedin && (
-          <a
-            href={member.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center mt-4"
-          >
-            <div className="px-4 py-2 bg-blue-800 text-white text-sm font-medium rounded hover:bg-blue-700">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </div>
-          </a>
-        )}
-      </div>
-    </div>
-  );
+	return (
+		<div className="w-full bg-white overflow-hidden mx-auto flex flex-col h-full">
+			{/* Image */}
+			<img
+				className="w-full h-[20rem] object-cover"
+				src={member.image ? member.image : "/images/jacobsweet.png"}
+				alt={member.name}
+			/>
+
+			{/* Content */}
+			<div className="flex flex-col justify-between mt-4 h-full">
+				<div className="flex flex-col">
+					<h3 className="text-xl text-gray-800 font-serif text-primary min-h-14 mb-2">
+						{member.role}
+					</h3>
+					<div className="flex flex-col w-full mb-4">
+						<h1 className="text-4xl font-medium font-serif">
+							{name[0]}
+						</h1>
+						<h1 className="text-4xl font-medium font-serif">
+							{name[1]}
+						</h1>
+					</div>
+					<p className="mt-2 text-gray-600">
+						<strong>Program:</strong> {member.program}
+					</p>
+					<p className="text-gray-600 mb-4">
+						<strong>Year:</strong> {member.year}
+					</p>
+					<p className="text-gray-600">
+						JSOSIF member since {member.joined}
+					</p>
+				</div>
+				{/* LinkedIn Button */}
+				{member.linkedin && (
+					<a
+						href={member.linkedin}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="inline-flex items-center mt-4"
+					>
+						<div className="p-1 w-12 h-12 bg-primary text-white text-sm font-medium rounded hover:bg-blue-700">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+							>
+								<path
+									fill="currentColor"
+									d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"
+								/>
+							</svg>
+						</div>
+					</a>
+				)}
+			</div>
+		</div>
+	);
 }
