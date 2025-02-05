@@ -8,6 +8,8 @@ import {
 	getFileType,
 	getFileTypeClass,
 } from "@/utils/dropzoneUtils";
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Hiring() {
 	const [formData, setFormData] = useState<{
@@ -22,8 +24,34 @@ export default function Hiring() {
 		file: null,
 	});
 
-	const [fileType, setFileType] = useState<string>();
 	const [fileTypeClass, setFileTypeClass] = useState<string>();
+	const [sending, setSending] = useState(false);
+
+	const notifyError = (msg: string) =>
+		toast.error("Error: " + msg, {
+			position: "top-center",
+			autoClose: 2000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+			theme: "light",
+			transition: Slide,
+		}); // Function to notify error
+
+	const notifySuccess = (msg: string) =>
+		toast.success("Success: " + msg, {
+			position: "top-center",
+			autoClose: 2000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+			theme: "light",
+			transition: Slide,
+		}); // Function to notify success
 
 	useEffect(() => {
 		console.log(fileTypeClass);
@@ -42,9 +70,10 @@ export default function Hiring() {
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+		setSending(true);
 
 		if (!formData.name || !formData.email) {
-			alert("Name and email are required!");
+			notifyError("Name and email are required!");
 			return;
 		}
 
@@ -61,15 +90,16 @@ export default function Hiring() {
 			});
 
 			if (response.ok) {
-				alert("Application submitted successfully!");
+				notifySuccess("Application submitted successfully!");
 				setFormData({ name: "", email: "", message: "", file: null });
 			} else {
-				alert("Failed to submit application.");
+				notifyError("Failed to submit application.");
 			}
 		} catch (error) {
 			console.error("Error submitting application:", error);
-			alert("An error occurred. Please try again.");
+			notifyError("An error occurred. Please try again.");
 		}
+		setSending(false);
 	};
 
 	const [scrollPosition, setScrollPosition] = useState(0);
@@ -93,6 +123,21 @@ export default function Hiring() {
 
 	return (
 		<div className="bg-white min-h-[calc(100vh - 7rem)] flex flex-col w-full pb-12">
+			<div className="relative z-[999999]">
+				<ToastContainer
+					position="top-center"
+					autoClose={2000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+					theme="light"
+					transition={Slide}
+				/>
+			</div>
 			{/* Banner Section */}
 			<Image
 				src={hiringbanner}
@@ -228,7 +273,6 @@ export default function Hiring() {
 										...formData,
 										file: acceptedFiles[0],
 									});
-									setFileType(getFileType(acceptedFiles[0]));
 									setFileTypeClass(
 										getFileTypeClass(acceptedFiles[0].type)
 									);
@@ -358,9 +402,20 @@ export default function Hiring() {
 					<div className="text-center">
 						<button
 							type="submit"
-							className="py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+							className="w-24 h-12 bg-primary text-white rounded-md active:scale-95 transition-all mx-auto flex items-center justify-center"
 						>
-							Submit
+							{!sending ? (
+								"Submit"
+							) : (
+								<div
+									className="inline-block h-6 w-6 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+									role="status"
+								>
+									<span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+										Sending...
+									</span>
+								</div>
+							)}
 						</button>
 					</div>
 				</form>

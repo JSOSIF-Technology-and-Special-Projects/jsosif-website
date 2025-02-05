@@ -109,7 +109,7 @@ const MapComponent = () => {
 
 	return (
 		<div
-			className="w-full h-screen max-h-[50vh] m-0 p-0"
+			className="w-full h-screen max-h-[15rem] lg:max-h-[50vh] m-0 p-0"
 			style={{ margin: 0, padding: 0, overflow: "hidden" }} // Ensure no extra white space
 		>
 			<LoadScript
@@ -125,7 +125,6 @@ const MapComponent = () => {
 						ref={(newRef) => markerRef(newRef)}
 						position={center}
 						onClick={handleInfoOpenClick}
-
 					>
 						{infoWindow && marker ? (
 							<InfoWindow
@@ -136,7 +135,7 @@ const MapComponent = () => {
 								onCloseClick={handleInfoCloseClick}
 							>
 								<div>
-									<h1 className="font-medium">
+									<h1 className="font-medium text-sm md:text-base">
 										John Simpson Odette Student Investment
 										Fund
 									</h1>

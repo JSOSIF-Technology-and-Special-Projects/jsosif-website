@@ -10,7 +10,7 @@ import jsoifjoin from "../assets/jsosifjoin.png";
 export default function Footer() {
 	return (
 		<footer className="bg-[#1e242e] z-50 relative">
-			<div className="px-72 text-white text-left py-4 flex justify-between items-center">
+			<div className="sm:gap-0 gap-2 px-4 md:px-20 lg:px-28 xl:px-48 2xl:px-72 text-white text-left py-4 flex flex-wrap sm:flex-row justify-between items-center">
 				<div>
 					<Image
 						src={jsosifbannerbw}
@@ -64,11 +64,11 @@ export default function Footer() {
 					<Image
 						src={jsoifjoin}
 						alt="Join JSOSIF"
-						className="w-fit h-64"
+						className="w-fit h-48 md:h-64"
 					/>
 				</div>
 			</div>
-			<div className="h-11 overflow-clip">
+			<div className="h-[4.62rem] md:h-11 overflow-clip">
 				<TickerTape
 					colorTheme="light"
 					isTransparent={false}
