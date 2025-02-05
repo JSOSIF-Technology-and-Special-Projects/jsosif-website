@@ -1,7 +1,6 @@
 "use client";
 import hiringbanner from "../assets/hiringbanner.png";
 import Image from "next/image";
-import emailjs from "emailjs-com";
 import { useState, useEffect } from "react";
 import Dropzone from "react-dropzone";
 import {
@@ -30,60 +29,57 @@ export default function Hiring() {
 		console.log(fileTypeClass);
 	}, [fileTypeClass]);
 
-	// @ts-ignore
-	const handleChange = (e) => {
+	const handleChange = (
+		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) => {
 		const { name, value } = e.target;
-		setFormData({ ...formData, [name]: value });
+		setFormData((prev) => ({ ...prev, [name]: value }));
 	};
 
-	// @ts-ignore
-	const handleFileChange = (e) => {
-		setFormData({ ...formData, file: e.target.files[0] });
+	const handleFileChange = (acceptedFiles: File[]) => {
+		setFormData((prev) => ({ ...prev, file: acceptedFiles[0] || null }));
 	};
 
-	// @ts-ignore
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
-		const templateParams = {
-			name: formData.name,
-			email: formData.email,
-			message: formData.message,
-		};
+		if (!formData.name || !formData.email) {
+			alert("Name and email are required!");
+			return;
+		}
 
-		emailjs
-			.send(
-				"YOUR_SERVICE_ID",
-				"YOUR_TEMPLATE_ID",
-				templateParams,
-				"YOUR_USER_ID"
-			)
-			.then((response) => {
-				console.log(
-					"Email sent successfully:",
-					response.status,
-					response.text
-				);
-				alert("Application submitted successfully!");
-			})
-			.catch((error) => {
-				console.error("Failed to send email:", error);
-				alert("Failed to send application. Please try again.");
+		const formDataToSend = new FormData();
+		formDataToSend.append("name", formData.name);
+		formDataToSend.append("email", formData.email);
+		formDataToSend.append("message", formData.message);
+		if (formData.file) formDataToSend.append("file", formData.file);
+
+		try {
+			const response = await fetch("http://localhost:5008/hiring", {
+				method: "POST",
+				body: formDataToSend,
 			});
+
+			if (response.ok) {
+				alert("Application submitted successfully!");
+				setFormData({ name: "", email: "", message: "", file: null });
+			} else {
+				alert("Failed to submit application.");
+			}
+		} catch (error) {
+			console.error("Error submitting application:", error);
+			alert("An error occurred. Please try again.");
+		}
 	};
 
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const handleScroll = () => {
-		const position = window.scrollY;
-		setScrollPosition(position);
+		setScrollPosition(window.scrollY);
 	};
 
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll, { passive: true });
-
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
+		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
 	const deleteFile = () => {
@@ -132,9 +128,7 @@ export default function Hiring() {
 						<p className="text-lg text-gray-700 leading-relaxed">
 							Lorem ipsum dolor sit, amet consectetur adipisicing
 							elit. Facilis quo libero neque assumenda repudiandae
-							tempora, corrupti quis quisquam dolore a velit
-							facere exercitationem culpa porro vero. Perferendis
-							atque sint ab!
+							tempora.
 						</p>
 					</div>
 					<div className="mb-12">
@@ -145,9 +139,7 @@ export default function Hiring() {
 						<p className="text-lg text-gray-700 leading-relaxed">
 							Lorem ipsum dolor sit, amet consectetur adipisicing
 							elit. Quia ratione perspiciatis obcaecati reiciendis
-							inventore facilis delectus repellat assumenda qui
-							soluta libero officia doloribus molestias, mollitia
-							ipsum ipsam suscipit aut quibusdam.
+							inventore.
 						</p>
 					</div>
 					<div className="mb-12">
@@ -157,10 +149,8 @@ export default function Hiring() {
 						</h1>
 						<p className="text-lg text-gray-700 leading-relaxed">
 							Lorem, ipsum dolor sit amet consectetur adipisicing
-							elit. Et aliquid totam dignissimos amet consequuntur
-							voluptatem corporis, facere a modi! Magni eius
-							molestias inventore facere laborum numquam adipisci
-							repellendus, quae facilis.
+							elit. Et aliquid totam dignissimos amet
+							consequuntur.
 						</p>
 					</div>
 				</div>
@@ -180,14 +170,13 @@ export default function Hiring() {
 							htmlFor="name"
 							className="block text-sm font-medium text-gray-700"
 						>
-							Name
-							<span className="text-primary">*</span>
+							Name <span className="text-primary">*</span>
 						</label>
 						<input
 							type="text"
 							id="name"
 							name="name"
-							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
 							value={formData.name}
 							onChange={handleChange}
 							required
@@ -198,14 +187,14 @@ export default function Hiring() {
 							htmlFor="email"
 							className="block text-sm font-medium text-gray-700"
 						>
-							UWindsor Email
+							UWindsor Email{" "}
 							<span className="text-primary">*</span>
 						</label>
 						<input
 							type="email"
 							id="email"
 							name="email"
-							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
 							value={formData.email}
 							onChange={handleChange}
 							required
@@ -222,10 +211,9 @@ export default function Hiring() {
 							id="message"
 							name="message"
 							rows={6}
-							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm resize-none"
+							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md resize-none"
 							value={formData.message}
 							onChange={handleChange}
-							required
 						/>
 					</div>
 					<div>
@@ -370,7 +358,7 @@ export default function Hiring() {
 					<div className="text-center">
 						<button
 							type="submit"
-							className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+							className="py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700"
 						>
 							Submit
 						</button>
