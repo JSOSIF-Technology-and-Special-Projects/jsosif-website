@@ -35,14 +35,14 @@ app.post('/hiring', upload.single('file'), async (req, res) => {
     try {
         console.log('📩 New application received');
 
-        const { name, email } = req.body;
+        const { name, email, message } = req.body;
         const file = req.file;
 
-        console.log(`📌 Name: ${name}, Email: ${email}, File: ${file ? file.originalname : 'No file received'}`);
+        console.log(`📌 Name: ${name}, Email: ${email}, Message: ${message}, File: ${file ? file.originalname : 'No file received'}`);
 
-        if (!name || !email || !file) {
+        if (!name || !email) {
             console.error('❌ Missing fields:', { name, email, file });
-            return res.status(400).json({ message: 'All fields are required' });
+            return res.status(400).json({ message: 'Name and email are required' });
         }
 
         // Email configuration
@@ -50,16 +50,15 @@ app.post('/hiring', upload.single('file'), async (req, res) => {
             from: process.env.HIRING_EMAIL,
             to: process.env.HIRING_EMAIL, // Receiving email
             subject: `New Job Application from ${name}`,
-            text: `Name: ${name}\nUWindsor Email: ${email}\nResume attached.`,
-            attachments: [{ filename: file.originalname, path: file.path }],
+            text: `Name: ${name}\nUWindsor Email: ${email}\nMessage: ${message}\nResume attached.`,
+            attachments: file ? [{ filename: file.originalname, path: file.path }] : [],
         };
 
         // Send the email
         const info = await transporter.sendMail(mailOptions);
         console.log(`✅ Email sent: ${info.response}`);
 
-        // Delete uploaded file after sending
-        fs.unlinkSync(file.path);
+        if (file) fs.unlinkSync(file.path);
         console.log('🗑️ File deleted after email sent.');
 
         return res.status(200).json({ message: 'Application submitted successfully!' });
