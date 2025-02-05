@@ -33,7 +33,7 @@ export default function TeamCard({ member }: TeamCardProps) {
 			{/* Content */}
 			<div className="flex flex-col justify-between mt-4 h-full">
 				<div className="flex flex-col">
-					<h3 className="text-xl text-gray-800 font-serif text-primary min-h-14 mb-2">
+					<h3 className="text-xl font-serif text-primary min-h-14 mb-2">
 						{member.role}
 					</h3>
 					<div className="flex flex-col w-full mb-4">
