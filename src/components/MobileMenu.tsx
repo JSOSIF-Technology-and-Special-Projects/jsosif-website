@@ -18,8 +18,8 @@ export default function MobileMenu({
 }: MobileMenuProps) {
 	return (
 		<>
-			<div className="h-[100vh] bg-white z-40 p-4 sm:p-12 min-w-[90vw] sm:min-w-[30rem] shadow-sm border-r relative">
-				<div className="flex justify-between items-center">
+			<div className="h-[100vh] bg-white z-40 min-w-[90vw] sm:min-w-[30rem] shadow-sm border-r relative">
+				<div className="flex justify-between items-center p-4 sm:p-12">
 					<Image
 						src={jsosifbanner}
 						alt="Logo"
@@ -47,45 +47,77 @@ export default function MobileMenu({
 				<div className="flex flex-col mt-10">
 					{/* Navigation Links */}
 					<nav className="flex flex-col text-gray-600">
-						<Link href={"/"} passHref legacyBehavior>
-							<a
-								onClick={() => setMenuOpen(false)}
-								className={`hover:text-[#0E5791] px-2 py-1 text-2xl rounded  ${
-									pathname === "/" && "text-primary"
+						<div className="group">
+							<Link href={"/"} passHref legacyBehavior>
+								<div className="flex">
+									{/* <div
+										className={`border-r-4 border-l border-primary rounded-r-md ${
+											pathname !== "/"
+												? "-translate-x-full group-hover:translate-x-0"
+												: "translate-x-0"
+										} transition-all`}
+									/> */}
+									<a
+										onClick={() => setMenuOpen(false)}
+										className={`hover:text-[#0E5791] px-2 sm:px-12 py-1 text-2xl rounded ${
+											pathname === "/" && "text-primary"
+										}`}
+									>
+										Home
+									</a>
+								</div>
+							</Link>
+							<div
+								className={`h-0.5 my-2 mx-4 transition-all ${
+									pathname === "/"
+										? "bg-[#0E5791] scale-x-100"
+										: "bg-gray-300 group-hover:bg-[#0E5791] duration-300 scale-x-50 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"
 								}`}
-							>
-								Home
-							</a>
-						</Link>
-
-						<div className="h-0.5 my-2 bg-gray-200" />
+							/>
+						</div>
 
 						{paths.map(({ name, href }, i) => {
 							return (
-								<>
+								<div key={name} className="group">
 									<Link
 										href={href}
 										passHref
 										legacyBehavior
 										key={name}
 									>
-										<a
-											onClick={() => setMenuOpen(false)}
-											className={`hover:text-[#0E5791] px-2 py-1 text-2xl rounded  ${
-												pathname === href &&
-												"text-primary"
-											}`}
-										>
-											{name}
-										</a>
+										<div className="flex">
+											{/* <div
+												className={`border-r-4 border-l border-primary rounded-r-md ${
+													pathname !== href
+														? "-translate-x-full group-hover:translate-x-0"
+														: "translate-x-0"
+												} transition-all`}
+												key={name}
+											/> */}
+											<a
+												onClick={() =>
+													setMenuOpen(false)
+												}
+												className={`hover:text-[#0E5791] px-2 sm:px-12 py-1 text-2xl rounded ${
+													pathname === href &&
+													"text-primary"
+												}`}
+											>
+												{name}
+											</a>
+										</div>
 									</Link>
-									{i !== paths.length - 1 && (
-										<div
-											key={name + "divider"}
-											className="h-0.5 my-2 bg-gray-200"
-										/>
-									)}
-								</>
+									{/* {i !== paths.length - 1 && ( */}
+									<div
+										key={name + "divider"}
+										className={`h-0.5 my-2 mx-4 transition-all ${
+											pathname === href
+												? "bg-[#0E5791] scale-x-100"
+												: "bg-gray-300 group-hover:bg-[#0E5791] duration-300 scale-x-50 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"
+										}`}
+									/>
+									{/* )} */}
+								</div>
 							);
 						})}
 					</nav>
