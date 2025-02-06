@@ -733,6 +733,8 @@ export const mockApiData = {
 			members: [
 				{
 					name: "Emma Tellier",
+					firstName: "Emma",
+					lastName: "Tellier",
 					role: "Lead Engagement Officer",
 					program: "",
 					year: "",
@@ -742,6 +744,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Joelle Jawdat",
+					firstName: "Joelle",
+					lastName: "Jawdat",
 					role: "Senior Engagement Officer",
 					program: "",
 					year: "",
@@ -751,6 +755,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Yazareth Meneses Arrieta",
+					firstName: "Yazareth",
+					lastName: "Meneses Arrieta",
 					role: "Media creator ",
 					program: "Business and psychology",
 					year: "1",
@@ -761,6 +767,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Sagal",
+					firstName: "Sagal",
+					lastName: "",
 					role: "Engagement Officer",
 					program: "",
 					year: "",

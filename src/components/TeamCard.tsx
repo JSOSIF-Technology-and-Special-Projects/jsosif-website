@@ -3,8 +3,6 @@
 "use client";
 
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 interface TeamCardProps {
 	member: {
@@ -25,7 +23,7 @@ export default function TeamCard({ member }: TeamCardProps) {
 		<div className="w-full bg-white overflow-hidden mx-auto flex flex-col h-full">
 			{/* Image */}
 			<img
-				className="w-full min-h-[20rem] max-h-[20rem] object-cover object-center"
+				className="w-full min-h-[12rem] max-h-[12rem] sm:min-h-[20rem] sm:max-h-[20rem] object-cover object-center"
 				src={member.image ? member.image : "/images/jacobsweet.png"}
 				alt={member.name}
 			/>
@@ -33,24 +31,24 @@ export default function TeamCard({ member }: TeamCardProps) {
 			{/* Content */}
 			<div className="flex flex-col justify-between mt-4 h-full">
 				<div className="flex flex-col">
-					<h3 className="text-xl font-serif text-primary min-h-14 mb-2">
+					<h3 className="text-sm sm:text-xl font-serif text-primary min-h-12 sm:min-h-14 mb-2">
 						{member.role}
 					</h3>
 					<div className="flex flex-col w-full mb-4">
-						<h1 className="text-4xl font-medium font-serif">
+						<h1 className="text-lg sm:text-4xl xl:text-3xl 2xl:text-4xl font-semibold sm:font-medium font-serif">
 							{member.firstName}
 						</h1>
-						<h1 className="text-4xl font-medium font-serif">
+						<h1 className="text-lg sm:text-4xl xl:text-3xl 2xl:text-4xl font-semibold sm:font-medium font-serif">
 							{member.lastName}
 						</h1>
 					</div>
-					<p className="mt-2 text-gray-600">
+					<p className="sm:mt-2 text-sm sm:text-base text-gray-600">
 						<strong>Program:</strong> {member.program}
 					</p>
-					<p className="text-gray-600 mb-4">
+					<p className="text-gray-600 text-sm sm:text-base mb-4">
 						<strong>Year:</strong> {member.year}
 					</p>
-					<p className="text-gray-600">
+					<p className="text-gray-600 text-sm sm:text-base">
 						JSOSIF member since {member.joined}
 					</p>
 				</div>
@@ -62,7 +60,7 @@ export default function TeamCard({ member }: TeamCardProps) {
 						rel="noopener noreferrer"
 						className="inline-flex items-center mt-4"
 					>
-						<div className="p-1 w-12 h-12 bg-primary text-white text-sm font-medium rounded hover:bg-blue-700">
+						<div className="p-1 w-8 h-8 sm:w-12 sm:h-12 bg-primary text-white text-sm font-medium rounded hover:bg-blue-700">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
