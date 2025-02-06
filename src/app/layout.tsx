@@ -32,7 +32,9 @@ export default function RootLayout({
 				<Header />
 
 				{/* Main Content */}
-				<main className="flex-grow pt-28">{children}</main>
+				<main className="flex-grow pt-20 lg:pt-24 xl:pt-28">
+					{children}
+				</main>
 
 				{/* Add Footer */}
 				<Footer />

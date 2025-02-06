@@ -37,7 +37,7 @@ export default function About() {
 			<div className="flex items-start justify-center mt-10 mb-32 z-10">
 				<div className="flex flex-col items-center justify-center gap-2">
 					<div className="flex flex-col items-center justify-center w-fit bg-primary opacity-90">
-						<h1 className="text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
+						<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
 							About Us
 						</h1>
 					</div>
@@ -50,19 +50,19 @@ export default function About() {
 
 			{/*  History Section */}
 			<div className="relative z-10 bg-white">
-				<div className="py-3 flex flex-col md:flex-row justify-center items-center gap-16 px-40 2xl:px-72">
-					<div className="relative bg-transparent text-white rounded-lg items-center flex max-w-md">
+				<div className="py-3 flex flex-col-reverse sm:flex-row justify-center items-center gap-8 md:gap-16 px-10 md:px-20 lg:px-40 2xl:px-72 ">
+					<div className="relative bg-transparent text-white rounded-lg items-center flex lg:max-w-md">
 						<Image
 							src={jsosifseeks}
 							alt="Vision Graphic"
-							className="object-fill w-full h-full rounded"
+							className="object-cover lg:object-fill min-w-full sm:min-w-[12rem] h-[20rem] sm:h-[15rem] sm:w-[20rem] shrink-0 md:shrink-1 md:w-full md:h-full rounded"
 						/>
 						<div className="absolute pl-6">
 							<div className="relative z-10">
-								<h4 className="italic text-lg">
+								<h4 className="italic text-lg sm:text-sm lg:text-base xl:text-lg">
 									JSOSIF seeks to be...
 								</h4>
-								<p className="text-[1.25rem] font-bold font-serif w-[17.5rem] p-2 border-t-2 border-b-2 leading-relaxed mt-4">
+								<p className="text-[1rem] sm:text-[0.75rem] lg:text-[1rem] xl:text-[1.25rem] font-bold font-serif w-2/3 sm:w-[10rem] lg:w-[14rem] xl:w-[17.5rem] p-2 border-t-2 border-b-2 leading-relaxed mt-4">
 									“A highly respected student investment fund
 									that achieves outstanding risk-adjusted
 									returns while investing heavily in human
@@ -74,15 +74,17 @@ export default function About() {
 
 					{/* History Section */}
 					<div className="max-w-md w-full font-light h-full">
-						<h4 className="text-3xl text-primary mb-4">History</h4>
+						<h4 className="text-2xl xl:text-3xl text-primary mb-4">
+							History
+						</h4>
 						<hr className="border-t-2 border-primary mb-4" />
-						<p className="text-gray-800 leading-relaxed">
+						<p className="text-gray-800 leading-relaxed text-sm xl:text-base">
 							The John Simpson Odette Student Investment Fund was
 							formed in the Fall of 2016 by Odette alumnus and the
 							Managing Director of Ridgewood Capital Asset
 							Management, John Simpson.
 						</p>
-						<p className="text-gray-800 leading-relaxed mt-4">
+						<p className="text-gray-800 leading-relaxed mt-4 text-sm xl:text-base">
 							The fund offers students the opportunity to manage a
 							diversified investment portfolio of real capital in
 							the financial markets. JSOSIF is the first
@@ -97,13 +99,13 @@ export default function About() {
 				</div>
 
 				{/* Mission Statement */}
-				<div className="py-3 flex flex-col md:flex-row justify-center items-center gap-16 px-40 2xl:px-72">
+				<div className="py-3 flex flex-col sm:flex-row justify-center items-center gap-8 md:gap-16 px-10 md:px-20 lg:px-40 2xl:px-72 ">
 					<div className="max-w-md w-full">
-						<h4 className="text-3xl text-primary mb-4">
+						<h4 className="text-2xl xl:text-3xl text-primary mb-4">
 							Mission Statement
 						</h4>
 						<hr className="border-t-2 border-primary mb-4" />
-						<p className="text-gray-800 leading-relaxed font-light">
+						<p className="text-gray-800 leading-relaxed text-sm xl:text-base">
 							The John Simpson Odette Student Investment Fund
 							(JSOSIF) aims to provide students at the University
 							of Windsor with valuable financial experience by
@@ -119,13 +121,13 @@ export default function About() {
 						<Image
 							src={jsosifpencil}
 							alt="Vision Graphic"
-							className="w-full h-full object-cover rounded"
+							className="object-cover lg:object-fill min-w-full sm:min-w-[12rem] h-[20rem] sm:h-[15rem] sm:w-[20rem] shrink-0 md:shrink-1 md:w-full md:h-full rounded"
 						/>
 					</div>
 				</div>
 
 				{/* Vision Statement */}
-				<div className="py-3 mb-14 flex flex-col md:flex-row justify-center items-center gap-16 px-40 2xl:px-72">
+				<div className="py-3 mb-14 flex flex-col-reverse sm:flex-row justify-center items-center gap-8 md:gap-16 px-10 md:px-20 lg:px-40 2xl:px-72 ">
 					{/* Image Section */}
 					<div className="relative max-w-md w-full flex items-stretch">
 						<Image
@@ -137,11 +139,11 @@ export default function About() {
 
 					{/* Text Section */}
 					<div className="max-w-md w-full">
-						<h4 className="text-3xl text-primary mb-4">
+						<h4 className="text-2xl xl:text-3xl text-primary mb-4">
 							Vision Statement
 						</h4>
 						<hr className="border-t-2 border-primary mb-4" />
-						<p className="text-gray-800 leading-relaxed font-light">
+						<p className="text-gray-800 leading-relaxed text-sm xl:text-base">
 							JSOSIF is a student-run portfolio that manages funds
 							donated by a private investor (John Simpson,
 							Managing Director of Ridgewood Capital Asset
