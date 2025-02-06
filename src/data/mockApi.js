@@ -163,13 +163,14 @@ export const mockApiData = {
 					linkedin: "https://www.linkedin.com/in/",
 				},
 				{
-					name: "Mohammed Mohammed",
+					name: "Mohamad Emad",
 					role: "Consumer & Retail",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Double Major in Business and Political Science",
+					year: "3",
+					joined: "Sept 2023",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQFahDbQDBlfeQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723491171400?e=1744243200&v=beta&t=58q5CGRqrzpHBpnSfyHp4UbJ0Al8d_TEvLBFmPnLpdI",
+					linkedin:
+						"https://www.linkedin.com/in/mohamad-emad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
 					name: "Fadel Asfari",
@@ -294,11 +295,12 @@ export const mockApiData = {
 				{
 					name: "James Botros",
 					role: "Tech Media Telecommunications",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Civil Engineering ",
+					year: "3",
+					joined: "Jan 2025",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQE7l-XmEynJbg/profile-displayphoto-shrink_400_400/B56ZRS7R55H0Ag-/0/1736558060040?e=1744243200&v=beta&t=pi0g50H8uh5B11A2uG7Zqtfc-jE5CCLVK3aUt06Oay0",
+					linkedin:
+						"https://www.linkedin.com/in/james-botros-456aa6295/",
 				},
 				{
 					name: "Izzy Kekelji",
@@ -373,13 +375,15 @@ export const mockApiData = {
 					linkedin: "https://www.linkedin.com/in/",
 				},
 				{
-					name: "Kohen",
+					name: "Kohen Colenutt",
 					role: "Health Care",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program:
+						"Business Administration, Specialization in Finance",
+					year: "2",
+					joined: "Sept 2024",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQFyiCHxzT81Xg/profile-displayphoto-shrink_400_400/B4EZOXyILdGQAw-/0/1733418321559?e=1744243200&v=beta&t=2WWF-8JoSXrpH6eBTY-t7Y7EYoqGMZ8n22vynr8cqBc",
+					linkedin:
+						"https://www.linkedin.com/in/kohen-colenutt-292800333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
 					name: "Andrew Booth",
@@ -391,13 +395,15 @@ export const mockApiData = {
 					linkedin: "https://www.linkedin.com/in/",
 				},
 				{
-					name: "Gabriel S",
+					name: "Gabriel Safieddine",
 					role: "Health Care",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program:
+						"Business commerce, finance specialization, minor in computer science & Economics",
+					year: "4",
+					joined: "Jan 2024",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQFH_JJKq6awqA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715898278586?e=1744243200&v=beta&t=ax6v7t62Zh5ZxcMMEkiihXCaNWx0hXd4jMDdEOqIsdQ",
+					linkedin:
+						"https://www.linkedin.com/in/gabriel-safieddine?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
 					name: "Alex Dougal",
@@ -435,11 +441,13 @@ export const mockApiData = {
 				{
 					name: "Sean Clarke",
 					role: "Lead Economist",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program:
+						"Honours Bachelor of Commerce–Business Administration, specialization in accounting, minor in computer science",
+					year: "3",
+					joined: "Sept 2022",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQF2erJ-DSjdDA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1701481382087?e=1744243200&v=beta&t=DmQ7VJ_Wk_ZT1h3lRmfsQeO5lio5fa3ngyaCmNqxdks",
+					linkedin:
+						"https://www.linkedin.com/in/sean-clarke-529294251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
 					name: "Ethan Braga",
@@ -495,11 +503,12 @@ export const mockApiData = {
 				{
 					name: "Aidan Richer",
 					role: "Senior Quantitative Analyst",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program:
+						"Bachelor of Mathematics - Mathematics and Finance; Minor in Economics",
+					year: "3",
+					joined: "Jan 2024",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQEbLBNvnHQKHg/profile-displayphoto-shrink_400_400/B56ZROFcMNGoAo-/0/1736476837321?e=1744243200&v=beta&t=AKM-1Njrff-YC4TH0JTJOmkOEzHWxjjJyf-vVMXt_pM",
+					linkedin: "http://www.linkedin.com/in/aidanricher",
 				},
 				{
 					name: "Kumayl",
@@ -537,11 +546,11 @@ export const mockApiData = {
 				{
 					name: "Michael Gibb",
 					role: "Senior Software Developer",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Computer Science",
+					year: "Jan 2023",
+					joined: "3",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQGKitaFHlm3xQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722281073141?e=1744243200&v=beta&t=tnNz0HnacMi8voRW4dg-KqcC0tX8wFXUJfq5cZjKlz4",
+					linkedin: "https://www.linkedin.com/in/michael-e-gibb",
 				},
 				{
 					name: "Landon Hadre",
@@ -555,20 +564,21 @@ export const mockApiData = {
 				{
 					name: "Ethan Konkolowicz",
 					role: "Software Developer",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program:
+						"Bachelor of Computing Science with Honours Applied Computing",
+					year: "3",
+					joined: "Nov 2024",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQHhYFvFdcg1-w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730481713695?e=1744243200&v=beta&t=7yYKOqMLRCqQFHtykf0YosbWJyKyzzioTlmKw1B1CZk",
+					linkedin: "https://www.linkedin.com/in/ethan-konk/",
 				},
 				{
 					name: "Kevin Neave",
 					role: "Software Developer",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Computer Science, Software Engineering",
+					year: "2",
+					joined: "Jan 2025",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQH6Zoml9zpaQA/profile-displayphoto-shrink_400_400/B56ZNvw9PaGgAg-/0/1732746926191?e=1744243200&v=beta&t=e5wx4rp8PDBWjCXGUeYpiaUgzQ-zvr6N8z6lfImNQ1o",
+					linkedin: "http://linkedin.com/in/kevin-neave-a01366293",
 				},
 				{
 					name: "Adam",
