@@ -93,6 +93,11 @@ export const mockApiData = {
 				"Sean Clarke and Ethan Braga track ongoing macroeconomic events driving different areas of the market, providing perspective on areas to concentrate capital allocation.",
 		},
 		{
+			name: "Compliance & Special Situations",
+			description:
+				"Matthew Livingstone and Joseph Murtagh"
+		},
+		{
 			name: "Software Development",
 			description:
 				"Aya Madi and Micheal Gibb focus on developing and maintaining the fund's proprietary software, which is used to track and analyze the fund's investments.",
@@ -111,21 +116,21 @@ export const mockApiData = {
 				{
 					name: "Jacob Sweet",
 					role: "Chief Executive Officer",
-					program: "No idea",
-					year: "Unknown",
-					joined: "Unknown",
-					image: "/images/jacobsweet.png",
+					program: "Commerce Finance Specialization Economics & Philosophy Minor",
+					year: "3",
+					joined: "Sept 2022",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQEmfSZUrXkfRQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668385805304?e=1744243200&v=beta&t=ogpAb7X4Q9b_UJKY9yH88VFFH_khyjPVsizpNjdId0Q",
 					linkedin:
-						"https://www.linkedin.com/in/jacob-sweet-853066214/?originalSubdomain=ca",
+						"https://www.linkedin.com/in/jacob-sweet-853066214/",
 				},
 				{
 					name: "Saif Jawdat",
 					role: "Chief Investment Officer",
 					program:
-						"BCOM specalziing in finance with a double minor in economics and IT",
-					year: "4th year",
+						"Honours Bcomm - Specializing in Finance and Minor in Economics & IT",
+					year: "4",
 					joined: "Sep 2023",
-					image: "",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQFMoP650DnFLA/profile-displayphoto-shrink_400_400/B4EZRnB.6OHgAo-/0/1736895361078?e=1744243200&v=beta&t=l9VnchdcFc0e31WViBaqPcnOuxBAOl0_GIxI9vz3-BA",
 					linkedin:
 						"https://www.linkedin.com/in/saif-jawdat-54a645262/",
 				},
@@ -184,11 +189,11 @@ export const mockApiData = {
 				{
 					name: "Cullan Bryne ",
 					role: "Health Care",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Honours Business Administration, Specialization in Finance, Minor in Computer Science ",
+					year: "2",
+					joined: "Oct 2023",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQFm3lHvEArffA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1701305242851?e=1744243200&v=beta&t=uSEeW4qRI6JS4dgWLnKC_s0q4zMwdZUSRQCJ0Mrlrfg",
+					linkedin: "http://www.linkedin.com/in/cullan-byrne",
 				},
 				{
 					name: "Luca Pecorada",
@@ -206,13 +211,13 @@ export const mockApiData = {
 			banner: "/images/team-banners/senior_analysts_banner.webp",
 			members: [
 				{
-					name: "Cozy Cosentino",
+					name: "Eitan Cozy Cosentino",
 					role: "Financial Institutions",
-					program: "No idea",
-					year: "Super Senior",
-					joined: "Unknown",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Business Administration, Finance, Economics",
+					year: "3",
+					joined: "Sept 2024",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQGnLhcnxyIFvQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668545416449?e=1744243200&v=beta&t=gEynNpAYF8JdWaYaq3mU6O-yJgkQCHSZ8cUBAiMpWRM",
+					linkedin: "https://www.linkedin.com/in/cozy-eitan-cosentino-429319257/",
 				},
 				{
 					name: "Rafael",
@@ -284,13 +289,13 @@ export const mockApiData = {
 					linkedin: "https://www.linkedin.com/in/",
 				},
 				{
-					name: "Mariam",
+					name: "Mariam Bakmaya",
 					role: "Financial Institutions",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Business/Psych with a finance specialization",
+					year: "2",
+					joined: "Jan 2025",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQHUe1MHRwwQvw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729819695392?e=1744243200&v=beta&t=Hq9Df-PlGM-dVyn8zw_106ZERik_U3rUk61LDNvHB80",
+					linkedin: "http://www.linkedin.com/in/mariam-raphael-bakmaya-885862303",
 				},
 				{
 					name: "James Botros",
@@ -488,17 +493,41 @@ export const mockApiData = {
 			],
 		},
 		{
+			name: "Compliance & Special Situations",
+			banner: "/images/team-banners/quant_portfolio_risk_banner.avif",
+			members: [
+				{
+					name: "Matthew Livingstone ",
+					role: "Lead Compliance Officer",
+					program: "Business, Finance",
+					year: "",
+					joined: "Jan 2025",
+					image: "https://media.licdn.com/dms/image/v2/D4D03AQEGC5q-HWH-Mg/profile-displayphoto-shrink_800_800/B4DZTcUFc2GcAk-/0/1738863041440?e=1744243200&v=beta&t=hzWEaxI5-ffqAaJbIMuUHjv-A58_d2kpm95SPQM7eeM",
+					linkedin: "https://www.linkedin.com/in/matthew-livingstone-a457b02a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+				},
+				{
+					name: "Joseph Murtagh",
+					role: "Senior Compliance Officer",
+					program: "",
+					year: "",
+					joined: "",
+					image: "",
+					linkedin: "https://www.linkedin.com/in/",
+				},
+			],
+		},
+		{
 			name: "Quantitative Research & Portfolio Risk",
 			banner: "/images/team-banners/quant_portfolio_risk_banner.avif",
 			members: [
 				{
 					name: "Adam Bergen",
 					role: "Lead Quantitative Analyst",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Business, Finance, Economics",
+					year: "3",
+					joined: "Oct 2023",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQFUt-Gw1WUq9Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700152760577?e=1744243200&v=beta&t=QoxU0tCBfW2XYJKerjmTRmYJ_6AciL64FZHi71ErXFo",
+					linkedin: "https://www.linkedin.com/in/adam-bergen-7223bb262/",
 				},
 				{
 					name: "Aidan Richer",
@@ -555,11 +584,11 @@ export const mockApiData = {
 				{
 					name: "Landon Hadre",
 					role: "Software Developer",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Computer Science with Honours Applied Computing and a minor in Applied IT",
+					year: "3",
+					joined: "Nov 2024",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQGS2Z6H58ut-Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726583437365?e=1744243200&v=beta&t=pHNPzbbjw3-VdZlv_SNQviHMBhjrFXKFofG8OJFURXw",
+					linkedin: "https://www.linkedin.com/in/landonhadre/",
 				},
 				{
 					name: "Ethan Konkolowicz",
@@ -615,12 +644,12 @@ export const mockApiData = {
 				},
 				{
 					name: "Yazareth Meneses Arrieta",
-					role: "Engagement Officer",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					role: "Media creator ",
+					program: "Business and psychology",
+					year: "1",
+					joined: "Jan 2025",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQESazTuRoUBjA/profile-displayphoto-shrink_400_400/B4EZOTKgRsHsAg-/0/1733340825414?e=1744243200&v=beta&t=FbPO7ou2MHCqquSpZN6AnE3NRYR-G0hubiMytMGvxHg",
+					linkedin: "https://www.linkedin.com/in/yazareth-meneses-arrieta-519117337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
 					name: "Sagal",
