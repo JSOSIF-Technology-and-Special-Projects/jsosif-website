@@ -74,7 +74,7 @@ export default function About() {
 
 					{/* History Section */}
 					<div className="max-w-md w-full font-light h-full">
-						<h4 className="text-2xl xl:text-3xl text-primary mb-4">
+						<h4 className="text-2xl xl:text-3xl text-primary mb-2 md:mb-4">
 							History
 						</h4>
 						<hr className="border-t-2 border-primary mb-4" />
@@ -101,7 +101,7 @@ export default function About() {
 				{/* Mission Statement */}
 				<div className="py-3 flex flex-col sm:flex-row justify-center items-center gap-8 md:gap-16 px-10 md:px-20 lg:px-40 2xl:px-72 ">
 					<div className="max-w-md w-full">
-						<h4 className="text-2xl xl:text-3xl text-primary mb-4">
+						<h4 className="text-2xl xl:text-3xl text-primary mb-2 md:mb-4">
 							Mission Statement
 						</h4>
 						<hr className="border-t-2 border-primary mb-4" />
@@ -139,7 +139,7 @@ export default function About() {
 
 					{/* Text Section */}
 					<div className="max-w-md w-full">
-						<h4 className="text-2xl xl:text-3xl text-primary mb-4">
+						<h4 className="text-2xl xl:text-3xl text-primary mb-2 md:mb-4">
 							Vision Statement
 						</h4>
 						<hr className="border-t-2 border-primary mb-4" />

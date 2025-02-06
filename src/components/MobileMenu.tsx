@@ -1,0 +1,96 @@
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import jsosifbanner from "../assets/jsosifbanner.png";
+
+interface MobileMenuProps {
+	setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+	pathname: string | null;
+	paths: {
+		name: string;
+		href: string;
+	}[];
+}
+export default function MobileMenu({
+	setMenuOpen,
+	pathname,
+	paths,
+}: MobileMenuProps) {
+	return (
+		<>
+			<div className="h-[100vh] bg-white z-40 p-4 sm:p-12 min-w-[90vw] sm:min-w-[30rem] shadow-sm border-r relative">
+				<div className="flex justify-between items-center">
+					<Image
+						src={jsosifbanner}
+						alt="Logo"
+						height={80}
+						width={300}
+						className="w-52 object-contain"
+					/>
+					<button
+						onClick={() => setMenuOpen(false)}
+						className="p-2 rounded-full hover:text-[#0E5791] text-gray-600 active:scale-95 transition-all"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+						>
+							<path
+								fill="currentColor"
+								d="M10.586 12L2.793 4.207l1.414-1.414L12 10.586l7.793-7.793l1.414 1.414L13.414 12l7.793 7.793l-1.414 1.414L12 13.414l-7.793 7.793l-1.414-1.414z"
+							/>
+						</svg>
+					</button>
+				</div>
+				<div className="flex flex-col mt-10">
+					{/* Navigation Links */}
+					<nav className="flex flex-col text-gray-600">
+						<Link href={"/"} passHref legacyBehavior>
+							<a
+								onClick={() => setMenuOpen(false)}
+								className={`hover:text-[#0E5791] px-2 py-1 text-2xl rounded  ${
+									pathname === "/" && "text-primary"
+								}`}
+							>
+								Home
+							</a>
+						</Link>
+
+						<div className="h-0.5 my-2 bg-gray-200" />
+
+						{paths.map(({ name, href }, i) => {
+							return (
+								<>
+									<Link
+										href={href}
+										passHref
+										legacyBehavior
+										key={name}
+									>
+										<a
+											onClick={() => setMenuOpen(false)}
+											className={`hover:text-[#0E5791] px-2 py-1 text-2xl rounded  ${
+												pathname === href &&
+												"text-primary"
+											}`}
+										>
+											{name}
+										</a>
+									</Link>
+									{i !== paths.length - 1 && (
+										<div
+											key={name + "divider"}
+											className="h-0.5 my-2 bg-gray-200"
+										/>
+									)}
+								</>
+							);
+						})}
+					</nav>
+				</div>
+			</div>
+		</>
+	);
+}

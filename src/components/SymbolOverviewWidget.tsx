@@ -27,7 +27,7 @@ export default function SymbolOverviewWidget({
 	const allTickers = [...formattedTickers, ...formattedBondTickers];
 
 	return (
-		<div className="h-[500px] w-[80%] mx-auto flex flex-col items-center">
+		<div className="h-[350px] lg:h-[500px] md:w-[80%] mx-2 md:mx-auto flex flex-col items-center">
 			{/* TradingView SymbolOverview Widget */}
 			{allTickers.length > 0 && (
 				<div className="w-full h-full">

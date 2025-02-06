@@ -42,14 +42,14 @@ export default function Portfolio() {
 			<Image
 				src={portfoliobanner}
 				alt="Portfolio Banner"
-				className="w-full object-cover -z-10 absolute h-[400px]"
+				className="w-full object-cover absolute h-[400px]"
 			/>
 			{/* Header Section */}
 			<div>
 				<div className="flex flex-col items-center justify-between py-8">
 					<div className="flex flex-col items-center justify-center gap-2">
-						<div className="flex flex-col items-center justify-center w-fit bg-primary opacity-70">
-							<h1 className="text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
+						<div className="flex flex-col items-center justify-center w-fit bg-primary opacity-90">
+							<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
 								Portfolio
 							</h1>
 						</div>
@@ -59,17 +59,17 @@ export default function Portfolio() {
 						</div>
 					</div>
 
-					<div className="flex flex-col md:flex-row items-center justify-center gap-8 w-[50vw] z-10 mt-10">
-						<p className="text-3xl font-serif mt-2 w-1/2 text-center">
-							<span className="text-[5.75rem] font-bold text-primary mr-3 font-[Roboto] italic leading-20">
+					<div className="flex flex-row items-center justify-center gap-8 w-[90vw] sm:w-[70vw] xl:w-[50vw] z-10 mt-2 sm:mt-10">
+						<p className="lg:text-xl xl:text-2xl 2xl:text-3xl font-serif mt-2 w-1/2 text-center">
+							<span className="text-6xl xl:text-7xl 2xl:text-[5.75rem] font-bold text-primary mr-3 font-[Roboto] italic leading-20">
 								{investmentHoldings}
 							</span>
-							unique and carefully selected holdings comprise our JSOSIF
-							portfolio.
+							unique and carefully selected holdings comprise our
+							JSOSIF portfolio.
 						</p>
-						<p className="text-3xl font-serif mt-6 w-1/2 text-center">
-							All of which are backed by research, modeling, and portfolio
-							optimization conducted by our teams.
+						<p className="xl:text-2xl 2xl:text-3xl font-serif mt-6 w-1/2 text-center">
+							All of which are backed by research, modeling, and
+							portfolio optimization conducted by our teams.
 						</p>
 					</div>
 				</div>
@@ -87,15 +87,15 @@ export default function Portfolio() {
 							<Image
 								alt={division.name}
 								src={division.bgImage}
-								className="absolute max-h-32 object-cover overflow-hidden"
+								className="absolute h-32 object-cover overflow-hidden"
 							/>
-							<h2 className="text-5xl w-full font-medium tracking-widest text-white py-5 text-center mb-4 z-10 relative">
+							<h2 className="text-3xl md:text-4xl lg:text-5xl w-full font-medium tracking-widest text-white py-5 text-center mb-4 z-10 relative">
 								{division.name}
 							</h2>
 						</div>
 
 						{/* Widgets Section */}
-						<div className="w-[80%] px-8">
+						<div className="w-full lg:w-[80%] px-0 md:px-8">
 							<SymbolOverviewWidget
 								ticker={division.ticker}
 								bondData={division.bondTicker || []} // Pass bond data if available

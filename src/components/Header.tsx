@@ -6,20 +6,48 @@ import Image from "next/image";
 import Link from "next/link";
 import jsosifbanner from "../assets/jsosifbanner.png";
 import { usePathname } from "next/navigation";
-import path from "path";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
 	//this allows an animation to be applied to the pages when you scroll down the page
 	const pathname = usePathname();
 	const [scrollPosition, setScrollPosition] = useState(0);
+	const [menuOpen, setMenuOpen] = useState(false);
 	const handleScroll = () => {
 		const position = window.scrollY;
 		setScrollPosition(position);
 	};
 
-	useEffect(() => {
-		console.log(pathname);
-	}, [pathname]);
+	const paths = [
+		{
+			name: "About",
+			href: "/about",
+		},
+		{
+			name: "Portfolio",
+			href: "/portfolio",
+		},
+		{
+			name: "Team",
+			href: "/team",
+		},
+		{
+			name: "Alumni",
+			href: "/alumni",
+		},
+		// {
+		// 	name: "Research",
+		// 	href: "/research",
+		// },
+		{
+			name: "Bloomberg",
+			href: "/bloomberg",
+		},
+		{
+			name: "Hiring",
+			href: "/hiring",
+		},
+	];
 
 	//adds an event listener to the window to listen for scroll events on use
 	useEffect(() => {
@@ -36,9 +64,32 @@ export default function Header() {
 				scrollPosition > 0 ? "fixed w-full" : "absolute w-full"
 			}`}
 		>
+			<div
+				className={`fixed h-screen w-screen top-0 left-0 bg-black z-30 transition-all ${
+					!menuOpen
+						? "bg-opacity-0 pointer-events-none"
+						: "bg-opacity-20 pointer-events-auto"
+				}`}
+			/>
+			<div
+				className={`fixed top-0 left-0 z-40 transition-all duration-300 ${
+					menuOpen
+						? "translate-x-0"
+						: " -translate-x-[90vw] sm:-translate-x-[30rem]"
+				}`}
+			>
+				<MobileMenu
+					setMenuOpen={setMenuOpen}
+					pathname={pathname}
+					paths={paths}
+				/>
+			</div>
 			{/* Logo Section */}
 			<div className="mx-4 md:mx-20 xl:mx-52 w-full flex items-center xl:justify-between relative">
-				<button className="mr-4 lg:mr-[8rem] rounded-full p-2 hover:text-[#0E5791] text-gray-600 xl:hidden">
+				<button
+					onClick={() => setMenuOpen(true)}
+					className="hover:cursor-pointer mr-4 lg:mr-[8rem] rounded-full p-2 hover:text-[#0E5791] text-gray-600 xl:hidden"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="32"
@@ -76,65 +127,24 @@ export default function Header() {
 
 				{/* Navigation Links */}
 				<nav className="xl:flex space-x-8 text-gray-600 hidden">
-					<Link href="/about" passHref legacyBehavior>
-						<a
-							className={`hover:text-[#0E5791] ${
-								pathname === "/about" && "text-primary"
-							}`}
-						>
-							About
-						</a>
-					</Link>
-					<Link href="/portfolio" passHref legacyBehavior>
-						<a
-							className={`hover:text-[#0E5791] ${
-								pathname === "/portfolio" && "text-primary"
-							}`}
-						>
-							Portfolio
-						</a>
-					</Link>
-					<Link href="/team" passHref legacyBehavior>
-						<a
-							className={`hover:text-[#0E5791] ${
-								pathname === "/team" && "text-primary"
-							}`}
-						>
-							Team
-						</a>
-					</Link>
-					<Link href="/alumni" passHref legacyBehavior>
-						<a
-							className={`hover:text-[#0E5791] ${
-								pathname === "/alumni" && "text-primary"
-							}`}
-						>
-							Alumni
-						</a>
-					</Link>
-					{/* <Link href="/research" passHref legacyBehavior>
-						<a className={`hover:text-[#0E5791] ${
-								pathname === "/hiring" && "text-primary"
-							}`}>Research</a>
-					</Link> */}
-					<Link href="/bloomberg" passHref legacyBehavior>
-						<a
-							className={`hover:text-[#0E5791] ${
-								pathname === "/bloomberg" && "text-primary"
-							}`}
-						>
-							Bloomberg
-						</a>
-					</Link>
-					<Link href="/hiring" passHref legacyBehavior>
-						<a
-							className={`hover:text-[#0E5791] ${
-								pathname === "/hiring" && "text-primary"
-							}`}
-						>
-							Hiring
-						</a>
-					</Link>
+					{paths.map(({ name, href }) => {
+						return (
+							<Link
+								href={href}
+								passHref
+								legacyBehavior
+								key={name}
+							>
+								<a
+									className={`hover:text-[#0E5791] ${
+										pathname === href && "text-primary"
+									}`}
+								>
+									{name}
+								</a>
+							</Link>
+						);
+					})}
 				</nav>
 			</div>
 		</header>
