@@ -7,7 +7,7 @@ import financial from "@/assets/financial.avif";
 
 export const mockApiData = {
 	statistics: {
-		fundMembers: 26,
+		fundMembers: 52,
 		investmentHoldings: 30,
 		assetsUnderManagement: 261000,
 	},
@@ -15,7 +15,7 @@ export const mockApiData = {
 		{
 			name: "Financial Institutions",
 			description:
-				"Connor Demelo and Cozy Cosentino cover the biggest names and most promising investments in the financial sector, such as Visa and Bank of America.",
+				"Connor Demelo and Cozy Cosentino cover top names and promising investments in the Financial Institutions Group, including Visa, Charles Schwab, and BMO, highlighting industry leaders and strong performers.",
 			ticker: "V|12M, SCHW, JPM|12M, TSX:BMO|12M",
 			bgImage: financial,
 		},
@@ -29,7 +29,7 @@ export const mockApiData = {
 		{
 			name: "Consumer & Retail",
 			description:
-				"Mohammad Mohammad and Noah Di Maio cover the biggest names and most promising investments in the consumer sector, such as Pepsi and Costco.",
+				"Mohamed Emad and Noah Di Maio cover the biggest names and most attractive investment opportunities in the consumer staples  space,  analyzing market trends, and emerging consumer spending patterns like PEP and COST.",
 			ticker: "LVMHF|12M, PEP|12M, TSX:JWEL|12M, GIS|12M, COST|12M, TSX:ATD|12M",
 			bgImage: consumerRetail,
 		},
@@ -43,7 +43,7 @@ export const mockApiData = {
 		{
 			name: "Health Care",
 			description:
-				"Cullan Bryne and Kartikay Dhamija cover the biggest names and most promising investments in the health care sector, such as Pfizer and Vertex Pharmecutical.",
+				"Cullan Bryne and Kartikay Dhamija invest in some of the biggest and most promising companies, with a focus on pharmaceutical manufacturing and oncology such as Novo Nordisk and Pfizer",
 			ticker: "PFE|12M, VRTX|12M, NVO|12M",
 			bgImage: healthCare,
 		},
@@ -85,12 +85,12 @@ export const mockApiData = {
 		{
 			name: "Quantitative Research & Portfolio Risk",
 			description:
-				"Adam Bergen and Aidan Richer develop a series of mathematical models measuring various aspects of and expected performance of the fund's portfolio.",
+				"Adam Bergen and Aidan Richer provide quantitative research and data analysis through proprietary models to visualize and manage portfolio risk.",
 		},
 		{
 			name: "Economic Advisory",
 			description:
-				"Sean Clarke and Ethan Braga track ongoing macroeconomic events driving different areas of the market, providing perspective on areas to concentrate capital allocation.",
+				" Sean Clarke and Ethan Bragga conduct in-depth analyses of macroeconomic trends, offering strategic insights into potential economic headwinds and tailwinds for JSOSIF's relative investment teams.",
 		},
 		{
 			name: "Compliance & Special Situations",
@@ -546,11 +546,11 @@ export const mockApiData = {
 					firstName: "Houshang",
 					lastName: "Javan",
 					role: "Junior Economist",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Masters in Applied Economics and Policy",
+					year: "1st",
+					joined: "Jan 2025",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQHKMGtZyOqtPQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713992002225?e=1744243200&v=beta&t=74iN95507yVVmU7XTztyVtKNu0uPK5_GUbXs_XzxMdA",
+					linkedin: "https://www.linkedin.com/in/houshang-javan/",
 				},
 				{
 					name: "Nathan Kemp-Dove",
