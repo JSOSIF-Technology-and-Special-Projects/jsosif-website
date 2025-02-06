@@ -9,6 +9,8 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 interface TeamCardProps {
 	member: {
 		name: string;
+		firstName: string;
+		lastName: string;
 		role: string;
 		program: string;
 		year: string;
@@ -19,8 +21,6 @@ interface TeamCardProps {
 }
 
 export default function TeamCard({ member }: TeamCardProps) {
-	const name = member.name.split(" ");
-
 	return (
 		<div className="w-full bg-white overflow-hidden mx-auto flex flex-col h-full">
 			{/* Image */}
@@ -38,10 +38,10 @@ export default function TeamCard({ member }: TeamCardProps) {
 					</h3>
 					<div className="flex flex-col w-full mb-4">
 						<h1 className="text-4xl font-medium font-serif">
-							{name[0]}
+							{member.firstName}
 						</h1>
 						<h1 className="text-4xl font-medium font-serif">
-							{name[1]}
+							{member.lastName}
 						</h1>
 					</div>
 					<p className="mt-2 text-gray-600">
