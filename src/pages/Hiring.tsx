@@ -3,11 +3,7 @@ import hiringbanner from "../assets/hiringbanner.png";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Dropzone from "react-dropzone";
-import {
-	getFileSizeString,
-	getFileType,
-	getFileTypeClass,
-} from "@/utils/dropzoneUtils";
+import { getFileSizeString, getFileTypeClass } from "@/utils/dropzoneUtils";
 import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -64,9 +60,9 @@ export default function Hiring() {
 		setFormData((prev) => ({ ...prev, [name]: value }));
 	};
 
-	const handleFileChange = (acceptedFiles: File[]) => {
-		setFormData((prev) => ({ ...prev, file: acceptedFiles[0] || null }));
-	};
+	// const handleFileChange = (acceptedFiles: File[]) => {
+	// 	setFormData((prev) => ({ ...prev, file: acceptedFiles[0] || null }));
+	// };
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
