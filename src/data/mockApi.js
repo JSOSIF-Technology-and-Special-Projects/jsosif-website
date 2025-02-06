@@ -94,8 +94,7 @@ export const mockApiData = {
 		},
 		{
 			name: "Compliance & Special Situations",
-			description:
-				"Matthew Livingstone and Joseph Murtagh"
+			description: "Matthew Livingstone and Joseph Murtagh",
 		},
 		{
 			name: "Software Development",
@@ -115,8 +114,11 @@ export const mockApiData = {
 			members: [
 				{
 					name: "Jacob Sweet",
+					firstName: "Jacob",
+					lastName: "Sweet",
 					role: "Chief Executive Officer",
-					program: "Commerce Finance Specialization Economics & Philosophy Minor",
+					program:
+						"Commerce Finance Specialization Economics & Philosophy Minor",
 					year: "3",
 					joined: "Sept 2022",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQEmfSZUrXkfRQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668385805304?e=1744243200&v=beta&t=ogpAb7X4Q9b_UJKY9yH88VFFH_khyjPVsizpNjdId0Q",
@@ -125,6 +127,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Saif Jawdat",
+					firstName: "Saif",
+					lastName: "Jawdat",
 					role: "Chief Investment Officer",
 					program:
 						"Honours Bcomm - Specializing in Finance and Minor in Economics & IT",
@@ -136,6 +140,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Nolan Robinson",
+					firstName: "Nolan",
+					lastName: "Robinson",
 					role: "Chief Strategy Officer",
 					program: "No idea",
 					year: "Super Senior",
@@ -151,6 +157,8 @@ export const mockApiData = {
 			members: [
 				{
 					name: "Connor Demelo",
+					firstName: "Connor",
+					lastName: "Demelo",
 					role: "Financial Institutions",
 					program: "No idea",
 					year: "Super Senior",
@@ -160,6 +168,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Eddy Aboukassm",
+					firstName: "Eddy",
+					lastName: "Aboukassm",
 					role: "Tech Media Telecommunications",
 					program: "No idea",
 					year: "Super Senior",
@@ -169,6 +179,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Mohamad Emad",
+					firstName: "Mohamad",
+					lastName: "Emad",
 					role: "Consumer & Retail",
 					program: "Double Major in Business and Political Science",
 					year: "3",
@@ -179,6 +191,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Fadel Asfari",
+					firstName: "Fadel",
+					lastName: "Asfari",
 					role: "Industrials & Natural Resources",
 					program: "",
 					year: "",
@@ -187,9 +201,12 @@ export const mockApiData = {
 					linkedin: "https://www.linkedin.com/in/",
 				},
 				{
-					name: "Cullan Bryne ",
+					name: "Cullan Bryne",
+					firstName: "Cullan",
+					lastName: "Bryne",
 					role: "Health Care",
-					program: "Honours Business Administration, Specialization in Finance, Minor in Computer Science ",
+					program:
+						"Honours Business Administration, Specialization in Finance, Minor in Computer Science ",
 					year: "2",
 					joined: "Oct 2023",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQFm3lHvEArffA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1701305242851?e=1744243200&v=beta&t=uSEeW4qRI6JS4dgWLnKC_s0q4zMwdZUSRQCJ0Mrlrfg",
@@ -197,6 +214,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Luca Pecorada",
+					firstName: "Luca",
+					lastName: "Pecorada",
 					role: "Fixed Income & Real Estate",
 					program: "",
 					year: "",
@@ -212,15 +231,20 @@ export const mockApiData = {
 			members: [
 				{
 					name: "Eitan Cozy Cosentino",
+					firstName: "Eitan Cozy",
+					lastName: "Cosentino",
 					role: "Financial Institutions",
 					program: "Business Administration, Finance, Economics",
 					year: "3",
 					joined: "Sept 2024",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQGnLhcnxyIFvQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668545416449?e=1744243200&v=beta&t=gEynNpAYF8JdWaYaq3mU6O-yJgkQCHSZ8cUBAiMpWRM",
-					linkedin: "https://www.linkedin.com/in/cozy-eitan-cosentino-429319257/",
+					linkedin:
+						"https://www.linkedin.com/in/cozy-eitan-cosentino-429319257/",
 				},
 				{
 					name: "Rafael",
+					firstName: "Rafael",
+					lastName: "",
 					role: "Tech Media Telecommunications",
 					program: "",
 					year: "",
@@ -230,6 +254,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Noah ",
+					firstName: "Noah",
+					lastName: "",
 					role: "Coumser & Retail",
 					program: "",
 					year: "",
@@ -239,6 +265,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Jack ",
+					firstName: "Jack",
+					lastName: "",
 					role: "Industrials & Natural Resources",
 					program: "",
 					year: "",
@@ -247,7 +275,9 @@ export const mockApiData = {
 					linkedin: "https://www.linkedin.com/in/",
 				},
 				{
-					name: "Karikay Dhamija ",
+					name: "Karikay Dhamija",
+					firstName: "Karikay",
+					lastName: "Dhamija",
 					role: "Health Care",
 					program: "",
 					year: "",
@@ -257,6 +287,8 @@ export const mockApiData = {
 				},
 				{
 					name: "N/A ",
+					firstName: "",
+					lastName: "",
 					role: "Fixed Income & Real Estate",
 					program: "",
 					year: "",
@@ -272,6 +304,8 @@ export const mockApiData = {
 			members: [
 				{
 					name: "Nick",
+					firstName: "Nick",
+					lastName: "",
 					role: "Financial Institutions",
 					program: "No idea",
 					year: "Super Senior",
@@ -281,6 +315,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Prabh",
+					firstName: "Prabh",
+					lastName: "",
 					role: "Financial Institutions",
 					program: "",
 					year: "",
@@ -290,15 +326,20 @@ export const mockApiData = {
 				},
 				{
 					name: "Mariam Bakmaya",
+					firstName: "Mariam",
+					lastName: "Bakmaya",
 					role: "Financial Institutions",
 					program: "Business/Psych with a finance specialization",
 					year: "2",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQHUe1MHRwwQvw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729819695392?e=1744243200&v=beta&t=Hq9Df-PlGM-dVyn8zw_106ZERik_U3rUk61LDNvHB80",
-					linkedin: "http://www.linkedin.com/in/mariam-raphael-bakmaya-885862303",
+					linkedin:
+						"http://www.linkedin.com/in/mariam-raphael-bakmaya-885862303",
 				},
 				{
 					name: "James Botros",
+					firstName: "James",
+					lastName: "Botros",
 					role: "Tech Media Telecommunications",
 					program: "Civil Engineering ",
 					year: "3",
@@ -309,6 +350,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Izzy Kekelji",
+					firstName: "Izzy",
+					lastName: "Kekelji",
 					role: "Tech Media Telecommunications",
 					program: "",
 					year: "",
@@ -318,6 +361,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Aparajita Sarkar",
+					firstName: "Aparajita",
+					lastName: "Sarkar",
 					role: "Tech Media Telecommunications",
 					program: "",
 					year: "",
@@ -327,6 +372,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Bella",
+					firstName: "Bella",
+					lastName: "",
 					role: "Consumer & Retail",
 					program: "",
 					year: "",
@@ -336,6 +383,8 @@ export const mockApiData = {
 				},
 				{
 					name: "David Jesus",
+					firstName: "David",
+					lastName: "Jesus",
 					role: "Consumer & Retail",
 					program: "",
 					year: "",
@@ -345,6 +394,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Jada Yaldo",
+					firstName: "Jada",
+					lastName: "Yaldo",
 					role: "Consumer & Retail",
 					program: "Combined Major in Psychology and Criminology",
 					year: "3rd",
@@ -354,6 +405,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Krish",
+					firstName: "Krish",
+					lastName: "",
 					role: "Industrials & Natural Resources",
 					program: "",
 					year: "",
@@ -363,6 +416,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Travis Loughead",
+					firstName: "Travis",
+					lastName: "Loughead",
 					role: "Industrials & Natural Resources",
 					program: "",
 					year: "",
@@ -372,6 +427,8 @@ export const mockApiData = {
 				},
 				{
 					name: "N/A",
+					firstName: "",
+					lastName: "",
 					role: "",
 					program: "",
 					year: "",
@@ -381,6 +438,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Kohen Colenutt",
+					firstName: "Kohen",
+					lastName: "Colenutt",
 					role: "Health Care",
 					program:
 						"Business Administration, Specialization in Finance",
@@ -392,6 +451,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Andrew Booth",
+					firstName: "Andrew",
+					lastName: "Booth",
 					role: "Health Care",
 					program: "",
 					year: "",
@@ -401,6 +462,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Gabriel Safieddine",
+					firstName: "Gabriel",
+					lastName: "Safieddine",
 					role: "Health Care",
 					program:
 						"Business commerce, finance specialization, minor in computer science & Economics",
@@ -412,6 +475,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Alex Dougal",
+					firstName: "Alex",
+					lastName: "Dougal",
 					role: "Fixed Income & Real Estate",
 					program: "",
 					year: "",
@@ -421,6 +486,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Marie",
+					firstName: "Marie",
+					lastName: "",
 					role: "Fixed Income & Real Estate",
 					program: "",
 					year: "",
@@ -430,12 +497,15 @@ export const mockApiData = {
 				},
 				{
 					name: "Huong Thao Nguyen",
+					firstName: "Huong Thao",
+					lastName: "Nguyen",
 					role: "Fixed Income & Real Estate",
 					program: "Master of Management - Data Analytics Stream",
 					year: "1st",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQElL878suS_hw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1695093638471?e=1744243200&v=beta&t=nzwrck2m5Bx0J8ny3VBcviURVjPFFYuLX81z9KiHY4I",
-					linkedin: "https://www.linkedin.com/in/linda-nguyen28?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+					linkedin:
+						"https://www.linkedin.com/in/linda-nguyen28?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 			],
 		},
@@ -445,6 +515,8 @@ export const mockApiData = {
 			members: [
 				{
 					name: "Sean Clarke",
+					firstName: "Sean",
+					lastName: "Clarke",
 					role: "Lead Economist",
 					program:
 						"Honours Bachelor of Commerce–Business Administration, specialization in accounting, minor in computer science",
@@ -456,6 +528,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Ethan Braga",
+					firstName: "Ethan",
+					lastName: "Braga",
 					role: "Senior Economist",
 					program: "",
 					year: "",
@@ -465,6 +539,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Houshang Javan",
+					firstName: "Houshang",
+					lastName: "Javan",
 					role: "Junior Economist",
 					program: "",
 					year: "",
@@ -474,6 +550,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Nathan Kemp-Dove",
+					firstName: "Nathan",
+					lastName: "Kemp-Dove",
 					role: "Junior Economist",
 					program: "",
 					year: "",
@@ -483,6 +561,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Nanki Bhatia",
+					firstName: "Nanki",
+					lastName: "Bhatia",
 					role: "Junior Economist",
 					program: "",
 					year: "",
@@ -497,16 +577,21 @@ export const mockApiData = {
 			banner: "/images/team-banners/quant_portfolio_risk_banner.avif",
 			members: [
 				{
-					name: "Matthew Livingstone ",
+					name: "Matthew Livingstone",
+					firstName: "Matthew",
+					lastName: "Livingstone",
 					role: "Lead Compliance Officer",
 					program: "Business, Finance",
 					year: "",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4D03AQEGC5q-HWH-Mg/profile-displayphoto-shrink_800_800/B4DZTcUFc2GcAk-/0/1738863041440?e=1744243200&v=beta&t=hzWEaxI5-ffqAaJbIMuUHjv-A58_d2kpm95SPQM7eeM",
-					linkedin: "https://www.linkedin.com/in/matthew-livingstone-a457b02a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+					linkedin:
+						"https://www.linkedin.com/in/matthew-livingstone-a457b02a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
 					name: "Joseph Murtagh",
+					firstName: "Joseph",
+					lastName: "Murtagh",
 					role: "Senior Compliance Officer",
 					program: "",
 					year: "",
@@ -522,15 +607,20 @@ export const mockApiData = {
 			members: [
 				{
 					name: "Adam Bergen",
+					firstName: "Adam",
+					lastName: "Bergen",
 					role: "Lead Quantitative Analyst",
 					program: "Business, Finance, Economics",
 					year: "3",
 					joined: "Oct 2023",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQFUt-Gw1WUq9Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700152760577?e=1744243200&v=beta&t=QoxU0tCBfW2XYJKerjmTRmYJ_6AciL64FZHi71ErXFo",
-					linkedin: "https://www.linkedin.com/in/adam-bergen-7223bb262/",
+					linkedin:
+						"https://www.linkedin.com/in/adam-bergen-7223bb262/",
 				},
 				{
 					name: "Aidan Richer",
+					firstName: "Aiden",
+					lastName: "Richer",
 					role: "Senior Quantitative Analyst",
 					program:
 						"Bachelor of Mathematics - Mathematics and Finance; Minor in Economics",
@@ -541,6 +631,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Kumayl",
+					firstName: "Kumayl",
+					lastName: "",
 					role: "Junior Quantitative Analyst",
 					program: "",
 					year: "",
@@ -550,6 +642,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Max Mullins",
+					firstName: "Max",
+					lastName: "Mullins",
 					role: "Junior Quantitative Analyst",
 					program: "",
 					year: "",
@@ -565,6 +659,8 @@ export const mockApiData = {
 			members: [
 				{
 					name: "Aya Madi",
+					firstName: "Aya",
+					lastName: "Madi",
 					role: "Lead Software Developer",
 					program: "",
 					year: "",
@@ -574,6 +670,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Michael Gibb",
+					firstName: "Michael",
+					lastName: "Gibb",
 					role: "Senior Software Developer",
 					program: "Computer Science",
 					year: "Jan 2023",
@@ -583,8 +681,11 @@ export const mockApiData = {
 				},
 				{
 					name: "Landon Hadre",
+					firstName: "Landon",
+					lastName: "Hadre",
 					role: "Software Developer",
-					program: "Computer Science with Honours Applied Computing and a minor in Applied IT",
+					program:
+						"Computer Science with Honours Applied Computing and a minor in Applied IT",
 					year: "3",
 					joined: "Nov 2024",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQGS2Z6H58ut-Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726583437365?e=1744243200&v=beta&t=pHNPzbbjw3-VdZlv_SNQviHMBhjrFXKFofG8OJFURXw",
@@ -592,6 +693,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Ethan Konkolowicz",
+					firstName: "Ethan",
+					lastName: "Konkolowicz",
 					role: "Software Developer",
 					program:
 						"Bachelor of Computing Science with Honours Applied Computing",
@@ -602,6 +705,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Kevin Neave",
+					firstName: "Kevin",
+					lastName: "Neave",
 					role: "Software Developer",
 					program: "Computer Science, Software Engineering",
 					year: "2",
@@ -611,6 +716,8 @@ export const mockApiData = {
 				},
 				{
 					name: "Adam",
+					firstName: "Adam",
+					lastName: "",
 					role: "Software Developer",
 					program: "",
 					year: "",
@@ -649,7 +756,8 @@ export const mockApiData = {
 					year: "1",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQESazTuRoUBjA/profile-displayphoto-shrink_400_400/B4EZOTKgRsHsAg-/0/1733340825414?e=1744243200&v=beta&t=FbPO7ou2MHCqquSpZN6AnE3NRYR-G0hubiMytMGvxHg",
-					linkedin: "https://www.linkedin.com/in/yazareth-meneses-arrieta-519117337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+					linkedin:
+						"https://www.linkedin.com/in/yazareth-meneses-arrieta-519117337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
 					name: "Sagal",
