@@ -1,0 +1,11 @@
+{
+    "search.followSymlinks": false,
+    "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+    "editor.codeLens": false,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/.git/**": true
+    }
+  }
+  
