@@ -25,7 +25,7 @@ export default function TeamCard({ member }: TeamCardProps) {
 		<div className="w-full bg-white overflow-hidden mx-auto flex flex-col h-full">
 			{/* Image */}
 			<img
-				className="w-full h-[20rem] object-cover"
+				className="w-full min-h-[20rem] max-h-[20rem] object-cover object-center"
 				src={member.image ? member.image : "/images/jacobsweet.png"}
 				alt={member.name}
 			/>
