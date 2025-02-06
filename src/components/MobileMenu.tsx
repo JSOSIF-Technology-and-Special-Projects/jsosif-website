@@ -59,7 +59,7 @@ export default function MobileMenu({
 									/> */}
 									<a
 										onClick={() => setMenuOpen(false)}
-										className={`hover:text-[#0E5791] px-2 sm:px-12 py-1 text-2xl rounded ${
+										className={`hover:text-[#0E5791] px-4 sm:px-12 py-1 text-2xl rounded ${
 											pathname === "/" && "text-primary"
 										}`}
 									>
@@ -98,7 +98,7 @@ export default function MobileMenu({
 												onClick={() =>
 													setMenuOpen(false)
 												}
-												className={`hover:text-[#0E5791] px-2 sm:px-12 py-1 text-2xl rounded ${
+												className={`hover:text-[#0E5791] px-4 sm:px-12 py-1 text-2xl rounded ${
 													pathname === href &&
 													"text-primary"
 												}`}

@@ -207,7 +207,7 @@ export default function Bloomberg() {
 				</div>
 
 				{/* Resources Section */}
-				<div className="w-full lg:w-1/2 lg:mt-12 md:mt-0 flex flex-col items-center">
+				<div className="w-full lg:w-1/2 md:mt-0 flex flex-col items-center">
 					<div className="w-full flex justify-center">
 						<div className="w-full lg:w-fit">
 							<h2 className="text-3xl sm:text-4xl text-gray-500 font-serif text-center pb-2 px-12">
