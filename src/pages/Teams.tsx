@@ -11,6 +11,8 @@ interface Team {
 	banner: string;
 	members: {
 		name: string;
+		firstName: string;
+		lastName: string;
 		role: string;
 		program: string;
 		year: string;
@@ -59,10 +61,10 @@ export default function Teams() {
 				} ${scrollPosition > 400 && "hidden"}`}
 			/>
 			{/* Overlay Content */}
-			<div className="flex items-start justify-center mt-10 mb-64 z-10">
+			<div className="flex items-start justify-center mt-10 mb-40 sm:mb-64 z-10">
 				<div className="flex flex-col items-center justify-center gap-2">
 					<div className="flex flex-col items-center justify-center w-fit bg-primary opacity-90">
-						<h1 className="text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
+						<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
 							Our Team
 						</h1>
 					</div>
@@ -92,14 +94,14 @@ export default function Teams() {
 										alt={team.name}
 										className="w-full h-24 z-0 object-cover"
 									/>
-									<h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center font-semibold tracking-[0.25em] text-4xl text-white">
+									<h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center font-semibold tracking-[0.25em] text-2xl sm:text-4xl text-white">
 										{team.name}
 									</h1>
 								</div>
 
 								{/* Team Members */}
 								<div className="flex justify-center">
-									<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 w-[50vw] h-full">
+									<div className="grid grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-20 w-full px-4 sm:px-10 md:px-40 xl:px-64 2xl:px-0 2xl:w-[50vw] h-full">
 										{team.members.map((member, idx) => (
 											<TeamCard
 												key={idx}

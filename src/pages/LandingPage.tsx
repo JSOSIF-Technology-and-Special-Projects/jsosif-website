@@ -68,7 +68,7 @@ const LandingPage: React.FC = () => {
 			</div>
 
 			{/* Statistics Section */}
-			<div className="bg-[#0E5791] text-white flex items-center justify-evenly md:justify-normal py-8 lg:pt-20 lg:pb-8 h-fit md:h-[15rem] xl:h-[20rem]">
+			<div className="bg-[#0E5791] text-white flex items-center w-full md:justify-normal py-8 lg:pt-20 lg:pb-8 h-fit md:h-[15rem] xl:h-[20rem]">
 				<div
 					className={`flex justify-between gap-4 sm:gap-10 md:gap-12 ml-8 sm:ml-20 md:ml-40 lg:ml-52 xl:ml-60 2xl:mx-[25rem]`}
 				>

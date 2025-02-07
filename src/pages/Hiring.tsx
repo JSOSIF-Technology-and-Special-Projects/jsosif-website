@@ -1,15 +1,9 @@
 "use client";
 import hiringbanner from "../assets/hiringbanner.png";
 import Image from "next/image";
+import emailjs from "emailjs-com";
 import { useState, useEffect } from "react";
 import Dropzone from "react-dropzone";
-import {
-	getFileSizeString,
-	getFileType,
-	getFileTypeClass,
-} from "@/utils/dropzoneUtils";
-import { ToastContainer, toast, Slide } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 export default function Hiring() {
 	const [formData, setFormData] = useState<{
@@ -24,120 +18,63 @@ export default function Hiring() {
 		file: null,
 	});
 
-	const [fileTypeClass, setFileTypeClass] = useState<string>();
-	const [sending, setSending] = useState(false);
-
-	const notifyError = (msg: string) =>
-		toast.error("Error: " + msg, {
-			position: "top-center",
-			autoClose: 2000,
-			hideProgressBar: false,
-			closeOnClick: true,
-			pauseOnHover: true,
-			draggable: true,
-			progress: undefined,
-			theme: "light",
-			transition: Slide,
-		}); // Function to notify error
-
-	const notifySuccess = (msg: string) =>
-		toast.success("Success: " + msg, {
-			position: "top-center",
-			autoClose: 2000,
-			hideProgressBar: false,
-			closeOnClick: true,
-			pauseOnHover: true,
-			draggable: true,
-			progress: undefined,
-			theme: "light",
-			transition: Slide,
-		}); // Function to notify success
-
-	useEffect(() => {
-		console.log(fileTypeClass);
-	}, [fileTypeClass]);
-
-	const handleChange = (
-		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-	) => {
+	// @ts-ignore
+	const handleChange = (e) => {
 		const { name, value } = e.target;
-		setFormData((prev) => ({ ...prev, [name]: value }));
+		setFormData({ ...formData, [name]: value });
 	};
 
-	const handleFileChange = (acceptedFiles: File[]) => {
-		setFormData((prev) => ({ ...prev, file: acceptedFiles[0] || null }));
+	// @ts-ignore
+	const handleFileChange = (e) => {
+		setFormData({ ...formData, file: e.target.files[0] });
 	};
 
-	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+	// @ts-ignore
+	const handleSubmit = (e) => {
 		e.preventDefault();
-		setSending(true);
 
-		if (!formData.name || !formData.email) {
-			notifyError("Name and email are required!");
-			return;
-		}
+		const templateParams = {
+			name: formData.name,
+			email: formData.email,
+			message: formData.message,
+		};
 
-		const formDataToSend = new FormData();
-		formDataToSend.append("name", formData.name);
-		formDataToSend.append("email", formData.email);
-		formDataToSend.append("message", formData.message);
-		if (formData.file) formDataToSend.append("file", formData.file);
-
-		try {
-			const response = await fetch("http://localhost:5008/hiring", {
-				method: "POST",
-				body: formDataToSend,
+		emailjs
+			.send(
+				"YOUR_SERVICE_ID",
+				"YOUR_TEMPLATE_ID",
+				templateParams,
+				"YOUR_USER_ID"
+			)
+			.then((response) => {
+				console.log(
+					"Email sent successfully:",
+					response.status,
+					response.text
+				);
+				alert("Application submitted successfully!");
+			})
+			.catch((error) => {
+				console.error("Failed to send email:", error);
+				alert("Failed to send application. Please try again.");
 			});
-
-			if (response.ok) {
-				notifySuccess("Application submitted successfully!");
-				setFormData({ name: "", email: "", message: "", file: null });
-			} else {
-				notifyError("Failed to submit application.");
-			}
-		} catch (error) {
-			console.error("Error submitting application:", error);
-			notifyError("An error occurred. Please try again.");
-		}
-		setSending(false);
 	};
 
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const handleScroll = () => {
-		setScrollPosition(window.scrollY);
+		const position = window.scrollY;
+		setScrollPosition(position);
 	};
 
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll, { passive: true });
-		return () => window.removeEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
-
-	const deleteFile = () => {
-		setFormData((prevForm) => {
-			return {
-				...prevForm,
-				file: null,
-			};
-		});
-	};
-
 	return (
 		<div className="bg-white min-h-[calc(100vh - 7rem)] flex flex-col w-full pb-12">
-			<div className="relative z-[999999]">
-				<ToastContainer
-					position="top-center"
-					autoClose={2000}
-					hideProgressBar={false}
-					newestOnTop={false}
-					closeOnClick
-					rtl={false}
-					pauseOnFocusLoss
-					draggable
-					pauseOnHover
-					theme="light"
-					transition={Slide}
-				/>
-			</div>
 			{/* Banner Section */}
 			<Image
 				src={hiringbanner}
@@ -173,7 +110,9 @@ export default function Hiring() {
 						<p className="text-lg text-gray-700 leading-relaxed">
 							Lorem ipsum dolor sit, amet consectetur adipisicing
 							elit. Facilis quo libero neque assumenda repudiandae
-							tempora.
+							tempora, corrupti quis quisquam dolore a velit
+							facere exercitationem culpa porro vero. Perferendis
+							atque sint ab!
 						</p>
 					</div>
 					<div className="mb-12">
@@ -184,7 +123,9 @@ export default function Hiring() {
 						<p className="text-lg text-gray-700 leading-relaxed">
 							Lorem ipsum dolor sit, amet consectetur adipisicing
 							elit. Quia ratione perspiciatis obcaecati reiciendis
-							inventore.
+							inventore facilis delectus repellat assumenda qui
+							soluta libero officia doloribus molestias, mollitia
+							ipsum ipsam suscipit aut quibusdam.
 						</p>
 					</div>
 					<div className="mb-12">
@@ -194,8 +135,10 @@ export default function Hiring() {
 						</h1>
 						<p className="text-lg text-gray-700 leading-relaxed">
 							Lorem, ipsum dolor sit amet consectetur adipisicing
-							elit. Et aliquid totam dignissimos amet
-							consequuntur.
+							elit. Et aliquid totam dignissimos amet consequuntur
+							voluptatem corporis, facere a modi! Magni eius
+							molestias inventore facere laborum numquam adipisci
+							repellendus, quae facilis.
 						</p>
 					</div>
 				</div>
@@ -215,13 +158,14 @@ export default function Hiring() {
 							htmlFor="name"
 							className="block text-sm font-medium text-gray-700"
 						>
-							Name <span className="text-primary">*</span>
+							Name
+							<span className="text-primary">*</span>
 						</label>
 						<input
 							type="text"
 							id="name"
 							name="name"
-							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
 							value={formData.name}
 							onChange={handleChange}
 							required
@@ -232,14 +176,14 @@ export default function Hiring() {
 							htmlFor="email"
 							className="block text-sm font-medium text-gray-700"
 						>
-							UWindsor Email{" "}
+							UWindsor Email
 							<span className="text-primary">*</span>
 						</label>
 						<input
 							type="email"
 							id="email"
 							name="email"
-							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
 							value={formData.email}
 							onChange={handleChange}
 							required
@@ -256,166 +200,61 @@ export default function Hiring() {
 							id="message"
 							name="message"
 							rows={6}
-							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md resize-none"
+							className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm resize-none"
 							value={formData.message}
 							onChange={handleChange}
+							required
 						/>
 					</div>
 					<div>
 						<label className="block text-sm font-medium text-gray-700 mb-1">
 							Resume (optional)
 						</label>
-						{!formData.file ? (
-							<Dropzone
-								onDrop={(acceptedFiles) => {
-									console.log(acceptedFiles);
-									setFormData({
-										...formData,
-										file: acceptedFiles[0],
-									});
-									setFileTypeClass(
-										getFileTypeClass(acceptedFiles[0].type)
-									);
-								}}
-							>
-								{({ getRootProps, getInputProps }) => (
-									<section className="border border-dashed border-gray-300 shadow rounded-lg p-6">
-										<div {...getRootProps()}>
-											<input {...getInputProps()} />
-											<div className="flex flex-col items-center justify-center gap-2">
-												<svg
-													xmlns="http://www.w3.org/2000/svg"
-													width="32"
-													height="32"
-													viewBox="0 0 24 24"
-													className="text-gray-600"
-												>
-													<path
-														fill="currentColor"
-														d="m12 12.586l4.243 4.242l-1.415 1.415L13 16.415V22h-2v-5.587l-1.828 1.83l-1.415-1.415zM12 2a7 7 0 0 1 6.954 6.194A5.5 5.5 0 0 1 18 18.978v-2.014a3.5 3.5 0 1 0-1.111-6.91a5 5 0 1 0-9.777 0a3.5 3.5 0 0 0-1.292 6.88l.18.03v2.014a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2"
-													/>
-												</svg>
-												<p className="font-semibold">
-													Choose a file or drag & drop
-													it here.
-												</p>
-												<p className="text-sm text-gray-400 italic">
-													PDF, DOCX, JPEG, PNG, up to
-													5 MB.
-												</p>
-												<span className="rounded px-2 font-semibold py-1 shadow border">
-													Browse File
-												</span>
-											</div>
-										</div>
-									</section>
-								)}
-							</Dropzone>
-						) : (
-							<div className="flex items-center justify-between w-full h-fit p-2 border rounded-lg bg-white">
-								<div className="flex">
-									<div className="relative">
-										{/* <File class="w-14 h-14 text-gray-300" /> */}
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="56"
-											height="56"
-											viewBox="0 0 21 21"
-											className="text-gray-300"
-										>
-											<g
-												fill="none"
-												fillRule="evenodd"
-												stroke="currentColor"
-												strokeLinecap="round"
-												strokeLinejoin="round"
+						<Dropzone
+							onDrop={(acceptedFiles) =>
+								console.log(acceptedFiles)
+							}
+						>
+							{({ getRootProps, getInputProps }) => (
+								<section className="border border-dashed border-gray-300 shadow rounded-lg p-6">
+									<div {...getRootProps()}>
+										<input {...getInputProps()} />
+										<div className="flex flex-col items-center justify-center gap-2">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="32"
+												height="32"
+												viewBox="0 0 24 24"
+												className="text-gray-600"
 											>
-												<path d="M16.5 15.5v-7l-5-5h-5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2" />
-												<path d="M11.5 3.5v3a2 2 0 0 0 2 2h3" />
-											</g>
-										</svg>
-										<span
-											style={{
-												background: fileTypeClass,
-											}}
-											className={`absolute capitalize text-white rounded-lg p-1 top-1/3 left-1 text-[0.6rem]`}
-										>
-											{formData.file.type
-												?.split("/")?.[1]
-												?.toUpperCase() || "Other"}
-										</span>
-									</div>
-									<div className="flex flex-col gap-1 justify-center">
-										<h1 className="font-medium text-sm">
-											{formData?.file?.name}
-										</h1>
-										<div className="flex gap-2 items-center">
-											{formData?.file?.size && (
-												<p className="text-xs text-accent-content">
-													{getFileSizeString(
-														formData.file.size
-													)}
-												</p>
-											)}
-											<span className="w-4 h-4 flex items-center justify-center bg-green-600 rounded-full">
-												<svg
-													xmlns="http://www.w3.org/2000/svg"
-													width="12"
-													height="12"
-													viewBox="0 0 24 24"
-													className="text-white"
-												>
-													<path
-														fill="currentColor"
-														d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
-													/>
-												</svg>
-											</span>
-											<p className="text-white text-xs">
-												Completed
+												<path
+													fill="currentColor"
+													d="m12 12.586l4.243 4.242l-1.415 1.415L13 16.415V22h-2v-5.587l-1.828 1.83l-1.415-1.415zM12 2a7 7 0 0 1 6.954 6.194A5.5 5.5 0 0 1 18 18.978v-2.014a3.5 3.5 0 1 0-1.111-6.91a5 5 0 1 0-9.777 0a3.5 3.5 0 0 0-1.292 6.88l.18.03v2.014a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2"
+												/>
+											</svg>
+											<p className="font-semibold">
+												Choose a file or drag & drop it
+												here.
 											</p>
+											<p className="text-sm text-gray-400 italic">
+												PDF, DOCX, JPEG, PNG, up to 5
+												MB.
+											</p>
+											<span className="rounded px-2 font-semibold py-1 shadow border">
+												Browse File
+											</span>
 										</div>
 									</div>
-								</div>
-								<button
-									type="button"
-									onClick={() => {
-										deleteFile();
-									}}
-									className="mr-3 p-1 rounded-full hover:text-red-700 text-gray-700 transition-all"
-								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="20"
-										height="20"
-										viewBox="0 0 24 24"
-									>
-										<path
-											fill="currentColor"
-											d="M7 4V2h10v2h5v2h-2v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6H2V4zM6 6v14h12V6zm3 3h2v8H9zm4 0h2v8h-2z"
-										/>
-									</svg>
-								</button>
-							</div>
-						)}
+								</section>
+							)}
+						</Dropzone>
 					</div>
 					<div className="text-center">
 						<button
 							type="submit"
-							className="w-24 h-12 bg-primary text-white rounded-md active:scale-95 transition-all mx-auto flex items-center justify-center"
+							className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
 						>
-							{!sending ? (
-								"Submit"
-							) : (
-								<div
-									className="inline-block h-6 w-6 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-									role="status"
-								>
-									<span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-										Sending...
-									</span>
-								</div>
-							)}
+							Submit
 						</button>
 					</div>
 				</form>

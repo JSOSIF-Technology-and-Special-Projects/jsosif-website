@@ -56,10 +56,10 @@ export default function Alumni() {
 				} ${scrollPosition > 400 && "hidden"}`}
 			/>
 			{/* Overlay Content */}
-			<div className="flex items-start justify-center mt-10 mb-64 z-10">
+			<div className="flex items-start justify-center mt-10 mb-40 sm:mb-64 z-10">
 				<div className="flex flex-col items-center justify-center gap-2">
 					<div className="flex flex-col items-center justify-center w-fit bg-primary opacity-90">
-						<h1 className="text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
+						<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
 							Our Alumni
 						</h1>
 					</div>
@@ -73,7 +73,7 @@ export default function Alumni() {
 			{/* Alumni Section */}
 			<div className="relative z-10 bg-white flex flex-col py-12 items-center w-full">
 				{/* Alumni Cards */}
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 w-[50vw] h-full">
+				<div className="grid grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-20 w-full px-4 sm:px-10 md:px-40 xl:px-64 2xl:px-0 2xl:w-[50vw] h-full">
 					{alumni.map((alum, idx) => (
 						<AlumniCard key={idx} alumni={alum} />
 					))}
