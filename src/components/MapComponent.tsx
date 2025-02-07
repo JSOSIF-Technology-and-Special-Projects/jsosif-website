@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
 const center = {
-  lat: 42.3050989623961,
+  lat: 42.3070989623961, //maybe fix this but works for now
   lng: -83.06467324703436,
 };
 
@@ -14,16 +14,20 @@ const markerIcon = new L.Icon({
   shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
   iconSize: [25, 41],
   iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
+  popupAnchor: [0, -40],
   shadowSize: [41, 41],
 });
 
 const OpenPopupOnLoad = () => {
   const map = useMap();
   useEffect(() => {
+    map.setView(center, 14, { animate: true }); // Adjust map view slightly upwards
     const marker = L.marker(center, { icon: markerIcon }).addTo(map);
     marker.bindPopup(
-      `<h1 class="font-medium text-sm md:text-base">John Simpson Odette Student Investment Fund</h1><p>Odette School of Business @ University of Windsor</p>`
+      `<div style="max-width: 200px; word-wrap: break-word; font-size: 14px; text-align: center;">
+        <h1 style="font-size: 16px; font-weight: 600; margin-bottom: 4px;">John Simpson Odette Student Investment Fund</h1>
+        <p>Odette School of Business @ University of Windsor</p>
+      </div>`
     ).openPopup();
   }, [map]);
   return null;
@@ -32,7 +36,7 @@ const OpenPopupOnLoad = () => {
 //dont allow user to move or anything
 const MapComponent = () => {
   return (
-    <div className="w-full h-screen max-h-[15rem] lg:max-h-[50vh] m-0 p-0">
+    <div className="w-full h-[15rem] md:h-[30vh] lg:h-[50vh] m-0 p-0">
       <MapContainer
         center={center}
         zoom={14}
