@@ -1,156 +1,60 @@
-//google maps api to display the location of the John Simpson Odette Student Investment Fund
-import React, { useState } from "react";
-import {
-	GoogleMap,
-	InfoWindow,
-	LoadScript,
-	Marker,
-} from "@react-google-maps/api";
+import React, { useEffect } from "react";
+import { MapContainer, TileLayer, useMap } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
 
+const center = {
+  lat: 42.3050989623961,
+  lng: -83.06467324703436,
+};
+
+//marker icon
+const markerIcon = new L.Icon({
+  iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+  shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
+
+const OpenPopupOnLoad = () => {
+  const map = useMap();
+  useEffect(() => {
+    const marker = L.marker(center, { icon: markerIcon }).addTo(map);
+    marker.bindPopup(
+      `<h1 class="font-medium text-sm md:text-base">John Simpson Odette Student Investment Fund</h1><p>Odette School of Business @ University of Windsor</p>`
+    ).openPopup();
+  }, [map]);
+  return null;
+};
+
+//dont allow user to move or anything
 const MapComponent = () => {
-	const mapStyles = [
-		{
-			featureType: "all",
-			elementType: "labels.text.fill",
-			stylers: [
-				{ saturation: 36 },
-				{ color: "#000000" },
-				{ lightness: 60 },
-			],
-		},
-		{
-			featureType: "all",
-			elementType: "labels.text.stroke",
-			stylers: [
-				{ visibility: "on" },
-				{ color: "#000000" },
-				{ lightness: 16 },
-			],
-		},
-		{
-			featureType: "all",
-			elementType: "labels.icon",
-			stylers: [{ visibility: "off" }],
-		},
-		{
-			featureType: "administrative",
-			elementType: "geometry.fill",
-			stylers: [{ color: "#000000" }, { lightness: 20 }],
-		},
-		{
-			featureType: "administrative",
-			elementType: "geometry.stroke",
-			stylers: [{ color: "#000000" }, { lightness: 17 }, { weight: 1.2 }],
-		},
-		{
-			featureType: "landscape",
-			elementType: "geometry",
-			stylers: [{ color: "#000000" }, { lightness: 28 }],
-		},
-		{
-			featureType: "poi",
-			elementType: "geometry",
-			stylers: [{ color: "#000000" }, { lightness: 24 }],
-		},
-		{
-			featureType: "road.highway",
-			elementType: "geometry.fill",
-			stylers: [{ color: "#000000" }, { lightness: 17 }],
-		},
-		{
-			featureType: "road.highway",
-			elementType: "geometry.stroke",
-			stylers: [{ color: "#000000" }, { lightness: 29 }, { weight: 0.2 }],
-		},
-		{
-			featureType: "road.arterial",
-			elementType: "geometry",
-			stylers: [{ color: "#000000" }, { lightness: 18 }],
-		},
-		{
-			featureType: "road.local",
-			elementType: "geometry",
-			stylers: [{ color: "#000000" }, { lightness: 16 }],
-		},
-		{
-			featureType: "transit",
-			elementType: "geometry",
-			stylers: [{ color: "#000000" }, { lightness: 19 }],
-		},
-		{
-			featureType: "water",
-			elementType: "geometry",
-			stylers: [{ color: "#000000" }, { lightness: 17 }],
-		},
-	];
-
-	const containerStyle = {
-		width: "100%",
-		height: "100%", // Use full height of the parent container
-		margin: 0, // Remove any default margins
-		padding: 0, // Remove any default padding
-	};
-
-	const center = {
-		lat: 42.3050989623961, // Replace with your desired latitude
-		lng: -83.06467324703436, // Replace with your desired longitude
-	};
-
-	const [marker, markerRef] = useState<Marker | null>(null);
-	const [infoWindow, setInfoWindow] = useState(true);
-
-	const handleInfoCloseClick = () => {
-		setInfoWindow(false);
-	};
-
-	const handleInfoOpenClick = () => {
-		setInfoWindow(true);
-	};
-
-	return (
-		<div
-			className="w-full h-screen max-h-[15rem] lg:max-h-[50vh] m-0 p-0"
-			style={{ margin: 0, padding: 0, overflow: "hidden" }} // Ensure no extra white space
-		>
-			<LoadScript
-				googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY || ""}
-			>
-				<GoogleMap
-					mapContainerStyle={containerStyle}
-					center={center}
-					zoom={14}
-					options={{ styles: mapStyles }}
-				>
-					<Marker
-						ref={(newRef) => markerRef(newRef)}
-						position={center}
-						onClick={handleInfoOpenClick}
-					>
-						{infoWindow && marker ? (
-							<InfoWindow
-								//@ts-expect-error anchor prop is not recognized by TypeScript
-								anchor={marker}
-								onDomReady={() => setInfoWindow(true)}
-								onUnmount={() => setInfoWindow(false)}
-								onCloseClick={handleInfoCloseClick}
-							>
-								<div>
-									<h1 className="font-medium text-sm md:text-base">
-										John Simpson Odette Student Investment
-										Fund
-									</h1>
-									<p>
-										Odette School of Business @ University
-										of Windsor
-									</p>
-								</div>
-							</InfoWindow>
-						) : null}
-					</Marker>
-				</GoogleMap>
-			</LoadScript>
-		</div>
-	);
+  return (
+    <div className="w-full h-screen max-h-[15rem] lg:max-h-[50vh] m-0 p-0">
+      <MapContainer
+        center={center}
+        zoom={14}
+        style={{ width: "100%", height: "100%" }}
+        className="z-0"
+        scrollWheelZoom={false}
+        dragging={false}
+        touchZoom={false}
+        doubleClickZoom={false}
+        boxZoom={false}
+        keyboard={false}
+        attributionControl={false}
+      >
+        {/* dark map theme */}
+        <TileLayer
+          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+          opacity={0.7}
+        />
+        <OpenPopupOnLoad />
+      </MapContainer>
+    </div>
+  );
 };
 
 export default MapComponent;

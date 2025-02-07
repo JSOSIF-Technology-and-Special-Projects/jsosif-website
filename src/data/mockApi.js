@@ -16,7 +16,7 @@ export const mockApiData = {
 			name: "Financial Institutions",
 			description:
 				"Connor Demelo and Cozy Cosentino cover top names and promising investments in the Financial Institutions Group, including Visa, Charles Schwab, and BMO, highlighting industry leaders and strong performers.",
-			ticker: "V|12M, SCHW, JPM|12M, TSX:BMO|12M",
+			ticker: "V|12M, SCHW|12M, JPM|12M, TSX:BMO|12M",
 			bgImage: financial,
 		},
 		{
@@ -104,7 +104,7 @@ export const mockApiData = {
 		{
 			name: "Engagement & Recruiting",
 			description:
-				"Emma Tellier and Joelle Jawdat focus on engaging with the community and recruiting new members to the fund.",
+				"Emma Tellier leads JSOSIF’s Marketing Team by managing media presence, planing impactful events, and fostering outreach to engage and expand our network, ensuring strong team visibility and strategic communication across all platforms.",
 		},
 	],
 	teams: [
@@ -133,7 +133,7 @@ export const mockApiData = {
 					program:
 						"Honours Bcomm - Specializing in Finance and Minor in Economics & IT",
 					year: "4th",
-					joined: "Sep 2023",
+					joined: "Sept 2023",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQFMoP650DnFLA/profile-displayphoto-shrink_400_400/B4EZRnB.6OHgAo-/0/1736895361078?e=1744243200&v=beta&t=l9VnchdcFc0e31WViBaqPcnOuxBAOl0_GIxI9vz3-BA",
 					linkedin:
 						"https://www.linkedin.com/in/saif-jawdat-54a645262/",
@@ -786,11 +786,11 @@ export const mockApiData = {
 	alumni: [
 		{
 			name: "Nico Fazio",
-			position: "Business Guy",
+			position: "Business Development",
 			company: "XTX Markets",
 			program: "BCOM specalization in Finance",
 			year: "2017-2020",
-			image: "/images/nicofazio.png",
+			image: "https://media.licdn.com/dms/image/v2/D4E03AQFomW6Ks3zR0g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729457800696?e=1744243200&v=beta&t=gAi2uixOQ_b1t0iRBVL3_tmj-5rBC-UOZPZdWCqq_4o",
 			blurb: "XTX Markets is a leading algorithmic trading firm partnering with counterparties, exchanges and e-trading venues globally to provide liquidity in the Equity, FX, Fixed Income, Commodity and Options markets. I work in the Business Development team. My avid involvement in JSOSIF was directly responsible for my eventual internships in Corporate Banking and subsequent career in the capital markets. It is the single most impactful and profitable extra-curricular experience offered by the University of Windsor.",
 			linkedin: "https://www.linkedin.com/in/nicofazio/",
 		},

@@ -4,6 +4,9 @@ import Image from "next/image";
 import emailjs from "emailjs-com";
 import { useState, useEffect } from "react";
 import Dropzone from "react-dropzone";
+import { getFileSizeString, getFileTypeClass } from "@/utils/dropzoneUtils";
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Hiring() {
 	const [formData, setFormData] = useState<{
@@ -24,10 +27,9 @@ export default function Hiring() {
 		setFormData({ ...formData, [name]: value });
 	};
 
-	// @ts-ignore
-	const handleFileChange = (e) => {
-		setFormData({ ...formData, file: e.target.files[0] });
-	};
+	// const handleFileChange = (acceptedFiles: File[]) => {
+	// 	setFormData((prev) => ({ ...prev, file: acceptedFiles[0] || null }));
+	// };
 
 	// @ts-ignore
 	const handleSubmit = (e) => {

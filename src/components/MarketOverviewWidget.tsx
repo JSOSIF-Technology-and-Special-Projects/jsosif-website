@@ -1,20 +1,17 @@
 "use client";
 
 import { MarketOverview } from "react-ts-tradingview-widgets";
+import { MarketOverviewTab, Locales } from "react-ts-tradingview-widgets";
 
 interface MarketOverviewWidgetProps {
 	colorTheme?: "light" | "dark";
 	height?: number | string;
 	width?: number | string;
-	tabs?: {
-		title: string;
-		symbols: { s: string; d?: string }[];
-		originalTitle?: string;
-	}[];
+	tabs?: MarketOverviewTab[];
 	dateRange?: "1D" | "1M" | "3M" | "12M" | "60M" | "ALL";
 	showFloatingTooltip?: boolean;
 	showChart?: boolean;
-	locale?: string;
+	locale?: Locales | undefined;
 	isTransparent?: boolean;
 }
 
