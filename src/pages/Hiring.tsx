@@ -80,8 +80,6 @@ export default function Hiring() {
 		formDataToSend.append("message", formData.message);
 		if (formData.file) formDataToSend.append("file", formData.file);
 
-		console.log(formData);
-		console.log(formDataToSend);
 		const res = await submitApplication(formDataToSend);
 		if (res.success) {
 			notifySuccess("Application submitted successfully!");
