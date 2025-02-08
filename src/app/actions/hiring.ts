@@ -28,7 +28,7 @@ export async function submitApplication(formData: FormData) {
         });
 
         // ✅ Convert file to a buffer (instead of saving it to disk)
-        let attachments = [];
+        const attachments = [];
         if (file) {
             const fileBuffer = Buffer.from(await file.arrayBuffer()); // Convert file to a buffer
             attachments.push({
