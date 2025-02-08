@@ -1,5 +1,4 @@
 "use client";
-
 import { SymbolOverview } from "react-ts-tradingview-widgets";
 
 interface BondTicker {

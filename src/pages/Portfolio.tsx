@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { fetchInvestmentDivisions, fetchStatistics } from "../data/mockApi"; // Mock API functions
 import Image, { StaticImageData } from "next/image";

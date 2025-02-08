@@ -1,8 +1,6 @@
 "use server";
+
 import nodemailer from "nodemailer";
-import fs from "fs/promises";
-import path from "path";
-import { writeFile } from "fs/promises";
 
 export async function submitApplication(formData: FormData) {
     try {
@@ -24,44 +22,33 @@ export async function submitApplication(formData: FormData) {
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
-                user: process.env.HIRING_EMAIL,  // Your Gmail address
-                pass: process.env.GMAIL_PASS,   // App Password
+                user: process.env.HIRING_EMAIL,
+                pass: process.env.GMAIL_PASS,
             },
         });
 
-        // File handling (if file exists)
-        const attachments = [];
-        let filePath = "";
+        // ✅ Convert file to a buffer (instead of saving it to disk)
+        let attachments = [];
         if (file) {
-            // Save file temporarily
-            filePath = path.join(process.cwd(), "uploads", file.name);
-            const buffer = Buffer.from(await file.arrayBuffer());
-            await writeFile(filePath, buffer);
-            
+            const fileBuffer = Buffer.from(await file.arrayBuffer()); // Convert file to a buffer
             attachments.push({
                 filename: file.name,
-                path: filePath,
+                content: fileBuffer, // Attach buffer directly
             });
         }
 
-        // Email configuration
+        // ✅ Email configuration
         const mailOptions = {
             from: process.env.HIRING_EMAIL,
-            to: process.env.HIRING_EMAIL, // Receiving email
+            to: process.env.HIRING_EMAIL,
             subject: `New Job Application from ${name}`,
-            text: `Name: ${name}\nUWindsor Email: ${email}\nMessage: ${message}\nResume attached.`,
+            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}\nResume attached.`,
             attachments,
         };
 
-        // Send email
+        // ✅ Send email
         const info = await transporter.sendMail(mailOptions);
         console.log(`✅ Email sent: ${info.response}`);
-
-        // Delete file after email is sent
-        if (filePath) {
-            await fs.unlink(filePath);
-            console.log("🗑️ File deleted after email sent.");
-        }
 
         return { success: true, message: "Application submitted successfully!" };
 
