@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import {
@@ -10,10 +9,14 @@ import {
 import jsosifbackground from "../assets/jsosifbackground.png";
 import investmentdiv from "../assets/investmentdiv.png";
 import supportdiv from "../assets/supportdiv.png";
-import MapComponent from "../components/MapComponent";
 import CountUp from "react-countup";
+import dynamic from "next/dynamic";
 
-const LandingPage: React.FC = () => {
+const MapComponent = dynamic(() => import("../components/MapComponent"), {
+	ssr: false,
+});
+
+export default function LandingPage() {
 	const [statistics, setStatistics] = useState({
 		fundMembers: 0,
 		investmentHoldings: 0,
@@ -243,6 +246,4 @@ const LandingPage: React.FC = () => {
 			</div>
 		</div>
 	);
-};
-
-export default LandingPage;
+}

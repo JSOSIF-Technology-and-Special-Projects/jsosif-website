@@ -1,5 +1,4 @@
 "use server";
-
 import nodemailer from "nodemailer";
 import fs from "fs/promises";
 import path from "path";
@@ -31,7 +30,7 @@ export async function submitApplication(formData: FormData) {
         });
 
         // File handling (if file exists)
-        let attachments = [];
+        const attachments = [];
         let filePath = "";
         if (file) {
             // Save file temporarily
