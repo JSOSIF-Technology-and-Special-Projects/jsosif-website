@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
             child_process: false,
         };
     }
+    config.module.rules.push({
+      test: /\.mjs$/,
+      include: /node_modules/,
+      type: "javascript/auto",
+    });
     return config;
 },
   env:{
@@ -19,3 +24,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
