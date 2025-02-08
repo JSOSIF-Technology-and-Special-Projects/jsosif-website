@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Dropzone from "react-dropzone";
 import { getFileSizeString, getFileTypeClass } from "@/utils/dropzoneUtils";
 import { ToastContainer, toast, Slide } from "react-toastify";
+import { submitApplication } from "@/app/actions/hiring";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Hiring() {
@@ -79,21 +80,14 @@ export default function Hiring() {
 		formDataToSend.append("message", formData.message);
 		if (formData.file) formDataToSend.append("file", formData.file);
 
-		try {
-			const response = await fetch("http://localhost:5008/hiring", {
-				method: "POST",
-				body: formDataToSend,
-			});
-
-			if (response.ok) {
-				notifySuccess("Application submitted successfully!");
-				setFormData({ name: "", email: "", message: "", file: null });
-			} else {
-				notifyError("Failed to submit application.");
-			}
-		} catch (error) {
-			console.error("Error submitting application:", error);
-			notifyError("An error occurred. Please try again.");
+		console.log(formData);
+		console.log(formDataToSend);
+		const res = await submitApplication(formDataToSend);
+		if (res.success) {
+			notifySuccess("Application submitted successfully!");
+		} else {
+			console.error("Error:", res.message);
+			notifyError("Theres been an error submiting your application.");
 		}
 		setSending(false);
 	};
