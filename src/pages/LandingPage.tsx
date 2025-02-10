@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import {
 	fetchStatistics,
@@ -9,7 +9,7 @@ import {
 import jsosifbackground from "../assets/jsosifbackground.png";
 import investmentdiv from "../assets/investmentdiv.png";
 import supportdiv from "../assets/supportdiv.png";
-import CountUp from "react-countup";
+import CountUp, { useCountUp } from "react-countup";
 import dynamic from "next/dynamic";
 
 const MapComponent = dynamic(() => import("../components/MapComponent"), {
@@ -51,6 +51,23 @@ export default function LandingPage() {
 			setTransition(true);
 		}, 100);
 	}, [transition]);
+
+	const [assetsUnderManagement, setAssetsUnderManagement] = useState(261_000);
+
+	let countUpRef = useRef(null);
+	const { update } = useCountUp({
+		// @ts-ignore
+		ref: countUpRef,
+		start: 0,
+		end: assetsUnderManagement,
+		duration: 2,
+		delay: 0.3,
+	});
+
+	const handleAddToAssets = () => {
+		setAssetsUnderManagement((prev) => prev + 10);
+		update(assetsUnderManagement);
+	};
 
 	return (
 		<div className="relative flex flex-col">
@@ -119,12 +136,14 @@ export default function LandingPage() {
 							}`}
 						>
 							$
-							<CountUp
+							{/* <CountUp
 								duration={2}
 								start={0}
 								delay={0.3}
-								end={statistics.assetsUnderManagement}
-							/>
+								// end={statistics.assetsUnderManagement}
+								end={assetsUnderManagement}
+							/> */}
+							<span ref={countUpRef}></span>
 							{/* ${statistics.assetsUnderManagement.toLocaleString()} */}
 						</h3>
 						<div className="h-1 bg-white mt-1 lg:mt-4 w-[8rem] sm:w-[10rem] md:w-[14rem] lg:w-[17rem] xl:w-[22rem]"></div>
