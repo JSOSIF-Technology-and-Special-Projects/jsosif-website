@@ -9,7 +9,7 @@ import {
 import jsosifbackground from "../assets/jsosifbackground.png";
 import investmentdiv from "../assets/investmentdiv.png";
 import supportdiv from "../assets/supportdiv.png";
-import CountUp, { useCountUp } from "react-countup";
+import { useCountUp } from "react-countup";
 import dynamic from "next/dynamic";
 
 const MapComponent = dynamic(() => import("../components/MapComponent"), {
@@ -54,20 +54,15 @@ export default function LandingPage() {
 
 	const [assetsUnderManagement, setAssetsUnderManagement] = useState(261_000);
 
-	let countUpRef = useRef(null);
+	const countUpRef = useRef(null);
 	const { update } = useCountUp({
-		// @ts-ignore
+		// @ts-expect-error - Ref is not null
 		ref: countUpRef,
 		start: 0,
 		end: assetsUnderManagement,
 		duration: 2,
 		delay: 0.3,
 	});
-
-	const handleAddToAssets = () => {
-		setAssetsUnderManagement((prev) => prev + 10);
-		update(assetsUnderManagement);
-	};
 
 	return (
 		<div className="relative flex flex-col">
