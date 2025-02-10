@@ -170,34 +170,24 @@ export default function Hiring() {
 							<hr className="w-full mx-auto mt-1" />
 						</h1>
 						<p className="text-lg text-gray-700 leading-relaxed">
-							Lorem ipsum dolor sit, amet consectetur adipisicing
-							elit. Quia ratione perspiciatis obcaecati reiciendis
-							inventore.
-						</p>
-					</div>
-					<div className="mb-12">
-						<h1 className="text-3xl sm:text-4xl font-serif text-left text-gray-700 mb-4">
-							Something else?
-							<hr className="w-full mx-auto mt-1" />
-						</h1>
-						<p className="text-lg text-gray-700 leading-relaxed">
-							Lorem, ipsum dolor sit amet consectetur adipisicing
-							elit. Et aliquid totam dignissimos amet
-							consequuntur.
+						We seek driven students eager to explore the world of finance, investing, and market analysis. While experience is not required, we value individuals with a strong interest in financial markets, portfolio management, and risk strategies. A solid understanding of global economic trends and proficiency in Microsoft Office, particularly Excel, PowerPoint, and Word, will be beneficial.
+						There are multiple roles available, allowing students to contribute in different areas based on their strengths and interests. Whether you enjoy analyzing financial data, researching market trends, or working on risk management strategies, there is an opportunity for you to grow and develop valuable skills. We appreciate individuals who are self-motivated, adaptable, and eager to collaborate in a team-driven environment.
 						</p>
 					</div>
 				</div>
 			</div>
 
 			{/* Form section */}
-			<div>
+			<div className="bg-white relative z-10">
 				<h1 className="text-4xl sm:text-6xl font-serif italic text-center text-primary mb-8">
 					Apply Now
 				</h1>
 				<form
 					onSubmit={handleSubmit}
-					className="max-w-lg mx-auto space-y-6 bg-white p-8 rounded-lg sm:shadow-lg"
+					className="max-w-3xl mx-auto space-y-6 bg-white p-8 rounded-lg sm:shadow-lg"
 				>
+				<div className="flex justify-between">
+				<div className="w-1/2">
 					<div>
 						<label
 							htmlFor="name"
@@ -238,7 +228,7 @@ export default function Hiring() {
 							htmlFor="message"
 							className="block text-sm font-medium text-gray-700"
 						>
-							Message (optional)
+							Message
 						</label>
 						<textarea
 							id="message"
@@ -249,9 +239,11 @@ export default function Hiring() {
 							onChange={handleChange}
 						/>
 					</div>
+				</div>
 					<div>
 						<label className="block text-sm font-medium text-gray-700 mb-1">
-							Resume (optional)
+							Resume
+							<span className="text-primary">*</span>
 						</label>
 						{!formData.file ? (
 							<Dropzone
@@ -267,8 +259,8 @@ export default function Hiring() {
 								}}
 							>
 								{({ getRootProps, getInputProps }) => (
-									<section className="border border-dashed border-gray-300 shadow rounded-lg p-6">
-										<div {...getRootProps()}>
+									<section className="border border-dashed border-gray-300 shadow rounded-lg p-6 h-[93%]">
+										<div {...getRootProps()} className="h-full flex flex-col items-center justify-center text-center">
 											<input {...getInputProps()} />
 											<div className="flex flex-col items-center justify-center gap-2">
 												<svg
@@ -300,9 +292,9 @@ export default function Hiring() {
 								)}
 							</Dropzone>
 						) : (
-							<div className="flex items-center justify-between w-full h-fit p-2 border rounded-lg bg-white">
+							<div className="flex items-center w-full  py-2 px-[1.65rem] border rounded-lg bg-white h-[93%] ">
 								<div className="flex">
-									<div className="relative">
+									<div className="relative h-full justify-center">
 										{/* <File class="w-14 h-14 text-gray-300" /> */}
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -387,6 +379,7 @@ export default function Hiring() {
 							</div>
 						)}
 					</div>
+				</div>
 					<div className="text-center">
 						<button
 							type="submit"
