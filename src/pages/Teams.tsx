@@ -61,7 +61,7 @@ export default function Teams() {
 				} ${scrollPosition > 400 && "hidden"}`}
 			/>
 			{/* Overlay Content */}
-			<div className="flex items-start justify-center mt-10 mb-40 sm:mb-64 z-10">
+			<div className="flex items-start justify-center mt-10 mb-40 sm:mb-64 z-10 overflow-hidden">
 				<div className="flex flex-col items-center justify-center gap-2">
 					<div className="flex flex-col items-center justify-center w-fit bg-primary opacity-90">
 						<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
@@ -76,7 +76,7 @@ export default function Teams() {
 			</div>
 			<div className="relative z-10 bg-white flex justify-center">
 				{/* Teams Section */}
-				<div className="my-12">
+				<div className="my-12 overflow-hidden">
 					{/* Render Each Team */}
 					<div className="flex flex-col justify-center w-full">
 						{teams.map((team, index) => (

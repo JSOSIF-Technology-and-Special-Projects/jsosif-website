@@ -45,7 +45,7 @@ export default function Portfolio() {
 			/>
 			{/* Header Section */}
 			<div>
-				<div className="flex flex-col items-center justify-between py-8">
+				<div className="flex flex-col items-center justify-between py-8 overflow-hidden">
 					<div className="flex flex-col items-center justify-center gap-2">
 						<div className="flex flex-col items-center justify-center w-fit bg-primary opacity-90">
 							<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white px-16 py-2 rounded-sm shadow-md">
@@ -82,11 +82,11 @@ export default function Portfolio() {
 						className="mb-12 items-center flex flex-col"
 					>
 						{/* Division Header */}
-						<div className="relative w-full flex items-center justify-center my-10">
+						<div className="relative w-full min-w-screen flex items-center justify-center my-10">
 							<Image
 								alt={division.name}
 								src={division.bgImage}
-								className="absolute h-32 object-cover overflow-hidden"
+								className="absolute h-32 min-w-screen w-full object-cover overflow-hidden"
 							/>
 							<h2 className="text-3xl md:text-4xl lg:text-5xl w-full font-medium tracking-widest text-white py-5 text-center mb-4 z-10 relative">
 								{division.name}

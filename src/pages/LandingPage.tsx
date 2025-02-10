@@ -186,7 +186,7 @@ export default function LandingPage() {
 								key={index}
 								className="bg-white/80 md:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
 							>
-								<h3 className="text-[#0E5791] sm:text-xl mb-2 min-h-16">
+								<h3 className="text-[#0E5791] text-wrap sm:text-xl mb-2 min-h-16 flex items-center justify-center mx-auto">
 									{division.name}
 								</h3>
 								<p className="text-gray-700 text-sm line-clamp-[15]">
@@ -215,7 +215,7 @@ export default function LandingPage() {
 								key={index}
 								className="bg-white/80 w-1/3 lg:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
 							>
-								<h3 className="text-primary text-xl mb-2 min-h-16">
+								<h3 className="text-primary sm:text-xl mb-2 min-h-16">
 									{team.name}
 								</h3>
 								<p className="text-gray-700 text-sm line-clamp-[15]">
@@ -230,7 +230,7 @@ export default function LandingPage() {
 								key={index}
 								className="bg-white/80 md:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
 							>
-								<h3 className="text-primary text-xl mb-2 min-h-16">
+								<h3 className="text-primary  mb-2 min-h-16">
 									{team.name}
 								</h3>
 								<p className="text-gray-700 text-sm line-clamp-[15]">
