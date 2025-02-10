@@ -7,7 +7,7 @@ import financial from "@/assets/financial.avif";
 
 export const mockApiData = {
 	statistics: {
-		fundMembers: 52,
+		fundMembers: 51,
 		investmentHoldings: 30,
 		assetsUnderManagement: 261000,
 	},
@@ -119,7 +119,7 @@ export const mockApiData = {
 					role: "Chief Executive Officer",
 					program:
 						"Commerce Finance Specialization Economics & Philosophy Minor",
-					year: "3",
+					year: "3rd",
 					joined: "Sept 2022",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQEmfSZUrXkfRQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668385805304?e=1744243200&v=beta&t=ogpAb7X4Q9b_UJKY9yH88VFFH_khyjPVsizpNjdId0Q",
 					linkedin:
@@ -373,13 +373,13 @@ export const mockApiData = {
 					linkedin: "https://www.linkedin.com/in/",
 				},
 				{
-					name: "Bella",
-					firstName: "Bella",
-					lastName: "",
+					name: "Weiai Luo ",
+					firstName: "Weiai",
+					lastName: "Luo",
 					role: "Consumer & Retail",
-					program: "",
-					year: "",
-					joined: "",
+					program: "Master of Management - International Accounting & Financial",
+					year: "1st",
+					joined: "Jan 2025",
 					image: "",
 					linkedin: "https://www.linkedin.com/in/",
 				},
@@ -388,11 +388,11 @@ export const mockApiData = {
 					firstName: "David",
 					lastName: "Jesus",
 					role: "Consumer & Retail",
-					program: "",
-					year: "",
-					joined: "",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Bachelor of Business Administration- Finance Specialization",
+					year: "2nd",
+					joined: "Jan 2025",
+					image: "https://media.licdn.com/dms/image/v2/D4D03AQGKfK54Y6WMvA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709167473698?e=1744848000&v=beta&t=ZxH3pMyZ_t5jJT0sYvc5M_PglHv382_48aGrs1l_fio",
+					linkedin: "https://www.linkedin.com/in/david-jesus-17baaa2b6/",
 				},
 				{
 					name: "Jada Yaldo",
@@ -425,7 +425,7 @@ export const mockApiData = {
 					year: "2nd",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQF_dbhVij-hSQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726108867147?e=1744848000&v=beta&t=az6miduUmPQQ1ZWJ7sln7D_6x5fzuhRXw9aR_fdb80c",
-					linkedin: "https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav",
+					linkedin: "https://www.linkedin.com/in/travis-loughead-0a1504293/?originalSubdomain=ca",
 				},
 				{
 					name: "N/A",
