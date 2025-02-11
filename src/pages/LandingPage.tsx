@@ -64,6 +64,11 @@ export default function LandingPage() {
 		delay: 0.3,
 	});
 
+	const handleAddToAssets = () => {
+		setAssetsUnderManagement((prev) => prev + 10);
+		update(assetsUnderManagement);
+	};
+
 	return (
 		<div className="relative flex flex-col">
 			{/* Background Section */}
