@@ -110,6 +110,7 @@ export default function Header() {
 						passHref
 						legacyBehavior
 						aria-label="Back to home"
+						className="hover:cursor-pointer"
 					>
 						<Image
 							src={jsosifbanner}
@@ -127,6 +128,7 @@ export default function Header() {
 						passHref
 						legacyBehavior
 						aria-label="Back to home"
+						className="hover:cursor-pointer"
 					>
 						<Image
 							src={jsosifbanner}
@@ -148,15 +150,16 @@ export default function Header() {
 								legacyBehavior
 								key={name}
 								aria-label={`Navigate to ${name}`}
+								className="hover:cursor-pointer"
 							>
-								<span
-									className={`hover:text-[#0E5791] ${
-										pathname === href &&
-										"text-primary hover:cursor-pointer"
+								<a
+									aria-disabled="true"
+									className={`hover:text-[#0E5791] hover:cursor-pointer ${
+										pathname === href && "text-primary"
 									}`}
 								>
 									{name}
-								</span>
+								</a>
 							</Link>
 						);
 					})}
