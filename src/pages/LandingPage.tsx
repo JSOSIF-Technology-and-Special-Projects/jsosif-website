@@ -188,7 +188,7 @@ export default function LandingPage() {
 						{investmentDivisions.map((division, index) => (
 							<div
 								key={index}
-								className="bg-white/80 w-1/3 lg:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
+								className="bg-white/90 w-1/3 lg:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
 							>
 								<h3 className="text-[#0E5791] text-xl mb-2 min-h-16 flex items-center justify-center mx-auto">
 									{division.name}
@@ -203,7 +203,7 @@ export default function LandingPage() {
 						{investmentDivisions.map((division, index) => (
 							<div
 								key={index}
-								className="bg-white/80 md:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
+								className="bg-white/90 md:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
 							>
 								<h3 className="text-[#0E5791] text-wrap sm:text-xl mb-2 min-h-16 flex items-center justify-center mx-auto">
 									{division.name}
@@ -232,7 +232,7 @@ export default function LandingPage() {
 						{supportTeams.map((team, index) => (
 							<div
 								key={index}
-								className="bg-white/80 w-1/3 lg:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
+								className="bg-white/90 w-1/3 lg:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
 							>
 								<h3 className="text-primary sm:text-xl mb-2 min-h-16 flex items-center justify-center mx-auto">
 									{team.name}
@@ -247,7 +247,7 @@ export default function LandingPage() {
 						{supportTeams.map((team, index) => (
 							<div
 								key={index}
-								className="bg-white/80 md:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
+								className="bg-white/90 md:w-1/4 2xl:w-[calc(25%-8px)] shadow-lg p-3 text-center"
 							>
 								<h3 className="text-primary  mb-2 min-h-16 flex items-center justify-center mx-auto">
 									{team.name}
