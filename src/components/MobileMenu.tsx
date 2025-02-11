@@ -29,6 +29,7 @@ export default function MobileMenu({
 					/>
 					<button
 						onClick={() => setMenuOpen(false)}
+						aria-label="Close Side Menu"
 						className="p-2 rounded-full hover:text-[#0E5791] text-gray-600 active:scale-95 transition-all"
 					>
 						<svg
