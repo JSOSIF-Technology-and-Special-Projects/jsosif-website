@@ -103,8 +103,14 @@ export default function Header() {
 						/>
 					</svg>
 				</button>
+				{/* Desktop home button */}
 				<div className="hover:cursor-pointer w-fit mr-12 shrink-0 md:block hidden">
-					<Link href="/" passHref legacyBehavior>
+					<Link
+						href="/"
+						passHref
+						legacyBehavior
+						aria-label="Back to home"
+					>
 						<Image
 							src={jsosifbanner}
 							alt="Logo"
@@ -114,8 +120,14 @@ export default function Header() {
 						/>
 					</Link>
 				</div>
+				{/* Mobile home button */}
 				<div className="hover:cursor-pointer w-fit shrink-0 md:hidden absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
-					<Link href="/" passHref legacyBehavior>
+					<Link
+						href="/"
+						passHref
+						legacyBehavior
+						aria-label="Back to home"
+					>
 						<Image
 							src={jsosifbanner}
 							alt="Logo"
@@ -135,14 +147,15 @@ export default function Header() {
 								passHref
 								legacyBehavior
 								key={name}
+								aria-label={`Navigate to ${name}`}
 							>
-								<a
+								<span
 									className={`hover:text-[#0E5791] ${
 										pathname === href && "text-primary"
 									}`}
 								>
 									{name}
-								</a>
+								</span>
 							</Link>
 						);
 					})}
