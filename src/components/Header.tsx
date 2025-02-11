@@ -116,7 +116,7 @@ export default function Header() {
 							alt="Logo"
 							height={80}
 							width={300}
-							className="h-12 md:h-16 xl:h-20 object-contain"
+							className="h-12 md:h-16 xl:h-20 object-contain hover:cursor-pointer"
 						/>
 					</Link>
 				</div>
@@ -133,7 +133,7 @@ export default function Header() {
 							alt="Logo"
 							height={80}
 							width={300}
-							className="h-12 md:h-16 xl:h-20 object-contain"
+							className="h-12 md:h-16 xl:h-20 object-contain hover:cursor-pointer"
 						/>
 					</Link>
 				</div>
@@ -151,7 +151,8 @@ export default function Header() {
 							>
 								<span
 									className={`hover:text-[#0E5791] ${
-										pathname === href && "text-primary"
+										pathname === href &&
+										"text-primary hover:cursor-pointer"
 									}`}
 								>
 									{name}
