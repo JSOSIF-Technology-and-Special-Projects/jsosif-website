@@ -88,6 +88,7 @@ export default function Header() {
 			<div className="mx-4 md:mx-20 xl:mx-52 w-full flex items-center xl:justify-between relative">
 				<button
 					onClick={() => setMenuOpen(true)}
+					aria-label="Back to home"
 					className="hover:cursor-pointer mr-4 lg:mr-[8rem] rounded-full p-2 hover:text-[#0E5791] text-gray-600 xl:hidden"
 				>
 					<svg

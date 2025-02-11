@@ -1,5 +1,5 @@
 "use client";
-import hiringbanner from "../assets/hiringbanner.png";
+import hiringbanner from "../assets/hiringbanner.webp";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Dropzone from "react-dropzone";

@@ -2,10 +2,10 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import aboutBanner from "../assets/aboutbanner.png";
-import jsosifseeks from "../assets/jsosifseeks.png";
-import jsosifpencil from "../assets/jsosifpencil.png";
-import jsosifhand from "../assets/jsosifhand.png";
+import aboutBanner from "../assets/aboutbanner.webp";
+import jsosifseeks from "../assets/jsosifseeks.webp";
+import jsosifpencil from "../assets/jsosifpencil.webp";
+import jsosifhand from "../assets/jsosifhand.webp";
 
 export default function About() {
 	const [scrollPosition, setScrollPosition] = useState(0);

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bloomberg from "../assets/bloomberg.png";
+import bloomberg from "../assets/bloomberg.webp";
 import microsoftteams from "../assets/microsoftteams.png";
 import attach from "../assets/attach.png";
 import React, { useEffect, useState } from "react";

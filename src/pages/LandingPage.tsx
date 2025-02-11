@@ -6,9 +6,9 @@ import {
 	fetchInvestmentDivisions,
 	fetchSupportTeams,
 } from "../data/mockApi"; // Import mock API functions
-import jsosifbackground from "../assets/jsosifbackground.png";
-import investmentdiv from "../assets/investmentdiv.png";
-import supportdiv from "../assets/supportdiv.png";
+import jsosifbackground from "../assets/jsosifbackground.webp";
+import investmentdiv from "../assets/investmentdiv.webp";
+import supportdiv from "../assets/supportdiv.webp";
 import { useCountUp } from "react-countup";
 import dynamic from "next/dynamic";
 
