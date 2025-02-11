@@ -170,8 +170,23 @@ export default function Hiring() {
 							<hr className="w-full mx-auto mt-1" />
 						</h1>
 						<p className="text-lg text-gray-700 leading-relaxed">
-						We seek driven students eager to explore the world of finance, investing, and market analysis. While experience is not required, we value individuals with a strong interest in financial markets, portfolio management, and risk strategies. A solid understanding of global economic trends and proficiency in Microsoft Office, particularly Excel, PowerPoint, and Word, will be beneficial.
-						There are multiple roles available, allowing students to contribute in different areas based on their strengths and interests. Whether you enjoy analyzing financial data, researching market trends, or working on risk management strategies, there is an opportunity for you to grow and develop valuable skills. We appreciate individuals who are self-motivated, adaptable, and eager to collaborate in a team-driven environment.
+							We seek driven students eager to explore the world
+							of finance, investing, and market analysis. While
+							experience is not required, we value individuals
+							with a strong interest in financial markets,
+							portfolio management, and risk strategies. A solid
+							understanding of global economic trends and
+							proficiency in Microsoft Office, particularly Excel,
+							PowerPoint, and Word, will be beneficial. There are
+							multiple roles available, allowing students to
+							contribute in different areas based on their
+							strengths and interests. Whether you enjoy analyzing
+							financial data, researching market trends, or
+							working on risk management strategies, there is an
+							opportunity for you to grow and develop valuable
+							skills. We appreciate individuals who are
+							self-motivated, adaptable, and eager to collaborate
+							in a team-driven environment.
 						</p>
 					</div>
 				</div>
@@ -182,12 +197,241 @@ export default function Hiring() {
 				<h1 className="text-4xl sm:text-6xl font-serif italic text-center text-primary mb-8">
 					Apply Now
 				</h1>
+				{/* Desktop */}
 				<form
 					onSubmit={handleSubmit}
-					className="max-w-3xl mx-auto space-y-6 bg-white p-8 rounded-lg sm:shadow-lg"
+					className="max-w-3xl hidden md:block mx-auto space-y-6 bg-white p-8 rounded-lg sm:shadow-lg"
 				>
-				<div className="flex justify-between">
-				<div className="w-1/2">
+					<div className="flex justify-between">
+						<div className="w-1/2 flex flex-col gap-1">
+							<div>
+								<label
+									htmlFor="name"
+									className="block text-sm font-medium text-gray-700"
+								>
+									Name <span className="text-primary">*</span>
+								</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+									value={formData.name}
+									onChange={handleChange}
+									required
+								/>
+							</div>
+							<div>
+								<label
+									htmlFor="email"
+									className="block text-sm font-medium text-gray-700"
+								>
+									UWindsor Email{" "}
+									<span className="text-primary">*</span>
+								</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+									value={formData.email}
+									onChange={handleChange}
+									required
+								/>
+							</div>
+							<div>
+								<label className="block text-sm font-medium text-gray-700 mb-1">
+									Resume
+									<span className="text-primary">*</span>
+								</label>
+								{!formData.file ? (
+									<Dropzone
+										onDrop={(acceptedFiles) => {
+											console.log(acceptedFiles);
+											setFormData({
+												...formData,
+												file: acceptedFiles[0],
+											});
+											setFileTypeClass(
+												getFileTypeClass(
+													acceptedFiles[0].type
+												)
+											);
+										}}
+									>
+										{({ getRootProps, getInputProps }) => (
+											<section className="border border-dashed border-gray-300 shadow rounded-lg p-6 h-[93%]">
+												<div
+													{...getRootProps()}
+													className="h-full flex flex-col items-center justify-center text-center"
+												>
+													<input
+														{...getInputProps()}
+													/>
+													<div className="flex flex-col items-center justify-center gap-2">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="32"
+															height="32"
+															viewBox="0 0 24 24"
+															className="text-gray-600"
+														>
+															<path
+																fill="currentColor"
+																d="m12 12.586l4.243 4.242l-1.415 1.415L13 16.415V22h-2v-5.587l-1.828 1.83l-1.415-1.415zM12 2a7 7 0 0 1 6.954 6.194A5.5 5.5 0 0 1 18 18.978v-2.014a3.5 3.5 0 1 0-1.111-6.91a5 5 0 1 0-9.777 0a3.5 3.5 0 0 0-1.292 6.88l.18.03v2.014a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2"
+															/>
+														</svg>
+														<p className="font-semibold">
+															Choose a file or
+															drag & drop it here.
+														</p>
+														<p className="text-sm text-gray-400 italic">
+															PDF, DOCX, JPEG,
+															PNG, up to 5 MB.
+														</p>
+														<span className="rounded px-2 font-semibold py-1 shadow border">
+															Browse File
+														</span>
+													</div>
+												</div>
+											</section>
+										)}
+									</Dropzone>
+								) : (
+									<div className="flex items-center rounded-lg bg-white h-[93%] ">
+										<div className="flex">
+											<div className="relative h-full justify-center">
+												{/* <File class="w-14 h-14 text-gray-300" /> */}
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="56"
+													height="56"
+													viewBox="0 0 21 21"
+													className="text-gray-300"
+												>
+													<g
+														fill="none"
+														fillRule="evenodd"
+														stroke="currentColor"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													>
+														<path d="M16.5 15.5v-7l-5-5h-5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2" />
+														<path d="M11.5 3.5v3a2 2 0 0 0 2 2h3" />
+													</g>
+												</svg>
+												<span
+													style={{
+														background:
+															fileTypeClass,
+													}}
+													className={`absolute capitalize text-white rounded-lg p-1 top-1/3 left-1 text-[0.6rem]`}
+												>
+													{formData.file.type
+														?.split("/")?.[1]
+														?.toUpperCase() ||
+														"Other"}
+												</span>
+											</div>
+											<div className="flex flex-col gap-1 justify-center">
+												<h1 className="font-medium text-sm">
+													{formData?.file?.name}
+												</h1>
+												<div className="flex gap-2 items-center">
+													{formData?.file?.size && (
+														<p className="text-xs text-accent-content">
+															{getFileSizeString(
+																formData.file
+																	.size
+															)}
+														</p>
+													)}
+													<span className="w-4 h-4 flex items-center justify-center bg-green-600 rounded-full">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="12"
+															height="12"
+															viewBox="0 0 24 24"
+															className="text-white"
+														>
+															<path
+																fill="currentColor"
+																d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+															/>
+														</svg>
+													</span>
+													<p className="text-white text-xs">
+														Completed
+													</p>
+												</div>
+											</div>
+										</div>
+										<button
+											type="button"
+											onClick={() => {
+												deleteFile();
+											}}
+											className="mr-3 p-1 rounded-full hover:text-red-700 text-gray-700 transition-all"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="20"
+												viewBox="0 0 24 24"
+											>
+												<path
+													fill="currentColor"
+													d="M7 4V2h10v2h5v2h-2v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6H2V4zM6 6v14h12V6zm3 3h2v8H9zm4 0h2v8h-2z"
+												/>
+											</svg>
+										</button>
+									</div>
+								)}
+							</div>
+						</div>
+						<div className="ml-10 w-96 mb-4">
+							<label
+								htmlFor="message"
+								className="block text-sm font-medium text-gray-700"
+							>
+								Message
+							</label>
+							<textarea
+								id="message"
+								name="message"
+								rows={6}
+								className="mt-1 block w-full h-full px-3 py-2 border border-gray-300 rounded-md resize-none"
+								value={formData.message}
+								onChange={handleChange}
+							/>
+						</div>
+					</div>
+					<div className="text-center">
+						<button
+							type="submit"
+							className="w-24 h-12 bg-primary text-white rounded-md active:scale-95 transition-all mx-auto flex items-center justify-center"
+						>
+							{!sending ? (
+								"Submit"
+							) : (
+								<div
+									className="inline-block h-6 w-6 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+									role="status"
+								>
+									<span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+										Sending...
+									</span>
+								</div>
+							)}
+						</button>
+					</div>
+				</form>
+
+				{/* Mobile */}
+				<form
+					onSubmit={handleSubmit}
+					className="max-w-lg md:hidden block mx-auto space-y-6 bg-white p-8 rounded-lg sm:shadow-lg"
+				>
 					<div>
 						<label
 							htmlFor="name"
@@ -228,7 +472,7 @@ export default function Hiring() {
 							htmlFor="message"
 							className="block text-sm font-medium text-gray-700"
 						>
-							Message
+							Message (optional)
 						</label>
 						<textarea
 							id="message"
@@ -239,11 +483,9 @@ export default function Hiring() {
 							onChange={handleChange}
 						/>
 					</div>
-				</div>
 					<div>
 						<label className="block text-sm font-medium text-gray-700 mb-1">
-							Resume
-							<span className="text-primary">*</span>
+							Resume (optional)
 						</label>
 						{!formData.file ? (
 							<Dropzone
@@ -259,8 +501,8 @@ export default function Hiring() {
 								}}
 							>
 								{({ getRootProps, getInputProps }) => (
-									<section className="border border-dashed border-gray-300 shadow rounded-lg p-6 h-[93%]">
-										<div {...getRootProps()} className="h-full flex flex-col items-center justify-center text-center">
+									<section className="border border-dashed border-gray-300 shadow rounded-lg p-6">
+										<div {...getRootProps()}>
 											<input {...getInputProps()} />
 											<div className="flex flex-col items-center justify-center gap-2">
 												<svg
@@ -275,11 +517,11 @@ export default function Hiring() {
 														d="m12 12.586l4.243 4.242l-1.415 1.415L13 16.415V22h-2v-5.587l-1.828 1.83l-1.415-1.415zM12 2a7 7 0 0 1 6.954 6.194A5.5 5.5 0 0 1 18 18.978v-2.014a3.5 3.5 0 1 0-1.111-6.91a5 5 0 1 0-9.777 0a3.5 3.5 0 0 0-1.292 6.88l.18.03v2.014a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2"
 													/>
 												</svg>
-												<p className="font-semibold">
+												<p className="font-semibold text-center">
 													Choose a file or drag & drop
 													it here.
 												</p>
-												<p className="text-sm text-gray-400 italic">
+												<p className="text-sm text-gray-400 italic text-center">
 													PDF, DOCX, JPEG, PNG, up to
 													5 MB.
 												</p>
@@ -292,9 +534,9 @@ export default function Hiring() {
 								)}
 							</Dropzone>
 						) : (
-							<div className="flex items-center w-full  py-2 px-[1.65rem] border rounded-lg bg-white h-[93%] ">
+							<div className="flex items-center justify-between w-full h-fit p-2 border rounded-lg bg-white">
 								<div className="flex">
-									<div className="relative h-full justify-center">
+									<div className="relative">
 										{/* <File class="w-14 h-14 text-gray-300" /> */}
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -379,7 +621,6 @@ export default function Hiring() {
 							</div>
 						)}
 					</div>
-				</div>
 					<div className="text-center">
 						<button
 							type="submit"
