@@ -23,8 +23,12 @@ export default function TeamCard({ member }: TeamCardProps) {
 		<div className="w-full bg-white overflow-hidden mx-auto flex flex-col h-full">
 			{/* Image */}
 			<img
-				className="w-full min-h-[12rem] max-h-[12rem] sm:min-h-[20rem] sm:max-h-[20rem] object-cover object-center"
-				src={member.image ? member.image : "/images/jacobsweet.png"}
+				className={`w-full min-h-[12rem] max-h-[12rem] sm:min-h-[20rem] sm:max-h-[20rem] object-cover object-center ${
+					!member.image && "opacity-50 object-scale-down"
+				}`}
+				src={
+					member.image ? member.image : "/images/jsosificonblue.webp"
+				}
 				alt={member.name}
 			/>
 
