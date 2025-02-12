@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import AlumniCard from "../components/AlumniCard"; // Reuse the new AlumniCard component
 import { fetchAlumni } from "../data/mockApi"; // Use the fetchAlumni function
-import alumnibackground from "../assets/alumnibackground.jpg"; // Replace with your actual banner image
+import alumnibackground from "../assets/alumnibackground.webp"; // Replace with your actual banner image
 import Image from "next/image";
 
 interface Alumni {

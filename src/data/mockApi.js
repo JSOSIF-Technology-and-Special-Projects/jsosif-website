@@ -1,8 +1,8 @@
 import healthCare from "@/assets/healthcare.avif";
 import techMediaTelecom from "@/assets/techmediatelecom.jpg";
 import consumerRetail from "@/assets/consumerretail.avif";
-import industrialsNaturalResources from "@/assets/industrialsresources.jpg";
-import fixedIncomeRealEstate from "@/assets/incomerealestate.jpg";
+import industrialsNaturalResources from "@/assets/industrialsresources.webp";
+import fixedIncomeRealEstate from "@/assets/incomerealestate.webp";
 import financial from "@/assets/financial.avif";
 
 export const mockApiData = {
@@ -22,7 +22,7 @@ export const mockApiData = {
 		{
 			name: "Tech Media Telecommunications",
 			description:
-				"Eddy Aboukassm and Rafael Augusto cover the technology sector. An industry that drives innovation in software, hardware, AI, and semiconductors, shaping global industries. Currently, TMT holds positions in Accenture (ACN) and Cisco Systems (CSCO)",
+				"Eddy Aboukassm and Rafael Augusto cover the technology sector. An industry that drives innovation in software, hardware, AI, and semiconductors, shaping global industries. Currently, TMT holds positions in Accenture (ACN) and Cisco Systems (CSCO).",
 			ticker: "ACN|12M, CSCO|12M, TSX:OTEX|12M, DIS|12M",
 			bgImage: techMediaTelecom,
 		},
@@ -36,14 +36,14 @@ export const mockApiData = {
 		{
 			name: "Industrials & Natural Resources",
 			description:
-				"Fadel Asfari and Jack cover the biggest names and most promising investments in the industrial sector, such as Enbridge and Canadian Natural Resources.",
+				"Faadel Asfari covers the Energy and Industrials sector, analyzing how key players like Enbridge, Xylem, and Nutrien adapt to regulatory changes, technological advancements, and sustainability trends to drive long-term growth and innovation.",
 			ticker: "TSX:ENB|12M, TSX:CNQ|12M, J|12M, TSX:MG|12M, XYL|12M, TSX:CP|12M, TSX:NTR|12M, AMTM",
 			bgImage: industrialsNaturalResources,
 		},
 		{
 			name: "Health Care",
 			description:
-				"Cullan Bryne and Kartikay Dhamija invest in some of the biggest and most promising companies, with a focus on pharmaceutical manufacturing and oncology such as Novo Nordisk and Pfizer",
+				"Cullan Bryne and Kartikay Dhamija focus on investing in leading and high-potential companies, particularly in pharmaceutical manufacturing and oncology, analyzing firms like Novo Nordisk and Pfizer to identify strong growth opportunities and long-term value creation.",
 			ticker: "PFE|12M, VRTX|12M, NVO|12M",
 			bgImage: healthCare,
 		},
@@ -85,21 +85,21 @@ export const mockApiData = {
 		{
 			name: "Quantitative Research & Portfolio Risk",
 			description:
-				"Adam Bergen and Aidan Richer provide quantitative research and data analysis through proprietary models to visualize and manage portfolio risk.",
+				"Adam Bergen and Aidan Richer utilize proprietary models to conduct in-depth data analysis, providing insights into portfolio risk, optimizing asset allocation, and enhancing the fund’s overall investment strategy through rigorous quantitative methodologies.",
 		},
 		{
 			name: "Economic Advisory",
 			description:
-				" Sean Clarke and Ethan Braga conduct in-depth analyses of macroeconomic trends, offering strategic insights into potential economic headwinds and tailwinds for JSOSIF's relative investment teams.",
+				"Sean Clarke and Ethan Braga conduct in-depth analyses of macroeconomic trends, providing strategic insights into potential economic headwinds and tailwinds that impact JSOSIF’s investment decisions, helping teams navigate shifting market conditions and optimize portfolio positioning.",
 		},
 		{
 			name: "Compliance & Special Situations",
-			description: "Matthew Livingstone and Joseph Murtagh",
+			description: "Matthew Livingstone and Joseph Murtagh ensure the fund adheres to regulations and internal policies while analyzing market events like mergers, acquisitions, and restructurings to assess their impact on holdings and overall strategy.",
 		},
 		{
 			name: "Software Development",
 			description:
-				"Aya Madi and Micheal Gibb focus on developing and maintaining the fund's proprietary software, which is used to track and analyze the fund's investments.",
+				"Aya Madi and Micheal Gibb develop and maintain the fund’s proprietary software, enabling efficient tracking, analysis, and management of investments through advanced data-driven tools that support strategic decision-making and portfolio optimization.",
 		},
 		{
 			name: "Engagement & Recruiting",
@@ -143,11 +143,11 @@ export const mockApiData = {
 					firstName: "Nolan",
 					lastName: "Robinson",
 					role: "Chief Strategy Officer",
-					program: "No idea",
-					year: "Super Senior",
-					joined: "Unknown",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					program: "Double major finance economics",
+					year: "3rd",
+					joined: "Jan 2023",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQEHn82Vbjo8eA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1682728499021?e=1744848000&v=beta&t=KpDA5cuAvufWPmbEXO9ph56TxD-DuNUaifOVHDGRDGU",
+					linkedin: "https://www.linkedin.com/in/nolan-robinson-13a591268?otpToken=MTMwNDFlZTAxMDI5Y2RjY2I1MmEwZmViNDExZGVmYjE4Y2NjZDk0OTkwYWE4YjZiN2JjZjA1NjY0YzVhNWNmMWY2ZDVkNmU5NThmNGQzZDA3ZGZmZGQ4YjNiN2U0YTgyMmQ1M2ZmNzNiNzlmZjBjMzNlY2RhM2JjLDEsMQ%3D%3D&midSig=35F84SMAOZ8rE1&eid=i72pha-m6o5njo8-j9&midToken=AQFMvyfDSaSFZg&trkEmail=eml-email_m2m_invite_single_01-header-0-profile_glimmer-null-i72pha%7Em6o5njo8%7Ej9-null-null&lipi=urn%3Ali%3Apage%3Aemail_email_m2m_invite_single_01%3BmRrUnsndTny8U1nNqk54uA%3D%3D&trk=eml-email_m2m_invite_single_01-header-0-profile_glimmer&originalSubdomain=ca",
 				},
 			],
 		},
@@ -160,7 +160,8 @@ export const mockApiData = {
 					firstName: "Connor",
 					lastName: "Demelo",
 					role: "Financial Institutions",
-					program: "Business Administration, Specialization in Finance with minors in Economics and IT",
+					program:
+						"Business Administration, Specialization in Finance with minors in Economics and IT",
 					year: "4th",
 					joined: "Jan 2023",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQGDsoguNW8RuA/profile-displayphoto-shrink_400_400/B4EZOcXCq7GQAg-/0/1733495107238?e=1744243200&v=beta&t=0R8EV3OIqPXS-TAM-BWE3iYQM-qQXK9JHdsSYWJsbHg",
@@ -175,7 +176,8 @@ export const mockApiData = {
 					year: "4th",
 					joined: "Oct 2022",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQH1pnYQaqravQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669688697141?e=1744848000&v=beta&t=cZSIdayttHN7J4_YxYefb0GDYXWaNZTZuPHXJx0urUU",
-					linkedin: "https://www.linkedin.com/in/edward-aboukassm-6142a21a4/?originalSubdomain=ca",
+					linkedin:
+						"https://www.linkedin.com/in/edward-aboukassm-6142a21a4/?originalSubdomain=ca",
 				},
 				{
 					name: "Mohamad Emad",
@@ -194,7 +196,8 @@ export const mockApiData = {
 					firstName: "Fadel",
 					lastName: "Asfari",
 					role: "Industrials & Natural Resources",
-					program: "Business Administration, Minor in Economics and Applied IT",
+					program:
+						"Business Administration, Minor in Economics and Applied IT",
 					year: "4th",
 					joined: "Sept 2023",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQGKptCB5JgDcg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1691640272494?e=1744243200&v=beta&t=mGj5dSJjm6XalsKkcgpR2gGJj0c__Cwd7Hbltqhd8aU",
@@ -205,7 +208,8 @@ export const mockApiData = {
 					firstName: "Cullan",
 					lastName: "Bryne",
 					role: "Health Care",
-					program: "Honours Business Administration, Specialization in Finance, Minor in Computer Science ",
+					program:
+						"Honours Business Administration, Specialization in Finance, Minor in Computer Science ",
 					year: "2nd",
 					program:
 						"Honours Business Administration, Specialization in Finance, Minor in Computer Science ",
@@ -223,7 +227,8 @@ export const mockApiData = {
 					year: "4th",
 					joined: "Jan 2023",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQGqb86yr_IAzQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700691369849?e=1744848000&v=beta&t=zftZLTR6dRj_lVNUBnXxsOVO1Ua6FHYhCIlP8l3XJUk",
-					linkedin: "http://www.linkedin.com/in/luca-pecoraro-66a808230",
+					linkedin:
+						"http://www.linkedin.com/in/luca-pecoraro-66a808230",
 				},
 			],
 		},
@@ -248,7 +253,8 @@ export const mockApiData = {
 					firstName: "Rafael",
 					lastName: "Ferreira",
 					role: "Tech Media Telecommunications",
-					program: "Master of Management with specialization in Business Data Analytics",
+					program:
+						"Master of Management with specialization in Business Data Analytics",
 					year: "1st",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/C4E03AQG62xrfnT1smA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516900102201?e=1744848000&v=beta&t=b_QDnA6nJG6z1HyYnxehojq_JnV6kmnMdqtnlGSfB44",
@@ -270,11 +276,13 @@ export const mockApiData = {
 					firstName: "Jack",
 					lastName: "Marcotte",
 					role: "Industrials & Natural Resources",
-					program: "Major: Business, Specialization: Finance, Minor: Economics",
+					program:
+						"Major: Business, Specialization: Finance, Minor: Economics",
 					year: "2nd",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQERVrpILL5-Zw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727467548770?e=1744848000&v=beta&t=qULgTAca9Ve9VfL-ZfDL1D8XuCnOEJfB3lnPLGpcx6w",
-					linkedin: "https://www.linkedin.com/in/jack-marcotte-74a6b3293/",
+					linkedin:
+						"https://www.linkedin.com/in/jack-marcotte-74a6b3293/",
 				},
 				{
 					name: "Kartikay Dhamija",
@@ -324,7 +332,8 @@ export const mockApiData = {
 					year: "3rd",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQGMAn5M6yZNzQ/profile-displayphoto-shrink_400_400/B56ZODmJByG4As-/0/1733079634937?e=1744848000&v=beta&t=z7RqtMpF9AjHuFOzVFtaNScIBte3IdbSo_cSj8BM1DU",
-					linkedin: "http://www.linkedin.com/in/prabh-sandhu-a555a4200",
+					linkedin:
+						"http://www.linkedin.com/in/prabh-sandhu-a555a4200",
 				},
 				{
 					name: "Mariam Bakmaya",
@@ -355,7 +364,8 @@ export const mockApiData = {
 					firstName: "Izzy",
 					lastName: "Kekelji",
 					role: "Tech Media Telecommunications",
-					program: "Bachelor of Commerce with a specalization in Finance and a minor in Computer Science",
+					program:
+						"Bachelor of Commerce with a specalization in Finance and a minor in Computer Science",
 					year: "2nd",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQGXEAgtUrQNOw/profile-displayphoto-shrink_400_400/B4EZRCMU1GGwAk-/0/1736277315388?e=1744243200&v=beta&t=thCMhK3BhH-jTHY9PNKyGAQ0TaCp18vPdJ1z0pf1TcQ",
@@ -377,7 +387,8 @@ export const mockApiData = {
 					firstName: "Weiai",
 					lastName: "Luo",
 					role: "Consumer & Retail",
-					program: "Master of Management - International Accounting & Financial",
+					program:
+						"Master of Management - International Accounting & Financial",
 					year: "1st",
 					joined: "Jan 2025",
 					image: "",
@@ -388,11 +399,13 @@ export const mockApiData = {
 					firstName: "David",
 					lastName: "Jesus",
 					role: "Consumer & Retail",
-					program: "Bachelor of Business Administration- Finance Specialization",
+					program:
+						"Bachelor of Business Administration- Finance Specialization",
 					year: "2nd",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4D03AQGKfK54Y6WMvA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709167473698?e=1744848000&v=beta&t=ZxH3pMyZ_t5jJT0sYvc5M_PglHv382_48aGrs1l_fio",
-					linkedin: "https://www.linkedin.com/in/david-jesus-17baaa2b6/",
+					linkedin:
+						"https://www.linkedin.com/in/david-jesus-17baaa2b6/",
 				},
 				{
 					name: "Jada Yaldo",
@@ -425,7 +438,8 @@ export const mockApiData = {
 					year: "2nd",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQF_dbhVij-hSQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726108867147?e=1744848000&v=beta&t=az6miduUmPQQ1ZWJ7sln7D_6x5fzuhRXw9aR_fdb80c",
-					linkedin: "https://www.linkedin.com/in/travis-loughead-0a1504293/?originalSubdomain=ca",
+					linkedin:
+						"https://www.linkedin.com/in/travis-loughead-0a1504293/?originalSubdomain=ca",
 				},
 				{
 					name: "N/A",
@@ -456,7 +470,8 @@ export const mockApiData = {
 					firstName: "Andrew",
 					lastName: "Booth",
 					role: "Health Care",
-					program: "Business Administration, Accounting Specialization, Minor in Economics",
+					program:
+						"Business Administration, Accounting Specialization, Minor in Economics",
 					year: "2nd",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQF4Qg9lCgQq0w/profile-displayphoto-shrink_400_400/B4EZQSqoEkGwAg-/0/1735479951941?e=1744243200&v=beta&t=J4kEEdumkU-UwMYG31RsTpioOz8jXF98bwVGOsgRD5w",
@@ -480,22 +495,26 @@ export const mockApiData = {
 					firstName: "Alexander",
 					lastName: "Dougal",
 					role: "Fixed Income & Real Estate",
-					program: "Honours Business Administration & Psychology, specializing in Human Resource Management",
+					program:
+						"Honours Business Administration & Psychology, specializing in Human Resource Management",
 					year: "3rd",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQHmN3ySagF-pw/profile-displayphoto-shrink_400_400/B4EZRGa8YUHAAk-/0/1736348256463?e=1744243200&v=beta&t=NSyCT9C2ML2-wO2vPbzjE6zu6x6N21h5cN0N2g6Lb30",
-					linkedin: "https://www.linkedin.com/in/alexander-dougall-977ba91b0/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+					linkedin:
+						"https://www.linkedin.com/in/alexander-dougall-977ba91b0/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
 					name: "Mary Aoun",
 					firstName: "Mary",
 					lastName: "Aoun",
 					role: "Fixed Income & Real Estate",
-					program: "Business Administration/Finance. Minor Applied Information Technology ",
+					program:
+						"Business Administration/Finance. Minor Applied Information Technology ",
 					year: "4th",
 					joined: "Jan 2024",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQHeKIn29hqq_A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732005397799?e=1744243200&v=beta&t=e5TvNkBtZcPNcsZaubuEtJECr0zZgV4j7PKwD9LJpI0",
-					linkedin: "https://www.linkedin.com/in/mary-aoun-882a6517a/",
+					linkedin:
+						"https://www.linkedin.com/in/mary-aoun-882a6517a/",
 				},
 				{
 					name: "Huong Thao Nguyen",
@@ -537,7 +556,8 @@ export const mockApiData = {
 					year: "3rd",
 					joined: "Oct 2023",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQHjZ0G4tNDLXg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700112010776?e=1744243200&v=beta&t=WsD_PSSK8nxNAmCiKX9nWmavObvh1OBCDsXW8I9TlHg",
-					linkedin: "https://www.linkedin.com/in/ethan-braga-8bb390294/",
+					linkedin:
+						"https://www.linkedin.com/in/ethan-braga-8bb390294/",
 				},
 				{
 					name: "Houshang Javan",
@@ -566,7 +586,8 @@ export const mockApiData = {
 					firstName: "Nanki",
 					lastName: "Bhatia",
 					role: "Junior Economist",
-					program: "Bachelor of Commerce (Honours) Business Administration with specialization in finance and minor in economics.",
+					program:
+						"Bachelor of Commerce (Honours) Business Administration with specialization in finance and minor in economics.",
 					year: "4th",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQHDEQSRnA0-VA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730951694614?e=1744243200&v=beta&t=oxlT_MGZM-QFDVXegbl1ilZCxU7Ynsdi-lYT4HPQwgY",
@@ -599,7 +620,8 @@ export const mockApiData = {
 					year: "1st",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQEC3BAEPSpdAw/profile-displayphoto-shrink_400_400/B4EZSodeszHoAg-/0/1737993088950?e=1744848000&v=beta&t=gWFjJQ2Sl_2mFEq7kVqKfTWrceRdz4TT-PWLZW5eBBI",
-					linkedin: "https://www.linkedin.com/in/joseph-murtagh-18b34032b/",
+					linkedin:
+						"https://www.linkedin.com/in/joseph-murtagh-18b34032b/",
 				},
 			],
 		},
@@ -647,11 +669,13 @@ export const mockApiData = {
 					firstName: "Max",
 					lastName: "Mullins",
 					role: "Junior Quantitative Analyst",
-					program: "Bachelor of Mathematics (Honours) - Math and Finance",
+					program:
+						"Bachelor of Mathematics (Honours) - Math and Finance",
 					year: "2nd",
 					joined: "Jan 2025",
-					image: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-					linkedin: "https://www.linkedin.com/in/max-mullins-01610a257/",
+					image: "",
+					linkedin:
+						"https://www.linkedin.com/in/max-mullins-01610a257/",
 				},
 			],
 		},
@@ -664,7 +688,8 @@ export const mockApiData = {
 					firstName: "Aya",
 					lastName: "Madi",
 					role: "Lead Software Developer",
-					program: "Business and Computer Science, Finance Specialization",
+					program:
+						"Business and Computer Science, Finance Specialization",
 					year: "4th",
 					joined: "Oct 2022",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQEBOdu6ymyuog/profile-displayphoto-shrink_400_400/B4EZSltolCHgAg-/0/1737946991397?e=1744243200&v=beta&t=JJTLX5A0SRC3CvtSH9AcFEtksL-4_6AdL5Fqg-ERBgs",
@@ -686,7 +711,8 @@ export const mockApiData = {
 					firstName: "Landon",
 					lastName: "Hadre",
 					role: "Software Developer",
-					program: "Computer Science with Honours Applied Computing and a minor in Applied IT",
+					program:
+						"Computer Science with Honours Applied Computing and a minor in Applied IT",
 					year: "3rd",
 					program:
 						"Computer Science with Honours Applied Computing and a minor in Applied IT",
@@ -744,7 +770,8 @@ export const mockApiData = {
 					year: "3rd",
 					joined: "Oct 2023",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQHY_bbcrO_r-Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731976916621?e=1744243200&v=beta&t=WtWdVf4XwOjPV8UZ54ZPiPRNpHyWKl6mVhFWzD9q0lE",
-					linkedin: "https://www.linkedin.com/in/emma-tellier-895877291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+					linkedin:
+						"https://www.linkedin.com/in/emma-tellier-895877291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
 					name: "Joelle Jawdat",
@@ -755,7 +782,8 @@ export const mockApiData = {
 					year: "1st",
 					joined: "Dec 2024",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQGnwEVly4x61A/profile-displayphoto-shrink_400_400/B4EZTdZBw5HcAk-/0/1738881113608?e=1744243200&v=beta&t=9iACnLDXC-GgpcOTnCdVe7JwtrUsllH-XzFvqB9wpmI",
-					linkedin: "https://www.linkedin.com/in/joelle-jawdat-789058337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+					linkedin:
+						"https://www.linkedin.com/in/joelle-jawdat-789058337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
 					name: "Yazareth Meneses Arrieta",
@@ -774,7 +802,8 @@ export const mockApiData = {
 					firstName: "Sagal",
 					lastName: "Rirash",
 					role: "Marketer",
-					program: "Business Administration Specialization in Human Resources",
+					program:
+						"Business Administration Specialization in Human Resources",
 					year: "3rd",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQHmwXpNhLXqEw/profile-displayphoto-shrink_400_400/B56ZRDq2G3H0Ag-/0/1736302093092?e=1744848000&v=beta&t=PVcINJ-hbT0e8zH5wXvUx965qwhtNRZ3JxKl5Kjqxy8",

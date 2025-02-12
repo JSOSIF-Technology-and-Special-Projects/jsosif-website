@@ -88,6 +88,7 @@ export default function Header() {
 			<div className="mx-4 md:mx-20 xl:mx-52 w-full flex items-center xl:justify-between relative">
 				<button
 					onClick={() => setMenuOpen(true)}
+					aria-label="Back to home"
 					className="hover:cursor-pointer mr-4 lg:mr-[8rem] rounded-full p-2 hover:text-[#0E5791] text-gray-600 xl:hidden"
 				>
 					<svg
@@ -102,25 +103,39 @@ export default function Header() {
 						/>
 					</svg>
 				</button>
+				{/* Desktop home button */}
 				<div className="hover:cursor-pointer w-fit mr-12 shrink-0 md:block hidden">
-					<Link href="/" passHref legacyBehavior>
+					<Link
+						href="/"
+						passHref
+						legacyBehavior
+						aria-label="Back to home"
+						className="hover:cursor-pointer"
+					>
 						<Image
 							src={jsosifbanner}
 							alt="Logo"
 							height={80}
 							width={300}
-							className="h-12 md:h-16 xl:h-20 object-contain"
+							className="h-12 md:h-16 xl:h-20 object-contain hover:cursor-pointer"
 						/>
 					</Link>
 				</div>
+				{/* Mobile home button */}
 				<div className="hover:cursor-pointer w-fit shrink-0 md:hidden absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
-					<Link href="/" passHref legacyBehavior>
+					<Link
+						href="/"
+						passHref
+						legacyBehavior
+						aria-label="Back to home"
+						className="hover:cursor-pointer"
+					>
 						<Image
 							src={jsosifbanner}
 							alt="Logo"
 							height={80}
 							width={300}
-							className="h-12 md:h-16 xl:h-20 object-contain"
+							className="h-12 md:h-16 xl:h-20 object-contain hover:cursor-pointer"
 						/>
 					</Link>
 				</div>
@@ -134,9 +149,12 @@ export default function Header() {
 								passHref
 								legacyBehavior
 								key={name}
+								aria-label={`Navigate to ${name}`}
+								className="hover:cursor-pointer"
 							>
 								<a
-									className={`hover:text-[#0E5791] ${
+									aria-disabled="true"
+									className={`hover:text-[#0E5791] hover:cursor-pointer ${
 										pathname === href && "text-primary"
 									}`}
 								>

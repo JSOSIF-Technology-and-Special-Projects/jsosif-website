@@ -93,6 +93,7 @@ export default function AlumniCard({ alumni }: AlumniCardProps) {
 							target="_blank"
 							rel="noopener noreferrer"
 							className="inline-flex items-center mt-4"
+							aria-label={`Visit ${alumni.name}'s LinkedIn`}
 						>
 							<div className="p-1 w-8 h-8 sm:w-12 sm:h-12 bg-primary text-white text-sm font-medium rounded hover:bg-blue-700">
 								<svg
@@ -123,6 +124,7 @@ export default function AlumniCard({ alumni }: AlumniCardProps) {
 					${isModalOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-32"}`}
 				>
 					<button
+						aria-label="Close Modal"
 						onClick={handleCloseModal}
 						className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 p-4"
 					>

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { fetchTeams } from "../data/mockApi"; // Import the updated mock data
 import TeamCard from "../components/TeamCard"; // Reuse the `TeamCard` component for members
-import jsosifteam from "../assets/jsosifteam.png"; // Import the banner image
+import jsosifteam from "../assets/jsosifteam.webp"; // Import the banner image
 
 interface Team {
 	name: string;

@@ -29,6 +29,7 @@ export default function MobileMenu({
 					/>
 					<button
 						onClick={() => setMenuOpen(false)}
+						aria-label="Close Side Menu"
 						className="p-2 rounded-full hover:text-[#0E5791] text-gray-600 active:scale-95 transition-all"
 					>
 						<svg
@@ -48,7 +49,12 @@ export default function MobileMenu({
 					{/* Navigation Links */}
 					<nav className="flex flex-col text-gray-600">
 						<div className="group">
-							<Link href={"/"} passHref legacyBehavior>
+							<Link
+								href={"/"}
+								passHref
+								legacyBehavior
+								aria-label="Navigate to Home"
+							>
 								<div className="flex">
 									{/* <div
 										className={`border-r-4 border-l border-primary rounded-r-md ${
@@ -57,14 +63,14 @@ export default function MobileMenu({
 												: "translate-x-0"
 										} transition-all`}
 									/> */}
-									<a
+									<span
 										onClick={() => setMenuOpen(false)}
-										className={`hover:text-[#0E5791] px-4 sm:px-12 py-1 text-2xl rounded ${
+										className={`hover:text-[#0E5791] px-4 sm:px-12 py-1 text-2xl rounded hover:cursor-pointer ${
 											pathname === "/" && "text-primary"
 										}`}
 									>
 										Home
-									</a>
+									</span>
 								</div>
 							</Link>
 							<div
@@ -84,6 +90,7 @@ export default function MobileMenu({
 										passHref
 										legacyBehavior
 										key={name}
+										aria-label={`Navigate to ${name}`}
 									>
 										<div className="flex">
 											{/* <div
@@ -94,17 +101,17 @@ export default function MobileMenu({
 												} transition-all`}
 												key={name}
 											/> */}
-											<a
+											<span
 												onClick={() =>
 													setMenuOpen(false)
 												}
-												className={`hover:text-[#0E5791] px-4 sm:px-12 py-1 text-2xl rounded ${
+												className={`hover:text-[#0E5791] px-4 sm:px-12 py-1 text-2xl rounded hover:cursor-pointer ${
 													pathname === href &&
 													"text-primary"
 												}`}
 											>
 												{name}
-											</a>
+											</span>
 										</div>
 									</Link>
 									{/* {i !== paths.length - 1 && ( */}
