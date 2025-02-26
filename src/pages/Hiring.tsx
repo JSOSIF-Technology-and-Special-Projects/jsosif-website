@@ -159,9 +159,13 @@ export default function Hiring() {
 							<hr className="w-full mx-auto mt-1" />
 						</h1>
 						<p className="text-lg text-gray-700 leading-relaxed">
-							Lorem ipsum dolor sit, amet consectetur adipisicing
-							elit. Facilis quo libero neque assumenda repudiandae
-							tempora.
+						 JSOSIF is recognized as one of the most competitive and sought-after student-run organizations
+						 at the University of Windsor. Members gain invaluable, hands-on experience in stock analysis, 
+						 portfolio management, and risk assessment, all within a live trading environment. 
+						 Beyond technical skills, JSOSIF invests heavily in professional development through networking and strategic career pipelines, 
+						 providing a direct path to high-level finance opportunities. 
+						 Our distinguished alumni have secured Investment Banking, Sales and Trading, Quant Analysis and Corporate Law roles on Bay Street, 
+						 Wall Street demonstrating that JSOSIF is a proven launchpad for success.
 						</p>
 					</div>
 					<div className="mb-12">
