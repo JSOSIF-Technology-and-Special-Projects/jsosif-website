@@ -213,7 +213,7 @@ export const mockApiData = {
 					year: "2nd",
 					program:
 						"Honours Business Administration, Specialization in Finance, Minor in Computer Science ",
-					year: "2",
+					year: "2nd",
 					joined: "Oct 2023",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQFm3lHvEArffA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1701305242851?e=1744243200&v=beta&t=uSEeW4qRI6JS4dgWLnKC_s0q4zMwdZUSRQCJ0Mrlrfg",
 					linkedin: "http://www.linkedin.com/in/cullan-byrne",
@@ -668,8 +668,8 @@ export const mockApiData = {
 					lastName: "Gibb",
 					role: "Senior Software Developer",
 					program: "Computer Science",
-					year: "Jan 2023",
-					joined: "3rd",
+					year: "3rd",
+					joined: "Jan 2023",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQGKitaFHlm3xQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722281073141?e=1744243200&v=beta&t=tnNz0HnacMi8voRW4dg-KqcC0tX8wFXUJfq5cZjKlz4",
 					linkedin: "https://www.linkedin.com/in/michael-e-gibb",
 				},
@@ -681,9 +681,6 @@ export const mockApiData = {
 					program:
 						"Computer Science with Honours Applied Computing and a minor in Applied IT",
 					year: "3rd",
-					program:
-						"Computer Science with Honours Applied Computing and a minor in Applied IT",
-					year: "3",
 					joined: "Nov 2024",
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQGS2Z6H58ut-Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726583437365?e=1744243200&v=beta&t=pHNPzbbjw3-VdZlv_SNQviHMBhjrFXKFofG8OJFURXw",
 					linkedin: "https://www.linkedin.com/in/landonhadre/",
@@ -709,7 +706,7 @@ export const mockApiData = {
 					year: "2nd",
 					joined: "Jan 2025",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQH6Zoml9zpaQA/profile-displayphoto-shrink_400_400/B56ZNvw9PaGgAg-/0/1732746926191?e=1744243200&v=beta&t=e5wx4rp8PDBWjCXGUeYpiaUgzQ-zvr6N8z6lfImNQ1o",
-					linkedin: "http://linkedin.com/in/kevin-neave-a01366293",
+					linkedin: "http://linkedin.com/in/kevin-neave-zx374",
 				},
 				{
 					name: "Adam El-Houssami",
