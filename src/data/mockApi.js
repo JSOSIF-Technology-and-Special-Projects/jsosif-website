@@ -94,7 +94,8 @@ export const mockApiData = {
 		},
 		{
 			name: "Compliance & Special Situations",
-			description: "Matthew Livingstone and Joseph Murtagh ensure the fund adheres to regulations and internal policies while analyzing market events like mergers, acquisitions, and restructurings to assess their impact on holdings and overall strategy.",
+			description:
+				"Matthew Livingstone and Joseph Murtagh ensure the fund adheres to regulations and internal policies while analyzing market events like mergers, acquisitions, and restructurings to assess their impact on holdings and overall strategy.",
 		},
 		{
 			name: "Software Development",
@@ -147,7 +148,8 @@ export const mockApiData = {
 					year: "3rd",
 					joined: "Jan 2023",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQEHn82Vbjo8eA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1682728499021?e=1744848000&v=beta&t=KpDA5cuAvufWPmbEXO9ph56TxD-DuNUaifOVHDGRDGU",
-					linkedin: "https://www.linkedin.com/in/nolan-robinson-13a591268?otpToken=MTMwNDFlZTAxMDI5Y2RjY2I1MmEwZmViNDExZGVmYjE4Y2NjZDk0OTkwYWE4YjZiN2JjZjA1NjY0YzVhNWNmMWY2ZDVkNmU5NThmNGQzZDA3ZGZmZGQ4YjNiN2U0YTgyMmQ1M2ZmNzNiNzlmZjBjMzNlY2RhM2JjLDEsMQ%3D%3D&midSig=35F84SMAOZ8rE1&eid=i72pha-m6o5njo8-j9&midToken=AQFMvyfDSaSFZg&trkEmail=eml-email_m2m_invite_single_01-header-0-profile_glimmer-null-i72pha%7Em6o5njo8%7Ej9-null-null&lipi=urn%3Ali%3Apage%3Aemail_email_m2m_invite_single_01%3BmRrUnsndTny8U1nNqk54uA%3D%3D&trk=eml-email_m2m_invite_single_01-header-0-profile_glimmer&originalSubdomain=ca",
+					linkedin:
+						"https://www.linkedin.com/in/nolan-robinson-13a591268?otpToken=MTMwNDFlZTAxMDI5Y2RjY2I1MmEwZmViNDExZGVmYjE4Y2NjZDk0OTkwYWE4YjZiN2JjZjA1NjY0YzVhNWNmMWY2ZDVkNmU5NThmNGQzZDA3ZGZmZGQ4YjNiN2U0YTgyMmQ1M2ZmNzNiNzlmZjBjMzNlY2RhM2JjLDEsMQ%3D%3D&midSig=35F84SMAOZ8rE1&eid=i72pha-m6o5njo8-j9&midToken=AQFMvyfDSaSFZg&trkEmail=eml-email_m2m_invite_single_01-header-0-profile_glimmer-null-i72pha%7Em6o5njo8%7Ej9-null-null&lipi=urn%3Ali%3Apage%3Aemail_email_m2m_invite_single_01%3BmRrUnsndTny8U1nNqk54uA%3D%3D&trk=eml-email_m2m_invite_single_01-header-0-profile_glimmer&originalSubdomain=ca",
 				},
 			],
 		},
@@ -264,8 +266,8 @@ export const mockApiData = {
 					name: "Noah Di Maio",
 					firstName: "Noah",
 					lastName: "Di Maio",
-					role: "Coumser & Retail",
-					program: "Business, Accounting ",
+					role: "Consumer & Retail",
+					program: "Business, Accounting",
 					year: "2nd",
 					joined: "Sept 2024",
 					image: "https://media.licdn.com/dms/image/v2/D5603AQHogeyScxjDlw/profile-displayphoto-shrink_400_400/B56ZRPmeUdGQAg-/0/1736502275028?e=1744243200&v=beta&t=m-v4-Aoex2wLMY_YgyjA5UXkVDBoBk536UT292HNhBM",
