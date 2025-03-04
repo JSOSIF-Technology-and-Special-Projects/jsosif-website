@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header"; // Adjust path if necessary
 import Footer from "../components/Footer"; // Adjust path if necessary
+import Script from "next/script";
+
 const geistSans = Geist({
 	variable: "--font-geist-sans",
 	subsets: ["latin"],
@@ -25,6 +27,21 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			{/* Google Analytics Script */}
+			<Script
+				src={`https://www.googletagmanager.com/gtag/js?id=G-H2BVL8NLCN`}
+				strategy="afterInteractive"
+			/>
+			<Script id="google-analytics" strategy="afterInteractive">
+				{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-H2BVL8NLCN', {
+            page_path: window.location.pathname,
+          });
+        `}
+			</Script>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
