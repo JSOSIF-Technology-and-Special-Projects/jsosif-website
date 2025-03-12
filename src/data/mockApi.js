@@ -5,6 +5,7 @@ import industrialsNaturalResources from "@/assets/industrialsresources.webp";
 import fixedIncomeRealEstate from "@/assets/incomerealestate.webp";
 import financial from "@/assets/financial.avif";
 
+
 export const mockApiData = {
 	statistics: {
 		fundMembers: 51,
@@ -259,7 +260,7 @@ export const mockApiData = {
 						"Master of Management with specialization in Business Data Analytics",
 					year: "1st",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/C4E03AQG62xrfnT1smA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516900102201?e=1744848000&v=beta&t=b_QDnA6nJG6z1HyYnxehojq_JnV6kmnMdqtnlGSfB44",
+					image: "/images/rafael.png",
 					linkedin: "http://linkedin.com/in/rafaelaugustofs/",
 				},
 				{
@@ -371,7 +372,7 @@ export const mockApiData = {
 						"Master of Management - International Accounting & Financial",
 					year: "1st",
 					joined: "Jan 2025",
-					image: "",
+					image: "/images/weiai.jpg",
 					linkedin: "https://www.linkedin.com/in/",
 				},
 				{
@@ -395,7 +396,7 @@ export const mockApiData = {
 					program: "Combined Major in Psychology and Criminology",
 					year: "3rd",
 					joined: "Jan 2025",
-					image: "",
+					image: "/images/jada.jpg",
 					linkedin: "https://www.linkedin.com/in/",
 				},
 				{
