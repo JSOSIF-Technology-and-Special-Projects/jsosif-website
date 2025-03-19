@@ -5,7 +5,6 @@ import industrialsNaturalResources from "@/assets/industrialsresources.webp";
 import fixedIncomeRealEstate from "@/assets/incomerealestate.webp";
 import financial from "@/assets/financial.avif";
 
-
 export const mockApiData = {
 	statistics: {
 		fundMembers: 51,
@@ -152,6 +151,18 @@ export const mockApiData = {
 					linkedin:
 						"https://www.linkedin.com/in/nolan-robinson-13a591268?otpToken=MTMwNDFlZTAxMDI5Y2RjY2I1MmEwZmViNDExZGVmYjE4Y2NjZDk0OTkwYWE4YjZiN2JjZjA1NjY0YzVhNWNmMWY2ZDVkNmU5NThmNGQzZDA3ZGZmZGQ4YjNiN2U0YTgyMmQ1M2ZmNzNiNzlmZjBjMzNlY2RhM2JjLDEsMQ%3D%3D&midSig=35F84SMAOZ8rE1&eid=i72pha-m6o5njo8-j9&midToken=AQFMvyfDSaSFZg&trkEmail=eml-email_m2m_invite_single_01-header-0-profile_glimmer-null-i72pha%7Em6o5njo8%7Ej9-null-null&lipi=urn%3Ali%3Apage%3Aemail_email_m2m_invite_single_01%3BmRrUnsndTny8U1nNqk54uA%3D%3D&trk=eml-email_m2m_invite_single_01-header-0-profile_glimmer&originalSubdomain=ca",
 				},
+				{
+					name: "Faadel Asfari",
+					firstName: "Faadel",
+					lastName: "Asfari",
+					role: "Chief Legal Officer",
+					program:
+						"Business Administration, Minor in Economics and Applied IT",
+					year: "4th",
+					joined: "Sept 2023",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQGKptCB5JgDcg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1691640272494?e=1744243200&v=beta&t=mGj5dSJjm6XalsKkcgpR2gGJj0c__Cwd7Hbltqhd8aU",
+					linkedin: "http://linkedin.com/in/faadel-asfari-b926b922b",
+				},
 			],
 		},
 		{
@@ -193,18 +204,6 @@ export const mockApiData = {
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQFahDbQDBlfeQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723491171400?e=1744243200&v=beta&t=58q5CGRqrzpHBpnSfyHp4UbJ0Al8d_TEvLBFmPnLpdI",
 					linkedin:
 						"https://www.linkedin.com/in/mohamad-emad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-				},
-				{
-					name: "Fadel Asfari",
-					firstName: "Fadel",
-					lastName: "Asfari",
-					role: "Industrials & Natural Resources",
-					program:
-						"Business Administration, Minor in Economics and Applied IT",
-					year: "4th",
-					joined: "Sept 2023",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQGKptCB5JgDcg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1691640272494?e=1744243200&v=beta&t=mGj5dSJjm6XalsKkcgpR2gGJj0c__Cwd7Hbltqhd8aU",
-					linkedin: "http://linkedin.com/in/faadel-asfari-b926b922b",
 				},
 				{
 					name: "Cullan Bryne",
@@ -347,7 +346,7 @@ export const mockApiData = {
 					program: "Civil Engineering ",
 					year: "3rd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQE7l-XmEynJbg/profile-displayphoto-shrink_400_400/B56ZRS7R55H0Ag-/0/1736558060040?e=1744243200&v=beta&t=pi0g50H8uh5B11A2uG7Zqtfc-jE5CCLVK3aUt06Oay0",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQEoSfE1xvq2Qg/profile-displayphoto-shrink_800_800/B56ZWsJtjXGoAg-/0/1742349984306?e=1747872000&v=beta&t=ViKP7iaQ7Kkr9FBbK67LjNL9TLFHr_3toTULhcSABFQ",
 					linkedin:
 						"https://www.linkedin.com/in/james-botros-456aa6295/",
 				},
@@ -560,7 +559,7 @@ export const mockApiData = {
 						"Bachelor of Commerce (Honours) Business Administration with specialization in finance and minor in economics.",
 					year: "4th",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQHDEQSRnA0-VA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730951694614?e=1744243200&v=beta&t=oxlT_MGZM-QFDVXegbl1ilZCxU7Ynsdi-lYT4HPQwgY",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQE_s7MIoxjewA/profile-displayphoto-shrink_800_800/B4EZVo9D9zHgAg-/0/1741222593563?e=1747872000&v=beta&t=YBJEssbviqAjYYZGxOTc8X7CZ7vJWO4gABqMr_YXEj4",
 					linkedin: "https://www.linkedin.com/in/nankibhatia",
 				},
 			],
@@ -748,7 +747,7 @@ export const mockApiData = {
 					program: "Law and Politics, Minor in Economics ",
 					year: "1st",
 					joined: "Dec 2024",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQGnwEVly4x61A/profile-displayphoto-shrink_400_400/B4EZTdZBw5HcAk-/0/1738881113608?e=1744243200&v=beta&t=9iACnLDXC-GgpcOTnCdVe7JwtrUsllH-XzFvqB9wpmI",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQGmDwR_WHpWZw/profile-displayphoto-shrink_800_800/B4EZWMz0JCG0Ac-/0/1741824148973?e=1747872000&v=beta&t=HtObksQH5JbD3iu27GQzjuKcnWZ08f7o3PGnlnu66CA",
 					linkedin:
 						"https://www.linkedin.com/in/joelle-jawdat-789058337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
