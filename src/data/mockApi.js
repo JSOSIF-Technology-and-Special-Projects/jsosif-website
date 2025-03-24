@@ -605,7 +605,7 @@ export const mockApiData = {
 						"http://www.linkedin.com/in/elizabeth-spiridon-98277b269",
 				},
 				{
-					name: "Michael Berlingieri ",
+					name: "Michael Berlingieri",
 					firstName: "Michael",
 					lastName: "Berlingieri",
 					role: "Junior Compliance Analyst",
@@ -615,8 +615,19 @@ export const mockApiData = {
 					image: "https://media.licdn.com/dms/image/v2/D5603AQFgbgZUEWyx6Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1695001072425?e=1748476800&v=beta&t=Ax4QaaH65OCUNPwarUpbU6n7ncIqN2d2F23UAGoirMo",
 					linkedin: 
 						"http://www.linkedin.com/in/michael-berlingieri-26958522a",
-				}
-
+				},
+				{
+					name: "Ahmad Nayab",
+					firstName: "Ahmad",
+					lastName: "Nayab",
+					role: "Junior Special Situations Analyst",
+					program: "Bachelor of Commerce (Honours), Specialization in Finance",
+					year: "3rd",
+					joined: "Mar 2025",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQG9rjlEe_sUxA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1694975067151?e=1748476800&v=beta&t=qHgCU7oQPClL_P92PKLWcZVgPHxWCG2EnyQNhgiWnN4",
+					linkedin: 
+						"http://www.linkedin.com/in/ahmad-nayab-878986291",
+				},
 			],
 		},
 		{
