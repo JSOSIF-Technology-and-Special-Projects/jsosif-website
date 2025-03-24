@@ -592,6 +592,18 @@ export const mockApiData = {
 					linkedin:
 						"https://www.linkedin.com/in/joseph-murtagh-18b34032b/",
 				},
+				{
+					name: "Elizabeth Spiridon",
+					firstName: "Elizabeth",
+					lastName: "Spiridon",
+					role: "Junior Compliance Analyst",
+					program: "Honours Law and Politics",
+					year: "3rd",
+					joined: "Mar 2025",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQF35RSv1C_gSA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728572059535?e=1748476800&v=beta&t=Y_JgI_ChBfeEBnrfpkhxf0dJhlkdQkQpJZSYcI8FcT8",
+					linkedin: 
+						"http://www.linkedin.com/in/elizabeth-spiridon-98277b269",
+				}
 			],
 		},
 		{
