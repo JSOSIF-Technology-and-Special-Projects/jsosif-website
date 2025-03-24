@@ -603,7 +603,20 @@ export const mockApiData = {
 					image: "https://media.licdn.com/dms/image/v2/D5603AQF35RSv1C_gSA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728572059535?e=1748476800&v=beta&t=Y_JgI_ChBfeEBnrfpkhxf0dJhlkdQkQpJZSYcI8FcT8",
 					linkedin: 
 						"http://www.linkedin.com/in/elizabeth-spiridon-98277b269",
+				},
+				{
+					name: "Michael Berlingieri ",
+					firstName: "Michael",
+					lastName: "Berlingieri",
+					role: "Junior Compliance Analyst",
+					program: "Bachelor of Commerce, Specialization in Finance",
+					year: "3rd",
+					joined: "Mar 2025",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQFgbgZUEWyx6Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1695001072425?e=1748476800&v=beta&t=Ax4QaaH65OCUNPwarUpbU6n7ncIqN2d2F23UAGoirMo",
+					linkedin: 
+						"http://www.linkedin.com/in/michael-berlingieri-26958522a",
 				}
+
 			],
 		},
 		{
