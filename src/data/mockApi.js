@@ -562,6 +562,7 @@ export const mockApiData = {
 					image: "https://media.licdn.com/dms/image/v2/D4E03AQE_s7MIoxjewA/profile-displayphoto-shrink_800_800/B4EZVo9D9zHgAg-/0/1741222593563?e=1747872000&v=beta&t=YBJEssbviqAjYYZGxOTc8X7CZ7vJWO4gABqMr_YXEj4",
 					linkedin: "https://www.linkedin.com/in/nankibhatia",
 				},
+				
 			],
 		},
 		{
@@ -628,6 +629,18 @@ export const mockApiData = {
 					linkedin: 
 						"http://www.linkedin.com/in/ahmad-nayab-878986291",
 				},
+				{
+					name: "Kailyana Gelinas",
+					firstName: "Kayliana",
+					lastName: "Geilinas",
+					role: "Junior Compliance Analyst",
+					program: "Honours Law and Politics",
+					year: "2nd",
+					joined: "Mar 2025",
+					image: "https://media.licdn.com/dms/image/v2/D4E03AQF1lS9_anwWfA/profile-displayphoto-shrink_400_400/B4EZSojHmoHgAk-/0/1737994567111?e=1748476800&v=beta&t=I4VCD81kb0zbotp-zJiUorntsKEkPB_-u_Ss09EJU3M",
+					linkedin: 
+						"https://www.linkedin.com/in/kailyana-gelinas-3148b5340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+				}
 			],
 		},
 		{
