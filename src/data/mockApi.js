@@ -655,7 +655,7 @@ export const mockApiData = {
 						"Bachelor of Mathematics - Mathematics and Finance; Minor in Economics",
 					year: "3rd",
 					joined: "Jan 2024",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQEbLBNvnHQKHg/profile-displayphoto-shrink_400_400/B56ZROFcMNGoAo-/0/1736476837321?e=1744243200&v=beta&t=AKM-1Njrff-YC4TH0JTJOmkOEzHWxjjJyf-vVMXt_pM",
+					image: "https://media.licdn.com/dms/image/v2/D5603AQF121uAq8SIHw/profile-displayphoto-shrink_400_400/B56ZW16TIbHQAo-/0/1742513714622?e=1748476800&v=beta&t=gQi1Up0c7In58BBCnlv5ru-XeS3QxMPJN1IGVT5GkXU",
 					linkedin: "http://www.linkedin.com/in/aidanricher",
 				},
 				{
