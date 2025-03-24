@@ -632,7 +632,7 @@ export const mockApiData = {
 				{
 					name: "Kailyana Gelinas",
 					firstName: "Kailyana",
-					lastName: "Geilinas",
+					lastName: "Gelinas",
 					role: "Junior Compliance Analyst",
 					program: "Honours Law and Politics",
 					year: "2nd",
