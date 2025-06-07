@@ -20,6 +20,7 @@ const markerIcon = new L.Icon({
 	shadowSize: [41, 41],
 });
 
+//white blurb that pops up
 const OpenPopupOnLoad = () => {
 	const map = useMap();
 	useEffect(() => {

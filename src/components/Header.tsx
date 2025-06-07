@@ -35,6 +35,7 @@ export default function Header() {
 			name: "Alumni",
 			href: "/alumni",
 		},
+		//will come later for member login or something
 		// {
 		// 	name: "Research",
 		// 	href: "/research",

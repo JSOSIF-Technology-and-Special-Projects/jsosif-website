@@ -1,8 +1,9 @@
+//portfolio grabs our tickers in the data page and displays them
 "use client";
 import { useState, useEffect } from "react";
-import { fetchInvestmentDivisions, fetchStatistics } from "../data/mockApi"; // Mock API functions
+import { fetchInvestmentDivisions, fetchStatistics } from "../data/mockApi"; 
 import Image, { StaticImageData } from "next/image";
-import portfoliobanner from "../assets/portfoliobanner.png"; // Replace with your banner image path
+import portfoliobanner from "../assets/portfoliobanner.png"; 
 import SymbolOverviewWidget from "../components/SymbolOverviewWidget";
 
 export default function Portfolio() {
