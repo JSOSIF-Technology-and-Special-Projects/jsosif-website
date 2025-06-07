@@ -1,10 +1,11 @@
+//teams page, holds all of us on it :)
 "use client";
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { fetchTeams } from "../data/mockApi"; // Import the updated mock data
-import TeamCard from "../components/TeamCard"; // Reuse the `TeamCard` component for members
-import jsosifteam from "../assets/jsosifteam.webp"; // Import the banner image
+import { fetchTeams } from "../data/mockApi"; 
+import TeamCard from "../components/TeamCard"; 
+import jsosifteam from "../assets/jsosifteam.webp"; 
 
 interface Team {
 	name: string;

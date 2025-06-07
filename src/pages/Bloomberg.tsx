@@ -1,3 +1,4 @@
+//bloomberg page, info about the lab and its hours and resources
 "use client";
 import Image from "next/image";
 import bloomberg from "../assets/bloomberg.webp";

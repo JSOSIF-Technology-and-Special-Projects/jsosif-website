@@ -1,3 +1,4 @@
+//tradingview component modified to our liking
 "use client";
 
 import { MarketOverview } from "react-ts-tradingview-widgets";

@@ -1,3 +1,4 @@
+//landing page, has all the teams little blurb as well as some stats
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";

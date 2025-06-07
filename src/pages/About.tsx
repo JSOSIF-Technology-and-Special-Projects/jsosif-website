@@ -1,3 +1,4 @@
+//about page, just covers history and mission statement of the jsosif team
 "use client";
 
 import React, { useState, useEffect } from "react";

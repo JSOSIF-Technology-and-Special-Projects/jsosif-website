@@ -1,3 +1,4 @@
+//hiring page, application form for jsosif team
 "use client";
 import hiringbanner from "../assets/hiringbanner.webp";
 import Image from "next/image";
@@ -60,7 +61,10 @@ export default function Hiring() {
 		const { name, value } = e.target;
 		setFormData((prev) => ({ ...prev, [name]: value }));
 	};
+	
 
+	//i think this was for a dropzone file input, but we are using the dropzone component now 
+	
 	// const handleFileChange = (acceptedFiles: File[]) => {
 	// 	setFormData((prev) => ({ ...prev, file: acceptedFiles[0] || null }));
 	// };

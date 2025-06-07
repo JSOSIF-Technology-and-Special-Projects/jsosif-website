@@ -1,9 +1,10 @@
+//alumni page, people who use to be part of the jsosif team
 "use client";
 
 import React, { useEffect, useState } from "react";
-import AlumniCard from "../components/AlumniCard"; // Reuse the new AlumniCard component
-import { fetchAlumni } from "../data/mockApi"; // Use the fetchAlumni function
-import alumnibackground from "../assets/alumnibackground.webp"; // Replace with your actual banner image
+import AlumniCard from "../components/AlumniCard"; 
+import { fetchAlumni } from "../data/mockApi";
+import alumnibackground from "../assets/alumnibackground.webp"; 
 import Image from "next/image";
 
 interface Alumni {
