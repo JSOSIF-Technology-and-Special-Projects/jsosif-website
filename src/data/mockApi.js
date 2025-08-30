@@ -122,7 +122,7 @@ export const mockApiData = {
 						"Commerce Finance Specialization Economics & Philosophy Minor",
 					year: "3rd",
 					joined: "Sept 2022",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQEmfSZUrXkfRQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668385805304?e=1744243200&v=beta&t=ogpAb7X4Q9b_UJKY9yH88VFFH_khyjPVsizpNjdId0Q",
+					image: "/images/pfps/jacobsweetpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/jacob-sweet-853066214/",
 				},
@@ -135,7 +135,7 @@ export const mockApiData = {
 						"Honours Bcomm - Specializing in Finance and Minor in Economics & IT",
 					year: "4th",
 					joined: "Sept 2023",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQFMoP650DnFLA/profile-displayphoto-shrink_400_400/B4EZRnB.6OHgAo-/0/1736895361078?e=1744243200&v=beta&t=l9VnchdcFc0e31WViBaqPcnOuxBAOl0_GIxI9vz3-BA",
+					image: "/images/pfps/saifjawdatpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/saif-jawdat-54a645262/",
 				},
@@ -147,21 +147,9 @@ export const mockApiData = {
 					program: "Double major finance economics",
 					year: "3rd",
 					joined: "Jan 2023",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQEHn82Vbjo8eA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1682728499021?e=1744848000&v=beta&t=KpDA5cuAvufWPmbEXO9ph56TxD-DuNUaifOVHDGRDGU",
+					image: "/images/pfps/nolanrobinsonpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/nolan-robinson-13a591268?otpToken=MTMwNDFlZTAxMDI5Y2RjY2I1MmEwZmViNDExZGVmYjE4Y2NjZDk0OTkwYWE4YjZiN2JjZjA1NjY0YzVhNWNmMWY2ZDVkNmU5NThmNGQzZDA3ZGZmZGQ4YjNiN2U0YTgyMmQ1M2ZmNzNiNzlmZjBjMzNlY2RhM2JjLDEsMQ%3D%3D&midSig=35F84SMAOZ8rE1&eid=i72pha-m6o5njo8-j9&midToken=AQFMvyfDSaSFZg&trkEmail=eml-email_m2m_invite_single_01-header-0-profile_glimmer-null-i72pha%7Em6o5njo8%7Ej9-null-null&lipi=urn%3Ali%3Apage%3Aemail_email_m2m_invite_single_01%3BmRrUnsndTny8U1nNqk54uA%3D%3D&trk=eml-email_m2m_invite_single_01-header-0-profile_glimmer&originalSubdomain=ca",
-				},
-				{
-					name: "Faadel Asfari",
-					firstName: "Faadel",
-					lastName: "Asfari",
-					role: "Chief Legal Officer",
-					program:
-						"Business Administration, Minor in Economics and Applied IT",
-					year: "4th",
-					joined: "Sept 2023",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQGKptCB5JgDcg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1691640272494?e=1744243200&v=beta&t=mGj5dSJjm6XalsKkcgpR2gGJj0c__Cwd7Hbltqhd8aU",
-					linkedin: "http://linkedin.com/in/faadel-asfari-b926b922b",
 				},
 			],
 		},
@@ -178,7 +166,7 @@ export const mockApiData = {
 						"Business Administration, Specialization in Finance with minors in Economics and IT",
 					year: "4th",
 					joined: "Jan 2023",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQGDsoguNW8RuA/profile-displayphoto-shrink_400_400/B4EZOcXCq7GQAg-/0/1733495107238?e=1744243200&v=beta&t=0R8EV3OIqPXS-TAM-BWE3iYQM-qQXK9JHdsSYWJsbHg",
+					image: "/images/pfps/connordemelopfp.jpg",
 					linkedin: "http://linkedin.com/in/connor-demelo-35174b267",
 				},
 				{
@@ -189,7 +177,7 @@ export const mockApiData = {
 					program: "Business, Specializing in Accounting",
 					year: "4th",
 					joined: "Oct 2022",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQH1pnYQaqravQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669688697141?e=1744848000&v=beta&t=cZSIdayttHN7J4_YxYefb0GDYXWaNZTZuPHXJx0urUU",
+					image: "/images/pfps/edwardaboukassmpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/edward-aboukassm-6142a21a4/?originalSubdomain=ca",
 				},
@@ -201,34 +189,43 @@ export const mockApiData = {
 					program: "Double Major in Business and Political Science",
 					year: "3rd",
 					joined: "Sept 2023",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQFahDbQDBlfeQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723491171400?e=1744243200&v=beta&t=58q5CGRqrzpHBpnSfyHp4UbJ0Al8d_TEvLBFmPnLpdI",
+					image: "/images/pfps/mohamademadpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/mohamad-emad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
-					name: "Cullan Bryne",
+					name: "Faadel Asfari",
+					firstName: "Faadel",
+					lastName: "Asfari",
+					role: "Industrials & Natural Resources",
+					program:
+						"Business Administration, Minor in Economics and Applied IT",
+					year: "4th",
+					joined: "Sept 2023",
+					image: "/images/pfps/faadelasfaripfp.jpg",
+					linkedin: "http://linkedin.com/in/faadel-asfari-b926b922b",
+				},
+				{
+					name: "Cullan Byrne",
 					firstName: "Cullan",
-					lastName: "Bryne",
+					lastName: "Byrne",
 					role: "Health Care",
 					program:
 						"Honours Business Administration, Specialization in Finance, Minor in Computer Science ",
 					year: "2nd",
-					program:
-						"Honours Business Administration, Specialization in Finance, Minor in Computer Science ",
-					year: "2nd",
 					joined: "Oct 2023",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQFm3lHvEArffA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1701305242851?e=1744243200&v=beta&t=uSEeW4qRI6JS4dgWLnKC_s0q4zMwdZUSRQCJ0Mrlrfg",
+					image: "/images/pfps/cullanbyrnepfp.jpg",
 					linkedin: "http://www.linkedin.com/in/cullan-byrne",
 				},
 				{
-					name: "Luca Pecorada",
+					name: "Luca Pecoraro",
 					firstName: "Luca",
-					lastName: "Pecorada",
+					lastName: "Pecoraro",
 					role: "Fixed Income & Real Estate",
 					program: "Business Administration (Finance specialization)",
 					year: "4th",
 					joined: "Jan 2023",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQGqb86yr_IAzQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700691369849?e=1744848000&v=beta&t=zftZLTR6dRj_lVNUBnXxsOVO1Ua6FHYhCIlP8l3XJUk",
+					image: "/images/pfps/lucapecoraropfp.jpg",
 					linkedin:
 						"http://www.linkedin.com/in/luca-pecoraro-66a808230",
 				},
@@ -239,16 +236,16 @@ export const mockApiData = {
 			banner: "/images/team-banners/senior_analysts_banner.webp",
 			members: [
 				{
-					name: "Eitan Cozy Cosentino",
-					firstName: "Eitan Cozy",
+					name: "Eitan (Cozy) Cosentino",
+					firstName: "Eitan (Cozy)",
 					lastName: "Cosentino",
 					role: "Financial Institutions",
 					program: "Business Administration, Finance, Economics",
 					year: "3rd",
 					joined: "Sept 2024",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQGnLhcnxyIFvQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668545416449?e=1744243200&v=beta&t=gEynNpAYF8JdWaYaq3mU6O-yJgkQCHSZ8cUBAiMpWRM",
+					image: "/images/pfps/eitancosentinopfp.jpg",
 					linkedin:
-						"https://www.linkedin.com/in/cozy-eitan-cosentino-429319257/",
+						"https://www.linkedin.com/in/eitan-cosentino-429319257/",
 				},
 				{
 					name: "Rafael Ferreira",
@@ -259,7 +256,7 @@ export const mockApiData = {
 						"Master of Management with specialization in Business Data Analytics",
 					year: "1st",
 					joined: "Jan 2025",
-					image: "/images/rafael.png",
+					image: "/images/pfps/rafaelferreirapfp.jpg",
 					linkedin: "http://linkedin.com/in/rafaelaugustofs/",
 				},
 				{
@@ -270,7 +267,7 @@ export const mockApiData = {
 					program: "Business, Accounting",
 					year: "2nd",
 					joined: "Sept 2024",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQHogeyScxjDlw/profile-displayphoto-shrink_400_400/B56ZRPmeUdGQAg-/0/1736502275028?e=1744243200&v=beta&t=m-v4-Aoex2wLMY_YgyjA5UXkVDBoBk536UT292HNhBM",
+					image: "/images/pfps/noahdimaiopfp.jpg",
 					linkedin: "http://www.linkedin.com/in/noah-di-maio",
 				},
 				{
@@ -282,7 +279,7 @@ export const mockApiData = {
 						"Major: Business, Specialization: Finance, Minor: Economics",
 					year: "2nd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQERVrpILL5-Zw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727467548770?e=1744848000&v=beta&t=qULgTAca9Ve9VfL-ZfDL1D8XuCnOEJfB3lnPLGpcx6w",
+					image: "/images/pfps/jackmarcottepfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/jack-marcotte-74a6b3293/",
 				},
@@ -294,7 +291,7 @@ export const mockApiData = {
 					program: "Finance Major, Economics Minor",
 					year: "3rd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQEGZu4imLzgmg/profile-displayphoto-shrink_400_400/B56ZP8s4sNG8Ag-/0/1735111446514?e=1744243200&v=beta&t=mgKrsO4qXxIYqWAGhALWcehSN7ZPSOcRR-0ubv-kyD0",
+					image: "/images/pfps/kartikaydhamijapfp.jpg",
 					linkedin: "http://www.linkedin.com/in/kartikaydhamija",
 				},
 			],
@@ -311,7 +308,7 @@ export const mockApiData = {
 					program: "B.A Honors, Economics",
 					year: "3rd",
 					joined: "Sep 2024",
-					image: "https://media.licdn.com/dms/image/v2/D4D03AQFLSNgswHJ9pA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732292882416?e=1744848000&v=beta&t=-fjSni0yuJyJXtXQ3hfoKpLxodBOsnxqfBd3idfr1zw",
+					image: "/images/pfps/nickmbuguapfp.jpg",
 					linkedin: "https://www.linkedin.com/in/nickmbugua/",
 				},
 				{
@@ -322,7 +319,7 @@ export const mockApiData = {
 					program: "Business Administration, Finance  ",
 					year: "3rd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQGMAn5M6yZNzQ/profile-displayphoto-shrink_400_400/B56ZODmJByG4As-/0/1733079634937?e=1744848000&v=beta&t=z7RqtMpF9AjHuFOzVFtaNScIBte3IdbSo_cSj8BM1DU",
+					image: "/images/pfps/prabhsandhupfp.jpg",
 					linkedin:
 						"http://www.linkedin.com/in/prabh-sandhu-a555a4200",
 				},
@@ -334,7 +331,7 @@ export const mockApiData = {
 					program: "Business/Psych with a finance specialization",
 					year: "2nd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQHUe1MHRwwQvw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729819695392?e=1744243200&v=beta&t=Hq9Df-PlGM-dVyn8zw_106ZERik_U3rUk61LDNvHB80",
+					image: "/images/pfps/mariambakmayapfp.jpg",
 					linkedin:
 						"http://www.linkedin.com/in/mariam-raphael-bakmaya-885862303",
 				},
@@ -346,20 +343,20 @@ export const mockApiData = {
 					program: "Civil Engineering ",
 					year: "3rd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQEoSfE1xvq2Qg/profile-displayphoto-shrink_800_800/B56ZWsJtjXGoAg-/0/1742349984306?e=1747872000&v=beta&t=ViKP7iaQ7Kkr9FBbK67LjNL9TLFHr_3toTULhcSABFQ",
+					image: "/images/pfps/jamesbotrospfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/james-botros-456aa6295/",
 				},
 				{
-					name: "Izzy Kekelji",
-					firstName: "Izzy",
-					lastName: "Kekelji",
+					name: "Izzabella Kekelj",
+					firstName: "Izzabella",
+					lastName: "Kekelj",
 					role: "Tech Media Telecommunications",
 					program:
 						"Bachelor of Commerce with a specalization in Finance and a minor in Computer Science",
 					year: "2nd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQGXEAgtUrQNOw/profile-displayphoto-shrink_400_400/B4EZRCMU1GGwAk-/0/1736277315388?e=1744243200&v=beta&t=thCMhK3BhH-jTHY9PNKyGAQ0TaCp18vPdJ1z0pf1TcQ",
+					image: "/images/pfps/izabellakekeljpfp.jpg",
 					linkedin: "http://www.linkedin.com/in/izabella-kekelj-",
 				},
 				{
@@ -371,8 +368,8 @@ export const mockApiData = {
 						"Master of Management - International Accounting & Financial",
 					year: "1st",
 					joined: "Jan 2025",
-					image: "/images/weiai.jpg",
-					linkedin: "https://www.linkedin.com/in/",
+					image: "",
+					linkedin: "https://www.linkedin.com/in/",      // linkedin not provided image not found
 				},
 				{
 					name: "David Jesus",
@@ -383,7 +380,7 @@ export const mockApiData = {
 						"Bachelor of Business Administration- Finance Specialization",
 					year: "2nd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4D03AQGKfK54Y6WMvA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709167473698?e=1744848000&v=beta&t=ZxH3pMyZ_t5jJT0sYvc5M_PglHv382_48aGrs1l_fio",
+					image: "/images/pfps/davidjesuspfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/david-jesus-17baaa2b6/",
 				},
@@ -395,8 +392,8 @@ export const mockApiData = {
 					program: "Combined Major in Psychology and Criminology",
 					year: "3rd",
 					joined: "Jan 2025",
-					image: "/images/jada.jpg",
-					linkedin: "https://www.linkedin.com/in/",
+					image: "/images/pfps/jadayaldopfp.jpg",
+					linkedin: "https://www.linkedin.com/in/jada-yaldo-4568192b8/",
 				},
 				{
 					name: "Krish Kaushik",
@@ -406,8 +403,8 @@ export const mockApiData = {
 					program: "BCom mahout finance minor economics ",
 					year: "3rd",
 					joined: "Nov 2024",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					image: "/images/pfps/krishkaushikpfp.jpg",
+					linkedin: "https://www.linkedin.com/in/krish-kaushik-5361bb346/",
 				},
 				{
 					name: "Travis Loughead",
@@ -417,7 +414,7 @@ export const mockApiData = {
 					program: "Business Administration ",
 					year: "2nd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQF_dbhVij-hSQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726108867147?e=1744848000&v=beta&t=az6miduUmPQQ1ZWJ7sln7D_6x5fzuhRXw9aR_fdb80c",
+					image: "/images/pfps/travislougheadpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/travis-loughead-0a1504293/?originalSubdomain=ca",
 				},
@@ -430,7 +427,7 @@ export const mockApiData = {
 						"Business Administration, Specialization in Finance",
 					year: "2nd",
 					joined: "Sept 2024",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQFyiCHxzT81Xg/profile-displayphoto-shrink_400_400/B4EZOXyILdGQAw-/0/1733418321559?e=1744243200&v=beta&t=2WWF-8JoSXrpH6eBTY-t7Y7EYoqGMZ8n22vynr8cqBc",
+					image: "/images/pfps/kohencolenuttpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/kohen-colenutt-292800333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
@@ -443,7 +440,7 @@ export const mockApiData = {
 						"Business Administration, Accounting Specialization, Minor in Economics",
 					year: "2nd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQF4Qg9lCgQq0w/profile-displayphoto-shrink_400_400/B4EZQSqoEkGwAg-/0/1735479951941?e=1744243200&v=beta&t=J4kEEdumkU-UwMYG31RsTpioOz8jXF98bwVGOsgRD5w",
+					image: "/images/pfps/andrewboothpfp.jpg",
 					linkedin: "https://www.linkedin.com/in/andrewbooth-/",
 				},
 				{
@@ -455,20 +452,20 @@ export const mockApiData = {
 						"Business commerce, finance specialization, minor in computer science & Economics",
 					year: "4th",
 					joined: "Jan 2024",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQFH_JJKq6awqA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715898278586?e=1744243200&v=beta&t=ax6v7t62Zh5ZxcMMEkiihXCaNWx0hXd4jMDdEOqIsdQ",
+					image: "/images/pfps/gabrielsafieddinepfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/gabriel-safieddine?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
 				{
-					name: "Alexander Dougal",
+					name: "Alexander Dougall",
 					firstName: "Alexander",
-					lastName: "Dougal",
+					lastName: "Dougall",
 					role: "Fixed Income & Real Estate",
 					program:
 						"Honours Business Administration & Psychology, specializing in Human Resource Management",
 					year: "3rd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQHmN3ySagF-pw/profile-displayphoto-shrink_400_400/B4EZRGa8YUHAAk-/0/1736348256463?e=1744243200&v=beta&t=NSyCT9C2ML2-wO2vPbzjE6zu6x6N21h5cN0N2g6Lb30",
+					image: "/images/pfps/alexanderdougallpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/alexander-dougall-977ba91b0/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
@@ -481,19 +478,19 @@ export const mockApiData = {
 						"Business Administration/Finance. Minor Applied Information Technology ",
 					year: "4th",
 					joined: "Jan 2024",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQHeKIn29hqq_A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732005397799?e=1744243200&v=beta&t=e5TvNkBtZcPNcsZaubuEtJECr0zZgV4j7PKwD9LJpI0",
+					image: "/images/pfps/maryaounpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/mary-aoun-882a6517a/",
 				},
 				{
-					name: "Huong Thao Nguyen",
-					firstName: "Huong Thao",
+					name: "Linda Thao Nguyen",
+					firstName: "Linda Thao",
 					lastName: "Nguyen",
 					role: "Fixed Income & Real Estate",
 					program: "Master of Management - Data Analytics Stream",
 					year: "1st",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQElL878suS_hw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1695093638471?e=1744243200&v=beta&t=nzwrck2m5Bx0J8ny3VBcviURVjPFFYuLX81z9KiHY4I",
+					image: "/images/pfps/lindanguyenpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/linda-nguyen28?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
@@ -512,7 +509,7 @@ export const mockApiData = {
 						"Honours Bachelor of Commerce–Business Administration, specialization in accounting, minor in computer science",
 					year: "3rd",
 					joined: "Sept 2022",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQF2erJ-DSjdDA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1701481382087?e=1744243200&v=beta&t=DmQ7VJ_Wk_ZT1h3lRmfsQeO5lio5fa3ngyaCmNqxdks",
+					image: "/images/pfps/seanclarkepfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/sean-clarke-529294251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
@@ -524,7 +521,7 @@ export const mockApiData = {
 					program: "BA in Economics",
 					year: "3rd",
 					joined: "Oct 2023",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQHjZ0G4tNDLXg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700112010776?e=1744243200&v=beta&t=WsD_PSSK8nxNAmCiKX9nWmavObvh1OBCDsXW8I9TlHg",
+					image: "/images/pfps/ethanbragapfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/ethan-braga-8bb390294/",
 				},
@@ -536,7 +533,7 @@ export const mockApiData = {
 					program: "Masters in Applied Economics and Policy",
 					year: "1st",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQHKMGtZyOqtPQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713992002225?e=1744243200&v=beta&t=74iN95507yVVmU7XTztyVtKNu0uPK5_GUbXs_XzxMdA",
+					image: "/images/pfps/houshangjavanpfp.jpg",
 					linkedin: "https://www.linkedin.com/in/houshang-javan/",
 				},
 				{
@@ -547,7 +544,7 @@ export const mockApiData = {
 					program: "Business Administration, Finance, Economics",
 					year: "1st",
 					joined: "Sept 2024",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQE_YuN4dvyKbA/profile-displayphoto-shrink_400_400/B56ZPYIfzPGQAo-/0/1734497926644?e=1744848000&v=beta&t=DoDiZIsWiyP6UOb4PfmwdzxajxC8sFhoMIqUuCsWBhU",
+					image: "/images/pfps/nathankempdovepfp.jpg",
 					linkedin: "http://www.linkedin.com/in/nathan-kemp-dove",
 				},
 				{
@@ -559,10 +556,9 @@ export const mockApiData = {
 						"Bachelor of Commerce (Honours) Business Administration with specialization in finance and minor in economics.",
 					year: "4th",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQE_s7MIoxjewA/profile-displayphoto-shrink_800_800/B4EZVo9D9zHgAg-/0/1741222593563?e=1747872000&v=beta&t=YBJEssbviqAjYYZGxOTc8X7CZ7vJWO4gABqMr_YXEj4",
+					image: "/images/pfps/nankibhatiapfp.jpg",
 					linkedin: "https://www.linkedin.com/in/nankibhatia",
 				},
-				
 			],
 		},
 		{
@@ -577,7 +573,7 @@ export const mockApiData = {
 					program: "Business, Finance",
 					year: "2nd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4D03AQEGC5q-HWH-Mg/profile-displayphoto-shrink_800_800/B4DZTcUFc2GcAk-/0/1738863041440?e=1744243200&v=beta&t=hzWEaxI5-ffqAaJbIMuUHjv-A58_d2kpm95SPQM7eeM",
+					image: "/images/pfps/matthewlivingstonepfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/matthew-livingstone-a457b02a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
@@ -589,58 +585,10 @@ export const mockApiData = {
 					program: "Bachelor of Commerce & Computer Science",
 					year: "1st",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQEC3BAEPSpdAw/profile-displayphoto-shrink_400_400/B4EZSodeszHoAg-/0/1737993088950?e=1744848000&v=beta&t=gWFjJQ2Sl_2mFEq7kVqKfTWrceRdz4TT-PWLZW5eBBI",
+					image: "/images/pfps/josephmurtaghpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/joseph-murtagh-18b34032b/",
 				},
-				{
-					name: "Elizabeth Spiridon",
-					firstName: "Elizabeth",
-					lastName: "Spiridon",
-					role: "Junior Compliance Analyst",
-					program: "Honours Law and Politics",
-					year: "3rd",
-					joined: "Mar 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQF35RSv1C_gSA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728572059535?e=1748476800&v=beta&t=Y_JgI_ChBfeEBnrfpkhxf0dJhlkdQkQpJZSYcI8FcT8",
-					linkedin: 
-						"http://www.linkedin.com/in/elizabeth-spiridon-98277b269",
-				},
-				{
-					name: "Michael Berlingieri",
-					firstName: "Michael",
-					lastName: "Berlingieri",
-					role: "Junior Compliance Analyst",
-					program: "Bachelor of Commerce, Specialization in Finance",
-					year: "3rd",
-					joined: "Mar 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQFgbgZUEWyx6Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1695001072425?e=1748476800&v=beta&t=Ax4QaaH65OCUNPwarUpbU6n7ncIqN2d2F23UAGoirMo",
-					linkedin: 
-						"http://www.linkedin.com/in/michael-berlingieri-26958522a",
-				},
-				{
-					name: "Ahmad Nayab",
-					firstName: "Ahmad",
-					lastName: "Nayab",
-					role: "Junior Special Situations Analyst",
-					program: "Bachelor of Commerce (Honours), Specialization in Finance",
-					year: "3rd",
-					joined: "Mar 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQG9rjlEe_sUxA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1694975067151?e=1748476800&v=beta&t=qHgCU7oQPClL_P92PKLWcZVgPHxWCG2EnyQNhgiWnN4",
-					linkedin: 
-						"http://www.linkedin.com/in/ahmad-nayab-878986291",
-				},
-				{
-					name: "Kailyana Gelinas",
-					firstName: "Kailyana",
-					lastName: "Gelinas",
-					role: "Junior Compliance Analyst",
-					program: "Honours Law and Politics",
-					year: "2nd",
-					joined: "Mar 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQF1lS9_anwWfA/profile-displayphoto-shrink_400_400/B4EZSojHmoHgAk-/0/1737994567111?e=1748476800&v=beta&t=I4VCD81kb0zbotp-zJiUorntsKEkPB_-u_Ss09EJU3M",
-					linkedin: 
-						"https://www.linkedin.com/in/kailyana-gelinas-3148b5340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-				}
 			],
 		},
 		{
@@ -655,7 +603,7 @@ export const mockApiData = {
 					program: "Business, Finance, Economics",
 					year: "3rd",
 					joined: "Oct 2023",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQFUt-Gw1WUq9Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700152760577?e=1744243200&v=beta&t=QoxU0tCBfW2XYJKerjmTRmYJ_6AciL64FZHi71ErXFo",
+					image: "/images/pfps/adambergenpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/adam-bergen-7223bb262/",
 				},
@@ -668,7 +616,7 @@ export const mockApiData = {
 						"Bachelor of Mathematics - Mathematics and Finance; Minor in Economics",
 					year: "3rd",
 					joined: "Jan 2024",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQF121uAq8SIHw/profile-displayphoto-shrink_400_400/B56ZW16TIbHQAo-/0/1742513714622?e=1748476800&v=beta&t=gQi1Up0c7In58BBCnlv5ru-XeS3QxMPJN1IGVT5GkXU",
+					image: "/images/pfps/aidanricherpfp.jpg",
 					linkedin: "http://www.linkedin.com/in/aidanricher",
 				},
 				{
@@ -679,7 +627,7 @@ export const mockApiData = {
 					program: "Major: Business (Minor: Comp Sci, IT)",
 					year: "4th",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQH5oh2X2YwexQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724985536406?e=1744848000&v=beta&t=IXURR2KDPXuDOyGRp1_Z9_y9-kP2DNT1J-AV2XZ1Xtc",
+					image: "/images/pfps/kumaylhoodapfp.jpg",
 					linkedin: "https://ca.linkedin.com/in/kumaylhooda",
 				},
 				{
@@ -691,7 +639,7 @@ export const mockApiData = {
 						"Bachelor of Mathematics (Honours) - Math and Finance",
 					year: "2nd",
 					joined: "Jan 2025",
-					image: "",
+					image: "",			// no pfp found
 					linkedin:
 						"https://www.linkedin.com/in/max-mullins-01610a257/",
 				},
@@ -710,7 +658,7 @@ export const mockApiData = {
 						"Business and Computer Science, Finance Specialization",
 					year: "4th",
 					joined: "Oct 2022",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQEBOdu6ymyuog/profile-displayphoto-shrink_400_400/B4EZSltolCHgAg-/0/1737946991397?e=1744243200&v=beta&t=JJTLX5A0SRC3CvtSH9AcFEtksL-4_6AdL5Fqg-ERBgs",
+					image: "/images/pfps/ayamadipfp.jpg",
 					linkedin: "http://www.linkedin.com/in/aya-madi",
 				},
 				{
@@ -721,7 +669,7 @@ export const mockApiData = {
 					program: "Computer Science",
 					year: "3rd",
 					joined: "Jan 2023",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQGKitaFHlm3xQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722281073141?e=1744243200&v=beta&t=tnNz0HnacMi8voRW4dg-KqcC0tX8wFXUJfq5cZjKlz4",
+					image: "/images/pfps/michaelgibbpfp.jpg",
 					linkedin: "https://www.linkedin.com/in/michael-e-gibb",
 				},
 				{
@@ -733,7 +681,7 @@ export const mockApiData = {
 						"Computer Science with Honours Applied Computing and a minor in Applied IT",
 					year: "3rd",
 					joined: "Nov 2024",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQGS2Z6H58ut-Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726583437365?e=1744243200&v=beta&t=pHNPzbbjw3-VdZlv_SNQviHMBhjrFXKFofG8OJFURXw",
+					image: "/images/pfps/landonhadrepfp.jpg",
 					linkedin: "https://www.linkedin.com/in/landonhadre/",
 				},
 				{
@@ -745,7 +693,7 @@ export const mockApiData = {
 						"Bachelor of Computing Science with Honours Applied Computing",
 					year: "3rd",
 					joined: "Nov 2024",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQHhYFvFdcg1-w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730481713695?e=1744243200&v=beta&t=7yYKOqMLRCqQFHtykf0YosbWJyKyzzioTlmKw1B1CZk",
+					image: "/images/pfps/ethankonkolowiczpfp.jpg",
 					linkedin: "https://www.linkedin.com/in/ethan-konk/",
 				},
 				{
@@ -756,7 +704,7 @@ export const mockApiData = {
 					program: "Computer Science, Software Engineering",
 					year: "2nd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQH6Zoml9zpaQA/profile-displayphoto-shrink_400_400/B56ZNvw9PaGgAg-/0/1732746926191?e=1744243200&v=beta&t=e5wx4rp8PDBWjCXGUeYpiaUgzQ-zvr6N8z6lfImNQ1o",
+					image: "/images/pfps/kevinneavepfp.jpg",
 					linkedin: "http://linkedin.com/in/kevin-neave-zx374",
 				},
 				{
@@ -767,8 +715,8 @@ export const mockApiData = {
 					program: "Computer Science",
 					year: "1st",
 					joined: "Jan 2025",
-					image: "",
-					linkedin: "https://www.linkedin.com/in/",
+					image: "/images/pfps/adamelhoussamipfp.jpg",
+					linkedin: "https://www.linkedin.com/in/adam-el-houssami-947185272/",
 				},
 			],
 		},
@@ -784,7 +732,7 @@ export const mockApiData = {
 					program: "Concurrent Education / Bachelor of English ",
 					year: "3rd",
 					joined: "Oct 2023",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQHY_bbcrO_r-Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731976916621?e=1744243200&v=beta&t=WtWdVf4XwOjPV8UZ54ZPiPRNpHyWKl6mVhFWzD9q0lE",
+					image: "/images/pfps/emmatellierpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/emma-tellier-895877291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
@@ -796,7 +744,7 @@ export const mockApiData = {
 					program: "Law and Politics, Minor in Economics ",
 					year: "1st",
 					joined: "Dec 2024",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQGmDwR_WHpWZw/profile-displayphoto-shrink_800_800/B4EZWMz0JCG0Ac-/0/1741824148973?e=1747872000&v=beta&t=HtObksQH5JbD3iu27GQzjuKcnWZ08f7o3PGnlnu66CA",
+					image: "/images/pfps/joellejawdatpfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/joelle-jawdat-789058337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
@@ -808,7 +756,7 @@ export const mockApiData = {
 					program: "Business and psychology",
 					year: "1st",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D4E03AQESazTuRoUBjA/profile-displayphoto-shrink_400_400/B4EZOTKgRsHsAg-/0/1733340825414?e=1744243200&v=beta&t=FbPO7ou2MHCqquSpZN6AnE3NRYR-G0hubiMytMGvxHg",
+					image: "/images/pfps/yazarethmenesesarrietapfp.jpg",
 					linkedin:
 						"https://www.linkedin.com/in/yazareth-meneses-arrieta-519117337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 				},
@@ -821,7 +769,7 @@ export const mockApiData = {
 						"Business Administration Specialization in Human Resources",
 					year: "3rd",
 					joined: "Jan 2025",
-					image: "https://media.licdn.com/dms/image/v2/D5603AQHmwXpNhLXqEw/profile-displayphoto-shrink_400_400/B56ZRDq2G3H0Ag-/0/1736302093092?e=1744848000&v=beta&t=PVcINJ-hbT0e8zH5wXvUx965qwhtNRZ3JxKl5Kjqxy8",
+					image: "/images/pfps/sagalrirashpfp.jpg",
 					linkedin: "http://www.linkedin.com/in/sagal-rirash",
 				},
 			],
@@ -834,7 +782,7 @@ export const mockApiData = {
 			company: "XTX Markets",
 			program: "BCOM specalization in Finance",
 			year: "2017-2020",
-			image: "https://media.licdn.com/dms/image/v2/D4E03AQFomW6Ks3zR0g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729457800696?e=1744243200&v=beta&t=gAi2uixOQ_b1t0iRBVL3_tmj-5rBC-UOZPZdWCqq_4o",
+			image: "/images/pfps/nicofaziopfp.jpg",
 			blurb: "XTX Markets is a leading algorithmic trading firm partnering with counterparties, exchanges and e-trading venues globally to provide liquidity in the Equity, FX, Fixed Income, Commodity and Options markets. I work in the Business Development team. My avid involvement in JSOSIF was directly responsible for my eventual internships in Corporate Banking and subsequent career in the capital markets. It is the single most impactful and profitable extra-curricular experience offered by the University of Windsor.",
 			linkedin: "https://www.linkedin.com/in/nicofazio/",
 		},
