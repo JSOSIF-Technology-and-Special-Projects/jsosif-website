@@ -1,0 +1,38 @@
+substitutions:
+  _AR_HOSTNAME: us-central1-docker.pkg.dev
+  _SERVICE_NAME: jsosif-website
+  _PLATFORM: managed
+  _DEPLOY_REGION: us-central1
+
+# Build image with buildpacks, forcing Node 20
+steps:
+  - name: gcr.io/k8s-skaffold/pack
+    entrypoint: pack
+    args:
+      - build
+      - $_AR_HOSTNAME/$PROJECT_ID/cloud-run-source-deploy/$_SERVICE_NAME/$_SERVICE_NAME:$SHORT_SHA
+      - --builder=gcr.io/buildpacks/builder:v1
+      - --path=.
+      - --env=GOOGLE_NODEJS_VERSION=20.*.*
+
+  # Push built image
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - $_AR_HOSTNAME/$PROJECT_ID/cloud-run-source-deploy/$_SERVICE_NAME/$_SERVICE_NAME:$SHORT_SHA
+
+  # Deploy to Cloud Run
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - services
+      - update
+      - $_SERVICE_NAME
+      - --platform=$_PLATFORM
+      - --image=$_AR_HOSTNAME/$PROJECT_ID/cloud-run-source-deploy/$_SERVICE_NAME/$_SERVICE_NAME:$SHORT_SHA
+      - --region=$_DEPLOY_REGION
+      - --quiet
+
+images:
+  - $_AR_HOSTNAME/$PROJECT_ID/cloud-run-source-deploy/$_SERVICE_NAME/$_SERVICE_NAME:$SHORT_SHA
