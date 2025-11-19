@@ -44,10 +44,10 @@ export default function Header() {
 			name: "Bloomberg",
 			href: "/bloomberg",
 		},
-		{
-			name: "Hiring",
-			href: "/hiring",
-		},
+		// {
+		// 	name: "Hiring",
+		// 	href: "/hiring",
+		// },
 	];
 
 	//adds an event listener to the window to listen for scroll events on use

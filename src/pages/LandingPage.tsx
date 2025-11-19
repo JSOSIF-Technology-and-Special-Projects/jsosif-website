@@ -21,7 +21,7 @@ export default function LandingPage() {
 	const [statistics, setStatistics] = useState({
 		fundMembers: 0,
 		investmentHoldings: 0,
-		assetsUnderManagement: 0,
+		assetsUnderManagement: 270000,
 	});
 	const [investmentDivisions, setInvestmentDivisions] = useState<
 		{ name: string; description: string }[]
@@ -53,7 +53,7 @@ export default function LandingPage() {
 		}, 100);
 	}, [transition]);
 
-	const [assetsUnderManagement, setAssetsUnderManagement] = useState(261_000);
+	const [assetsUnderManagement, setAssetsUnderManagement] = useState(270_000);
 
 	const countUpRef = useRef(null);
 	const { update } = useCountUp({

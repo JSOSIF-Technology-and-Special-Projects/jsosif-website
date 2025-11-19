@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { fetchTeams } from "../data/mockApi"; 
 import TeamCard from "../components/TeamCard"; 
-import jsosifteam from "../assets/jsosifteam.webp"; 
+import jsosifteam from "../assets/banner.jpg"; 
 
 interface Team {
 	name: string;
