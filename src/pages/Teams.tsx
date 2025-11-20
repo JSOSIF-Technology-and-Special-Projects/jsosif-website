@@ -26,7 +26,6 @@ export default function Teams() {
   const [teams, setTeams] = useState<Team[]>([]);
 
   useEffect(() => {
-    // Fetch teams data
     const fetchData = async () => {
       const data = await fetchTeams();
       setTeams(data);
@@ -36,6 +35,7 @@ export default function Teams() {
   }, []);
 
   const [scrollPosition, setScrollPosition] = useState(0);
+
   const handleScroll = () => {
     const position = window.scrollY;
     setScrollPosition(position);
@@ -52,12 +52,12 @@ export default function Teams() {
   return (
     <div className="min-h-screen flex flex-col w-full bg-white">
       {/* Banner Section */}
-      {/* Banner Section */}
       <Image
         src="/images/banner.jpg"
         alt="Our Team Banner"
         width={1920}
         height={600}
+        priority // <- preload main banner
         style={{ height: scrollPosition / 8 + 400 }}
         className={`w-full object-cover -z-0 ${
           scrollPosition > 0 ? "fixed" : "absolute"
@@ -78,10 +78,10 @@ export default function Teams() {
           </div>
         </div>
       </div>
+
       <div className="relative z-10 bg-white flex justify-center">
         {/* Teams Section */}
         <div className="my-12 overflow-hidden">
-          {/* Render Each Team */}
           <div className="flex flex-col justify-center w-full">
             {teams.map((team, index) => (
               <div
@@ -91,10 +91,14 @@ export default function Teams() {
               >
                 {/* Team Header */}
                 <div className="relative w-screen mb-20 h-24">
-                  <img
+                  <Image
                     src={team.banner}
                     alt={team.name}
+                    fill
                     className="w-full h-24 z-0 object-cover"
+                    // preload the first team banner only if you want
+                    priority={index === 0}
+                    sizes="100vw"
                   />
                   <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center font-semibold tracking-[0.25em] text-2xl sm:text-4xl text-white">
                     {team.name}
