@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import jsosifbanner from "/images/jsosifbanner.png";
+import jsosifbanner from "../assets/jsosifbanner.png";
 import { usePathname } from "next/navigation";
 import MobileMenu from "./MobileMenu";
 

@@ -53,7 +53,7 @@ export default function LandingPage() {
 		}, 100);
 	}, [transition]);
 
-	const [assetsUnderManagement, setAssetsUnderManagement] = useState(2_000);
+	const [assetsUnderManagement, setAssetsUnderManagement] = useState(270_000);
 
 	const countUpRef = useRef(null);
 	const { update } = useCountUp({
