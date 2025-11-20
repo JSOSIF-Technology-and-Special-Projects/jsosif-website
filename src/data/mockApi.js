@@ -165,7 +165,7 @@ export const mockApiData = {
           program: "Business administration with a specialization in finance",
           year: "4th",
           joined: "Aug 2024",
-          image: "/images/pfps/CozyCosentino.JPG",
+          image: "/images/pfps/CozyCosentino.jpg",
           linkedin: "https://www.linkedin.com/in/eitan-cosentino-429319257/ 		",
         },
         {
@@ -202,7 +202,7 @@ export const mockApiData = {
             "Master of Management with specialization in Business Data Analytics",
           year: "2nd",
           joined: "Jan 2025",
-          image: "/images/pfps/RafaelSilva.JPG",
+          image: "/images/pfps/RaphaelSilva.JPG",
           linkedin: "https://www.linkedin.com/in/rafaelaugustofs/",
         },
         {
@@ -243,7 +243,7 @@ export const mockApiData = {
           program: "Bachelor of Arts in Economics",
           year: "3rd",
           joined: "Sep 2024",
-          image: "/images/pfps/NickMbugua.JPG",
+          image: "/images/pfps/nickmbuguapfp.jpg",
           linkedin: "https://www.linkedin.com/in/nickmbugua/",
         },
 
@@ -255,7 +255,7 @@ export const mockApiData = {
           program: "Law School",
           year: "1st",
           joined: "Oct 2025",
-          image: "/images/pfps/Luckshsanuthayakumar.jpg",
+          image: "/images/pfps/LuckshsanUthayakumar.JPG",
           linkedin: "www.linkedin.com/in/luckshsan 		",
         },
         {
@@ -475,7 +475,7 @@ export const mockApiData = {
             "Business Administration and Psychology, Finance Specialization",
           year: "3rd",
           joined: "Dec 2024",
-          image: "/images/pfps/MariamRaphaelBakmaya.jpeg",
+          image: "/images/pfps/MariamRaphael.jpeg",
           linkedin: "www.linkedin.com/in/mariam-raphael-bakmaya-885862303 			",
         },
 
@@ -526,7 +526,7 @@ export const mockApiData = {
           program: "Business Administration, Finance specialization",
           year: "2nd",
           joined: "Sep 2024",
-          image: "/images/pfps/NathanKempDove.JPG",
+          image: "/images/pfps/NathanKemp-Dove.JPG",
           linkedin: "https://www.linkedin.com/in/nathan-kemp-dove/ 		",
         },
         {
@@ -588,7 +588,7 @@ export const mockApiData = {
           program: "Honours law and politics",
           year: "4th",
           joined: "Feb 2025",
-          image: "/images/pfps/ElizibethSpiridon.JPG",
+          image: "/images/pfps/LizSpiridon.JPG",
           linkedin: "https://www.linkedin.com/in/elizabeth-spiridon-98277b269		",
         },
         {
@@ -798,7 +798,7 @@ export const mockApiData = {
           program: "Business Administration, Human Resources Specialization",
           year: "3rd",
           joined: "Jan 2025",
-          image: "/images/pfps/NatalieMaxwellLabute.JPG",
+          image: "/images/pfps/NatalieMaxwell.JPG",
           linkedin: "https://www.linkedin.com/in/natalie-maxwell-8a86b6293/		",
         },
       ],
