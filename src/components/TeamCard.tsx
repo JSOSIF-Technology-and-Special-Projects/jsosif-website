@@ -32,7 +32,7 @@ export default function TeamCard({ member }: TeamCardProps) {
             !member.image && "opacity-50 object-scale-down"
           }`}
           loading="lazy"
-          quality={100} // bump quality for portraits
+          quality={85} // bump quality for portraits
           sizes="(min-width: 1280px) 18vw, (min-width: 1024px) 22vw, (min-width: 640px) 40vw, 50vw"
         />
       </div>
