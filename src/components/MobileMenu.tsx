@@ -127,6 +127,13 @@ export default function MobileMenu({
 								</div>
 							);
 						})}
+						<a
+							href="https://internal.jsosif.com/login"
+							onClick={() => setMenuOpen(false)}
+							className="mx-4 mt-4 w-fit rounded-md bg-[#0E5791] px-4 py-2 text-lg font-medium text-white transition-colors hover:bg-[#0b4675] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0E5791] sm:mx-12"
+						>
+							Member Login
+						</a>
 					</nav>
 				</div>
 			</div>

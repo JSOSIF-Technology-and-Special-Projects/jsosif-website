@@ -142,7 +142,7 @@ export default function Header() {
 				</div>
 
 				{/* Navigation Links */}
-				<nav className="xl:flex space-x-8 text-gray-600 hidden">
+				<nav className="xl:flex items-center space-x-8 text-gray-600 hidden">
 					{paths.map(({ name, href }) => {
 						return (
 							<Link
@@ -164,6 +164,12 @@ export default function Header() {
 							</Link>
 						);
 					})}
+					<a
+						href="https://internal.jsosif.com/login"
+						className="shrink-0 whitespace-nowrap rounded-md bg-[#0E5791] px-4 py-2 font-medium text-white transition-colors hover:bg-[#0b4675] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0E5791]"
+					>
+						Member Login
+					</a>
 				</nav>
 			</div>
 		</header>
